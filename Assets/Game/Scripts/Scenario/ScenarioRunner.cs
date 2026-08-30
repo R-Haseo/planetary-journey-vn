@@ -6,9 +6,14 @@ public class ScenarioRunner : MonoBehaviour
 {
     [SerializeField] private DialogueView dialogueView;
     [SerializeField] private BackgroundView backgroundView;
+    [SerializeField] private AudioSource voiceAudioSource;
 
     [SerializeField] private Sprite spaceExterior;
     [SerializeField] private Sprite spaceshipInterior;
+    [SerializeField] private AudioClip girl001;
+    [SerializeField] private AudioClip ai002;
+    [SerializeField] private AudioClip girl003;
+    [SerializeField] private AudioClip ai004;
 
     private readonly List<DialogueLine> lines = new();
     private int currentIndex;
@@ -17,10 +22,10 @@ public class ScenarioRunner : MonoBehaviour
     {
         backgroundView.Show(spaceExterior);
 
-        lines.Add(new DialogueLine("少女", "……何もないね。", null));
-        lines.Add(new DialogueLine("AI", "はい。", null));
-        lines.Add(new DialogueLine("少女", "ずっと？", null));
-        lines.Add(new DialogueLine("AI", "少なくとも、ここ三日間は。", null));
+        lines.Add(new DialogueLine("少女", "……何もないね。", null, girl001));
+        lines.Add(new DialogueLine("AI", "はい。", null, ai002));
+        lines.Add(new DialogueLine("少女", "ずっと？", null, girl003));
+        lines.Add(new DialogueLine("AI", "少なくとも、ここ三日間は。", null, ai004));
 
         ShowCurrentLine();
     }
@@ -53,6 +58,13 @@ public class ScenarioRunner : MonoBehaviour
         if (line.Background != null)
         {
             backgroundView.Show(line.Background);
+        }
+
+        voiceAudioSource.Stop();
+
+        if (line.Voice != null)
+        {
+            voiceAudioSource.PlayOneShot(line.Voice);
         }
     }
 
