@@ -52,7 +52,7 @@ public class ScenarioRunner : MonoBehaviour
 
         var scenarioCommand = commands[currentIndex];
 
-        if (scenarioCommand.Type != "dialogue")
+        if (scenarioCommand.Type != "dialogue" && scenarioCommand.Type != "description")
         {
             return;
         }
@@ -86,6 +86,9 @@ public class ScenarioRunner : MonoBehaviour
                 ShowBackground(scenarioCommand.AssetId);
                 MoveToNextCommand();
                 break;
+            case "description":
+                ShowDescription(scenarioCommand);
+                break;
 
             default:
                 Debug.LogWarning($"Unknown scenario command type: {scenarioCommand.Type}");
@@ -112,5 +115,10 @@ public class ScenarioRunner : MonoBehaviour
         }
 
         backgroundView.Show(entry.Sprite);
+    }
+
+    private void ShowDescription(ScenarioCommandDto command)
+    {
+        dialogueView.Show(string.Empty, command.Text);
     }
 }
