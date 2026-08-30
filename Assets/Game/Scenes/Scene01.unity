@@ -540,12 +540,21 @@ MonoBehaviour:
   dialogueView: {fileID: 1893812289}
   backgroundView: {fileID: 664555118}
   voiceAudioSource: {fileID: 1881264566}
-  spaceExterior: {fileID: 2495107377974511851, guid: 2b4d87f1343e93e4eaac9f145251708c, type: 3}
-  spaceshipInterior: {fileID: -445710961865628079, guid: f0cfe01679b968c459b221e3c6833970, type: 3}
-  girl001: {fileID: 8300000, guid: 60f1553bdf62d6d4fbb88c3268d952bb, type: 3}
-  ai002: {fileID: 8300000, guid: a285a9ea521c6e34f8390c7ec87813de, type: 3}
-  girl003: {fileID: 8300000, guid: 543a4d1b876c5704d89e9e3a3d42233e, type: 3}
-  ai004: {fileID: 8300000, guid: f34bbec6e53b33e439f9d9343216edfb, type: 3}
+  scenarioJson: {fileID: 4900000, guid: 00a10606e065d9c4786a8ae14c00e7a4, type: 3}
+  voices:
+  - Id: s01_001
+    Clip: {fileID: 8300000, guid: 60f1553bdf62d6d4fbb88c3268d952bb, type: 3}
+  - Id: s01_002
+    Clip: {fileID: 8300000, guid: a285a9ea521c6e34f8390c7ec87813de, type: 3}
+  - Id: s01_003
+    Clip: {fileID: 8300000, guid: 543a4d1b876c5704d89e9e3a3d42233e, type: 3}
+  - Id: s01_004
+    Clip: {fileID: 8300000, guid: f34bbec6e53b33e439f9d9343216edfb, type: 3}
+  backgrounds:
+  - Id: space_exterior
+    Sprite: {fileID: 2495107377974511851, guid: 2b4d87f1343e93e4eaac9f145251708c, type: 3}
+  - Id: spaceship_interior
+    Sprite: {fileID: -445710961865628079, guid: f0cfe01679b968c459b221e3c6833970, type: 3}
 --- !u!4 &668518700
 Transform:
   m_ObjectHideFlags: 0

@@ -1,0 +1,36 @@
+{
+  "Events": [
+    {
+      "Type": "background",
+      "AssetId": "space_exterior"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_001",
+      "Speaker": "少女",
+      "Text": "……何もないね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_002",
+      "Speaker": "AI",
+      "Text": "はい"
+    },
+    {
+      "Type": "background",
+      "AssetId": "spaceship_interior"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_003",
+      "Speaker": "少女",
+      "Text": "ずっと？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_004",
+      "Speaker": "AI",
+      "Text": "少なくとも、ここ三日間は"
+    }
+  ]
+}

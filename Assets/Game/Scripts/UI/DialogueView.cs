@@ -9,6 +9,6 @@ public class DialogueView : MonoBehaviour
     public void Show(DialogueLine line)
     {
         speakerText.text = line.Speaker;
-        dialogueText.text = line.Message;
+        dialogueText.text = line.Text;
     }
 }

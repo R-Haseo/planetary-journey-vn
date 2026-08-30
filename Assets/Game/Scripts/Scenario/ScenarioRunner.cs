@@ -8,26 +8,26 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private BackgroundView backgroundView;
     [SerializeField] private AudioSource voiceAudioSource;
 
-    [SerializeField] private Sprite spaceExterior;
-    [SerializeField] private Sprite spaceshipInterior;
-    [SerializeField] private AudioClip girl001;
-    [SerializeField] private AudioClip ai002;
-    [SerializeField] private AudioClip girl003;
-    [SerializeField] private AudioClip ai004;
+    [SerializeField] private TextAsset scenarioJson;
+    [SerializeField] private List<VoiceEntry> voices;
+    [SerializeField] private List<BackgroundEntry> backgrounds;
 
-    private readonly List<DialogueLine> lines = new();
+    private List<ScenarioEvent> events;
     private int currentIndex;
+
+    private void Awake()
+    {
+        var scenarioData = JsonUtility.FromJson<ScenarioData>(scenarioJson.text);
+
+        events = scenarioData.Events;
+
+        Debug.Log($"Scenario loaded: {events?.Count ?? 0} events");
+    }
 
     private void Start()
     {
-        backgroundView.Show(spaceExterior);
-
-        lines.Add(new DialogueLine("少女", "……何もないね。", null, girl001));
-        lines.Add(new DialogueLine("AI", "はい。", null, ai002));
-        lines.Add(new DialogueLine("少女", "ずっと？", null, girl003));
-        lines.Add(new DialogueLine("AI", "少なくとも、ここ三日間は。", null, ai004));
-
-        ShowCurrentLine();
+        currentIndex = 0;
+        ProcessCurrentEvent();
     }
 
     private void Update()
@@ -44,38 +44,96 @@ public class ScenarioRunner : MonoBehaviour
         }
     }
 
-    private void ShowCurrentLine()
+    private void NextLine()
     {
-        if (currentIndex >= lines.Count)
+        if (currentIndex >= events.Count)
         {
             return;
         }
 
-        var line = lines[currentIndex];
+        var scenarioEvent = events[currentIndex];
 
-        dialogueView.Show(line);
-
-        if (line.Background != null)
+        if (scenarioEvent.Type != "dialogue")
         {
-            backgroundView.Show(line.Background);
+            return;
         }
 
-        voiceAudioSource.Stop();
+        MoveToNextEvent();
+    }
 
-        if (line.Voice != null)
+    private void MoveToNextEvent()
+    {
+        currentIndex++;
+        ProcessCurrentEvent();
+    }
+
+    private void ProcessCurrentEvent()
+    {
+        if (currentIndex >= events.Count)
         {
-            voiceAudioSource.PlayOneShot(line.Voice);
+            Debug.Log("End of scenario");
+            return;
+        }
+
+        var scenarioEvent = events[currentIndex];
+
+        switch (scenarioEvent.Type)
+        {
+            case "dialogue":
+                ShowDialogue(scenarioEvent);
+                break;
+
+            case "background":
+                ShowBackground(scenarioEvent.AssetId);
+                MoveToNextEvent();
+                break;
+
+            default:
+                Debug.LogWarning($"Unknown scenario event type: {scenarioEvent.Type}");
+
+                MoveToNextEvent();
+                break;
         }
     }
 
-    private void NextLine()
+    private void ShowDialogue(ScenarioEvent scenarioEvent)
     {
-        if (currentIndex >= lines.Count - 1)
+        var line = new DialogueLine
+        {
+            Id = scenarioEvent.Id,
+            Speaker = scenarioEvent.Speaker,
+            Text = scenarioEvent.Text
+        };
+
+        dialogueView.Show(line);
+        PlayVoice(scenarioEvent.Id);
+    }
+
+    private void ShowBackground(string assetId)
+    {
+        var entry = backgrounds.Find(x => x.Id == assetId);
+
+        if (entry == null || entry.Sprite == null)
+        {
+            Debug.LogWarning($"Background not found: {assetId}");
+            return;
+        }
+
+        backgroundView.Show(entry.Sprite);
+    }
+
+    private void PlayVoice(string id)
+    {
+        voiceAudioSource.Stop();
+
+        var entry = voices.Find(x => x.Id == id);
+
+        if (entry == null || entry.Clip == null)
         {
             return;
         }
 
-        currentIndex++;
-        ShowCurrentLine();
+        voiceAudioSource.clip = entry.Clip;
+        voiceAudioSource.Play();
     }
 }
