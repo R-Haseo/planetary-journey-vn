@@ -1,7 +1,7 @@
 using System;
 
 [Serializable]
-public class ScenarioEvent
+public class ScenarioCommandDto
 {
     public string Type;
 

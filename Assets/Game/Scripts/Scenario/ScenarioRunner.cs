@@ -12,16 +12,16 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private List<VoiceEntry> voices;
     [SerializeField] private List<BackgroundEntry> backgrounds;
 
-    private List<ScenarioEvent> events;
+    private List<ScenarioCommandDto> commands;
     private int currentIndex;
 
     private void Awake()
     {
-        var scenarioData = JsonUtility.FromJson<ScenarioData>(scenarioJson.text);
+        var scenarioData = JsonUtility.FromJson<ScenarioDataDto>(scenarioJson.text);
 
-        events = scenarioData.Events;
+        commands = scenarioData.Commands;
 
-        Debug.Log($"Scenario loaded: {events?.Count ?? 0} events");
+        Debug.Log($"Scenario loaded: {commands?.Count ?? 0} events");
     }
 
     private void Start()
@@ -46,12 +46,12 @@ public class ScenarioRunner : MonoBehaviour
 
     private void NextLine()
     {
-        if (currentIndex >= events.Count)
+        if (currentIndex >= commands.Count)
         {
             return;
         }
 
-        var scenarioEvent = events[currentIndex];
+        var scenarioEvent = commands[currentIndex];
 
         if (scenarioEvent.Type != "dialogue")
         {
@@ -69,13 +69,13 @@ public class ScenarioRunner : MonoBehaviour
 
     private void ProcessCurrentEvent()
     {
-        if (currentIndex >= events.Count)
+        if (currentIndex >= commands.Count)
         {
             Debug.Log("End of scenario");
             return;
         }
 
-        var scenarioEvent = events[currentIndex];
+        var scenarioEvent = commands[currentIndex];
 
         switch (scenarioEvent.Type)
         {
@@ -96,16 +96,9 @@ public class ScenarioRunner : MonoBehaviour
         }
     }
 
-    private void ShowDialogue(ScenarioEvent scenarioEvent)
+    private void ShowDialogue(ScenarioCommandDto scenarioEvent)
     {
-        var line = new DialogueLine
-        {
-            Id = scenarioEvent.Id,
-            Speaker = scenarioEvent.Speaker,
-            Text = scenarioEvent.Text
-        };
-
-        dialogueView.Show(line);
+        dialogueView.Show(scenarioEvent.Speaker, scenarioEvent.Text);
         PlayVoice(scenarioEvent.Id);
     }
 

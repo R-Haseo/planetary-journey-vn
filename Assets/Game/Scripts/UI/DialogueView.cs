@@ -6,9 +6,9 @@ public class DialogueView : MonoBehaviour
     [SerializeField] private TMP_Text speakerText;
     [SerializeField] private TMP_Text dialogueText;
 
-    public void Show(DialogueLine line)
+    public void Show(string speaker, string text)
     {
-        speakerText.text = line.Speaker;
-        dialogueText.text = line.Text;
+        speakerText.text = speaker;
+        dialogueText.text = text;
     }
 }

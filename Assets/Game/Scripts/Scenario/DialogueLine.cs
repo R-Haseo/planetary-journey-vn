@@ -1,9 +1,0 @@
-using System;
-
-[Serializable]
-public class DialogueLine
-{
-    public string Id;
-    public string Speaker;
-    public string Text;
-}

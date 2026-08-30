@@ -1,5 +1,5 @@
 {
-  "Events": [
+  "Commands": [
     {
       "Type": "background",
       "AssetId": "space_exterior"
