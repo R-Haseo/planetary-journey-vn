@@ -5,16 +5,22 @@ using UnityEngine.InputSystem;
 public class ScenarioRunner : MonoBehaviour
 {
     [SerializeField] private DialogueView dialogueView;
+    [SerializeField] private BackgroundView backgroundView;
+
+    [SerializeField] private Sprite spaceExterior;
+    [SerializeField] private Sprite spaceshipInterior;
 
     private readonly List<DialogueLine> lines = new();
     private int currentIndex;
 
     private void Start()
     {
-        lines.Add(new DialogueLine("少女", "……何もないね。"));
-        lines.Add(new DialogueLine("AI", "はい。"));
-        lines.Add(new DialogueLine("少女", "ずっと？"));
-        lines.Add(new DialogueLine("AI", "少なくとも、ここ三日間は。"));
+        backgroundView.Show(spaceExterior);
+
+        lines.Add(new DialogueLine("少女", "……何もないね。", null));
+        lines.Add(new DialogueLine("AI", "はい。", null));
+        lines.Add(new DialogueLine("少女", "ずっと？", null));
+        lines.Add(new DialogueLine("AI", "少なくとも、ここ三日間は。", null));
 
         ShowCurrentLine();
     }
@@ -35,9 +41,18 @@ public class ScenarioRunner : MonoBehaviour
 
     private void ShowCurrentLine()
     {
-        if (currentIndex < lines.Count)
+        if (currentIndex >= lines.Count)
         {
-            dialogueView.Show(lines[currentIndex]);
+            return;
+        }
+
+        var line = lines[currentIndex];
+
+        dialogueView.Show(line);
+
+        if (line.Background != null)
+        {
+            backgroundView.Show(line.Background);
         }
     }
 
