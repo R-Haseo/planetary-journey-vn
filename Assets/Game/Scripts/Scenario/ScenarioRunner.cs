@@ -6,10 +6,9 @@ public class ScenarioRunner : MonoBehaviour
 {
     [SerializeField] private DialogueView dialogueView;
     [SerializeField] private BackgroundView backgroundView;
-    [SerializeField] private AudioSource voiceAudioSource;
+    [SerializeField] private VoicePlayer voicePlayer;
 
     [SerializeField] private TextAsset scenarioJson;
-    [SerializeField] private List<VoiceEntry> voices;
     [SerializeField] private List<BackgroundEntry> backgrounds;
 
     private List<ScenarioCommandDto> commands;
@@ -21,13 +20,13 @@ public class ScenarioRunner : MonoBehaviour
 
         commands = scenarioData.Commands;
 
-        Debug.Log($"Scenario loaded: {commands?.Count ?? 0} events");
+        Debug.Log($"Scenario loaded: {commands?.Count ?? 0} commands");
     }
 
     private void Start()
     {
         currentIndex = 0;
-        ProcessCurrentEvent();
+        ProcessCurrentCommand();
     }
 
     private void Update()
@@ -51,23 +50,23 @@ public class ScenarioRunner : MonoBehaviour
             return;
         }
 
-        var scenarioEvent = commands[currentIndex];
+        var scenarioCommand = commands[currentIndex];
 
-        if (scenarioEvent.Type != "dialogue")
+        if (scenarioCommand.Type != "dialogue")
         {
             return;
         }
 
-        MoveToNextEvent();
+        MoveToNextCommand();
     }
 
-    private void MoveToNextEvent()
+    private void MoveToNextCommand()
     {
         currentIndex++;
-        ProcessCurrentEvent();
+        ProcessCurrentCommand();
     }
 
-    private void ProcessCurrentEvent()
+    private void ProcessCurrentCommand()
     {
         if (currentIndex >= commands.Count)
         {
@@ -75,31 +74,31 @@ public class ScenarioRunner : MonoBehaviour
             return;
         }
 
-        var scenarioEvent = commands[currentIndex];
+        var scenarioCommand = commands[currentIndex];
 
-        switch (scenarioEvent.Type)
+        switch (scenarioCommand.Type)
         {
             case "dialogue":
-                ShowDialogue(scenarioEvent);
+                ShowDialogue(scenarioCommand);
                 break;
 
             case "background":
-                ShowBackground(scenarioEvent.AssetId);
-                MoveToNextEvent();
+                ShowBackground(scenarioCommand.AssetId);
+                MoveToNextCommand();
                 break;
 
             default:
-                Debug.LogWarning($"Unknown scenario event type: {scenarioEvent.Type}");
+                Debug.LogWarning($"Unknown scenario command type: {scenarioCommand.Type}");
 
-                MoveToNextEvent();
+                MoveToNextCommand();
                 break;
         }
     }
 
-    private void ShowDialogue(ScenarioCommandDto scenarioEvent)
+    private void ShowDialogue(ScenarioCommandDto scenarioCommand)
     {
-        dialogueView.Show(scenarioEvent.Speaker, scenarioEvent.Text);
-        PlayVoice(scenarioEvent.Id);
+        dialogueView.Show(scenarioCommand.Speaker, scenarioCommand.Text);
+        voicePlayer.Play(scenarioCommand.Id);
     }
 
     private void ShowBackground(string assetId)
@@ -113,20 +112,5 @@ public class ScenarioRunner : MonoBehaviour
         }
 
         backgroundView.Show(entry.Sprite);
-    }
-
-    private void PlayVoice(string id)
-    {
-        voiceAudioSource.Stop();
-
-        var entry = voices.Find(x => x.Id == id);
-
-        if (entry == null || entry.Clip == null)
-        {
-            return;
-        }
-
-        voiceAudioSource.clip = entry.Clip;
-        voiceAudioSource.Play();
     }
 }
