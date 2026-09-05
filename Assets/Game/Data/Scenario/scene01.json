@@ -1,0 +1,334 @@
+{
+  "Commands": [
+    {
+      "Type": "background",
+      "AssetId": "space_exterior"
+    },
+    {
+      "Type": "description",
+      "Text": "無数の星々が浮かぶ、静かな宇宙。"
+    },
+    {
+      "Type": "description",
+      "Text": "その中を、一隻の小型宇宙船がゆっくりと進んでいる。"
+    },
+    {
+      "Type": "background",
+      "AssetId": "spaceship_interior"
+    },
+    {
+      "Type": "character",
+      "AssetId": "roman/normal",
+      "Action": "show",
+      "Position": "left",
+      "Width": 620,
+      "Height": 930
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/normal",
+      "Action": "show",
+      "Position": "right",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120
+    },
+    {
+      "Type": "description",
+      "Text": "窓の外を眺めながら、少女が座っている。"
+    },
+    {
+      "Type": "description",
+      "Text": "その傍らには、少女の頭ほどの大きさの球体型AIが浮遊している。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_001",
+      "Speaker": "少女",
+      "Text": "……何もないね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_002",
+      "Speaker": "AI",
+      "Text": "はい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_003",
+      "Speaker": "少女",
+      "Text": "ずっと？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_004",
+      "Speaker": "AI",
+      "Text": "少なくとも、ここ三日間は"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_005",
+      "Speaker": "少女",
+      "Text": "退屈"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_006",
+      "Speaker": "AI",
+      "Text": "宇宙調査とは、本来そういうものです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_007",
+      "Speaker": "少女",
+      "Text": "私は調査員じゃないんだけど"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_008",
+      "Speaker": "AI",
+      "Text": "では、観光ですか？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_009",
+      "Speaker": "少女",
+      "Text": "それも違う"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_010",
+      "Speaker": "AI",
+      "Text": "目的のない旅行を、一般に観光と――"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_011",
+      "Speaker": "少女",
+      "Text": "うるさい"
+    },
+    {
+      "Type": "description",
+      "Text": "少女が座席に深く身体を沈める。"
+    },
+    {
+      "Type": "se",
+      "AssetId": "notification"
+    },
+    {
+      "Type": "description",
+      "Text": "モニターに通信が表示される。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_012",
+      "Speaker": "少女",
+      "Text": "博士から？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_013",
+      "Speaker": "AI",
+      "Text": "はい。次の調査対象が指定されました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_014",
+      "Speaker": "少女",
+      "Text": "今度はどんなところ？"
+    },
+    {
+      "Type": "description",
+      "Text": "モニターに、一つの青白い惑星が表示される。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_015",
+      "Speaker": "AI",
+      "Text": "惑星――"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_016",
+      "Speaker": "AI",
+      "Text": "人口、およそ十二億。大気組成、重力ともに人類の生存に適しています"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_017",
+      "Speaker": "少女",
+      "Text": "普通の星じゃない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_018",
+      "Speaker": "AI",
+      "Text": "かつては"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_019",
+      "Speaker": "少女",
+      "Text": "かつて？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_020",
+      "Speaker": "AI",
+      "Text": "この惑星では現在、生命活動が極端に減少していると推定されています"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_021",
+      "Speaker": "少女",
+      "Text": "生命活動が？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_022",
+      "Speaker": "AI",
+      "Text": "都市からの通信、交通、商業活動。いずれも数年前から急速に減少しています"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_023",
+      "Speaker": "少女",
+      "Text": "人口は十二億人いるんでしょ？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_024",
+      "Speaker": "AI",
+      "Text": "登録上は"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_025",
+      "Speaker": "少女",
+      "Text": "じゃあ、みんなどこに行ったの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_026",
+      "Speaker": "AI",
+      "Text": "不明です"
+    },
+    {
+      "Type": "description",
+      "Text": "少女はモニターに映った惑星をしばらく眺める。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_027",
+      "Speaker": "少女",
+      "Text": "滅んじゃったとか？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_028",
+      "Speaker": "AI",
+      "Text": "その可能性は低いと思われます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_029",
+      "Speaker": "少女",
+      "Text": "どうして？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_030",
+      "Speaker": "AI",
+      "Text": "都市インフラは現在も稼働しています"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_031",
+      "Speaker": "少女",
+      "Text": "人はいる。でも、何もしてない？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_032",
+      "Speaker": "AI",
+      "Text": "そのようです"
+    },
+    {
+      "Type": "description",
+      "Text": "少しの沈黙。"
+    },
+    {
+      "Type": "description",
+      "Text": "少女は座席から身体を起こす。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_033",
+      "Speaker": "少女",
+      "Text": "面白そう"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_034",
+      "Speaker": "AI",
+      "Text": "危険そう、の間違いでは？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_035",
+      "Speaker": "少女",
+      "Text": "行けば分かるよ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_036",
+      "Speaker": "AI",
+      "Text": "博士からも調査するよう指示されています"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_037",
+      "Speaker": "少女",
+      "Text": "じゃ、決まり"
+    },
+    {
+      "Type": "description",
+      "Text": "少女がモニター上の惑星を指差す。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_038",
+      "Speaker": "少女",
+      "Text": "次はここ"
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "right"
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "left"
+    },
+    {
+      "Type": "background",
+      "AssetId": "space_exterior"
+    },
+    {
+      "Type": "description",
+      "Text": "宇宙船がゆっくりと進路を変える。"
+    },
+    {
+      "Type": "description",
+      "Text": "遠くに浮かぶ青白い惑星へ向かって加速していく。"
+    },
+    {
+      "Type": "fadeout"
+    },
+    {
+      "Type": "scene",
+      "AssetId": "Scene02"
+    }
+  ]
+}
