@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -7,49 +8,76 @@ public class CharacterPlayer : MonoBehaviour
     [SerializeField]
     private CharacterView characterView;
 
-    private AsyncOperationHandle<Sprite>? currentHandle;
+    private readonly Dictionary<CharacterPosition, AsyncOperationHandle<Sprite>>
+        currentHandles = new();
 
-    public async void Show(string assetId, CharacterPosition position)
+    public void Show(string assetId, CharacterPosition position)
     {
-        ReleaseCurrent();
+        Release(position);
 
         var address = $"character/{assetId}";
         var handle = Addressables.LoadAssetAsync<Sprite>(address);
 
-        currentHandle = handle;
+        currentHandles[position] = handle;
 
-        await handle.Task;
-
-        if (handle.Status != AsyncOperationStatus.Succeeded)
+        handle.Completed += completedHandle =>
         {
-            Debug.LogError($"Failed to load character: {address}");
-            currentHandle = null;
+            if (completedHandle.Status != AsyncOperationStatus.Succeeded)
+            {
+                Debug.LogError($"Failed to load character: {address}");
+
+                if (currentHandles.TryGetValue(position, out var currentHandle) &&
+                    currentHandle.Equals(completedHandle))
+                {
+                    currentHandles.Remove(position);
+                }
+
+                return;
+            }
+
+            // ロード中に同じ位置が別キャラクターに変更された場合、
+            // 古いロード結果は表示しない。
+            if (!currentHandles.TryGetValue(position, out var registeredHandle) ||
+                !registeredHandle.Equals(completedHandle))
+            {
+                return;
+            }
+
+            characterView.Show(completedHandle.Result, position);
+        };
+    }
+
+    public void Hide(CharacterPosition position)
+    {
+        characterView.Hide(position);
+        Release(position);
+    }
+
+    private void Release(CharacterPosition position)
+    {
+        if (!currentHandles.TryGetValue(position, out var handle))
+        {
             return;
         }
 
-        characterView.SetPosition(position);
-        characterView.Show(handle.Result);
-    }
+        if (handle.IsValid())
+        {
+            Addressables.Release(handle);
+        }
 
-    public void Hide()
-    {
-        characterView.Hide();
-        ReleaseCurrent();
+        currentHandles.Remove(position);
     }
 
     private void OnDestroy()
     {
-        ReleaseCurrent();
-    }
-
-    private void ReleaseCurrent()
-    {
-        if (!currentHandle.HasValue)
+        foreach (var handle in currentHandles.Values)
         {
-            return;
+            if (handle.IsValid())
+            {
+                Addressables.Release(handle);
+            }
         }
 
-        Addressables.Release(currentHandle.Value);
-        currentHandle = null;
+        currentHandles.Clear();
     }
 }

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.AddressableAssets;
+using System.Threading.Tasks;
 
 public class ScenarioRunner : MonoBehaviour
 {
@@ -104,31 +105,35 @@ public class ScenarioRunner : MonoBehaviour
 
     private void ProcessCharacterCommand(ScenarioCommandDto command)
     {
+        var position = ParseCharacterPosition(command.Position);
+
         switch (command.Action)
         {
             case "show":
-            {
-                var position = command.Position switch
-                {
-                    "left" => CharacterPosition.Left,
-                    "right" => CharacterPosition.Right,
-                    _ => CharacterPosition.Center
-                };
-
                 characterPlayer.Show(command.AssetId, position);
                 break;
-            }
 
             case "hide":
-                characterPlayer.Hide();
+                characterPlayer.Hide(position);
                 break;
 
             default:
-                Debug.LogWarning($"Unknown character action: {command.Action}");
+                Debug.LogWarning(
+                    $"Unknown character action: {command.Action}");
                 break;
         }
 
         MoveToNextCommand();
+    }
+
+    private CharacterPosition ParseCharacterPosition(string position)
+    {
+        return position switch
+        {
+            "left" => CharacterPosition.Left,
+            "right" => CharacterPosition.Right,
+            _ => CharacterPosition.Center
+        };
     }
 
     private void ShowDialogue(ScenarioCommandDto scenarioCommand)

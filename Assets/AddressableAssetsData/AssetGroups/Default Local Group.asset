@@ -30,6 +30,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1eb80adf33cbba84781d432ed2bc30e2
+    m_Address: character/ai/normal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2059186d32b5a3249971eacc64b6deda
     m_Address: voice/s01_037
     m_ReadOnly: 0

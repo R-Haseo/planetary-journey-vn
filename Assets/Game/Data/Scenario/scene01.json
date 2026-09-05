@@ -20,7 +20,13 @@
       "Type": "character",
       "AssetId": "roman/normal",
       "Action": "show",
-      "Position": "center"
+      "Position": "left"
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/normal",
+      "Action": "show",
+      "Position": "right"
     },
     {
       "Type": "description",
@@ -292,7 +298,13 @@
     },
     {
       "Type": "character",
-      "Action": "hide"
+      "Action": "hide",
+      "Position": "right"
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "left"
     },
     {
       "Type": "background",

@@ -4,40 +4,53 @@ using UnityEngine.UI;
 public class CharacterView : MonoBehaviour
 {
     [SerializeField]
-    private Image characterImage;
+    private Image leftImage;
+
+    [SerializeField]
+    private Image centerImage;
+
+    [SerializeField]
+    private Image rightImage;
 
     private void Awake()
     {
-        characterImage.enabled = false;
-        characterImage.preserveAspect = true;
+        InitializeImage(leftImage);
+        InitializeImage(centerImage);
+        InitializeImage(rightImage);
     }
 
-    public void Show(Sprite sprite)
+    public void Show(Sprite sprite, CharacterPosition position)
     {
-        characterImage.sprite = sprite;
-        characterImage.enabled = true;
+        var image = GetImage(position);
+
+        image.sprite = sprite;
+        image.enabled = true;
     }
 
-    public void Hide()
+    public void Hide(CharacterPosition position)
     {
-        characterImage.sprite = null;
-        characterImage.enabled = false;
+        var image = GetImage(position);
+
+        image.sprite = null;
+        image.enabled = false;
     }
 
-    public void SetPosition(CharacterPosition position)
+    private Image GetImage(CharacterPosition position)
     {
-        var rectTransform = characterImage.rectTransform;
-        var anchoredPosition = rectTransform.anchoredPosition;
-
-        anchoredPosition.x = position switch
+        return position switch
         {
-            CharacterPosition.Left => -500f,
-            CharacterPosition.Center => 0f,
-            CharacterPosition.Right => 500f,
-            _ => 0f
+            CharacterPosition.Left => leftImage,
+            CharacterPosition.Center => centerImage,
+            CharacterPosition.Right => rightImage,
+            _ => centerImage
         };
+    }
 
-        rectTransform.anchoredPosition = anchoredPosition;
+    private static void InitializeImage(Image image)
+    {
+        image.sprite = null;
+        image.preserveAspect = true;
+        image.enabled = false;
     }
 }
 
