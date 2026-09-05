@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.AddressableAssets;
 
 public class ScenarioRunner : MonoBehaviour
 {
+    [SerializeField] private CharacterPlayer characterPlayer;
     [SerializeField] private DialogueView dialogueView;
     [SerializeField] private BackgroundView backgroundView;
     [SerializeField] private VoicePlayer voicePlayer;
@@ -78,10 +80,12 @@ public class ScenarioRunner : MonoBehaviour
 
         switch (scenarioCommand.Type)
         {
+            case "character":
+                ShowCharacter(scenarioCommand);
+                break;
             case "dialogue":
                 ShowDialogue(scenarioCommand);
                 break;
-
             case "background":
                 ShowBackground(scenarioCommand.AssetId);
                 MoveToNextCommand();
@@ -96,6 +100,20 @@ public class ScenarioRunner : MonoBehaviour
                 MoveToNextCommand();
                 break;
         }
+    }
+
+    private void ShowCharacter(ScenarioCommandDto command)
+    {
+        var position = command.Position switch
+        {
+            "left" => CharacterPosition.Left,
+            "right" => CharacterPosition.Right,
+            _ => CharacterPosition.Center
+        };
+
+        characterPlayer.Show(command.AssetId, position);
+
+        MoveToNextCommand();
     }
 
     private void ShowDialogue(ScenarioCommandDto scenarioCommand)

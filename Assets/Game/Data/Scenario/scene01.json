@@ -17,6 +17,11 @@
       "AssetId": "spaceship_interior"
     },
     {
+      "Type": "character",
+      "AssetId": "roman/normal",
+      "Position": "center"
+    },
+    {
       "Type": "description",
       "Text": "窓の外を眺めながら、少女が座っている。"
     },
