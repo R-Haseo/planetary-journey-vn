@@ -81,7 +81,7 @@ public class ScenarioRunner : MonoBehaviour
         switch (scenarioCommand.Type)
         {
             case "character":
-                ShowCharacter(scenarioCommand);
+                ProcessCharacterCommand(scenarioCommand);
                 break;
             case "dialogue":
                 ShowDialogue(scenarioCommand);
@@ -102,16 +102,31 @@ public class ScenarioRunner : MonoBehaviour
         }
     }
 
-    private void ShowCharacter(ScenarioCommandDto command)
+    private void ProcessCharacterCommand(ScenarioCommandDto command)
     {
-        var position = command.Position switch
+        switch (command.Action)
         {
-            "left" => CharacterPosition.Left,
-            "right" => CharacterPosition.Right,
-            _ => CharacterPosition.Center
-        };
+            case "show":
+            {
+                var position = command.Position switch
+                {
+                    "left" => CharacterPosition.Left,
+                    "right" => CharacterPosition.Right,
+                    _ => CharacterPosition.Center
+                };
 
-        characterPlayer.Show(command.AssetId, position);
+                characterPlayer.Show(command.AssetId, position);
+                break;
+            }
+
+            case "hide":
+                characterPlayer.Hide();
+                break;
+
+            default:
+                Debug.LogWarning($"Unknown character action: {command.Action}");
+                break;
+        }
 
         MoveToNextCommand();
     }

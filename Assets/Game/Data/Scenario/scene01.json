@@ -19,6 +19,7 @@
     {
       "Type": "character",
       "AssetId": "roman/normal",
+      "Action": "show",
       "Position": "center"
     },
     {
@@ -288,6 +289,10 @@
       "Id": "s01_038",
       "Speaker": "少女",
       "Text": "次はここ"
+    },
+    {
+      "Type": "character",
+      "Action": "hide"
     },
     {
       "Type": "background",
