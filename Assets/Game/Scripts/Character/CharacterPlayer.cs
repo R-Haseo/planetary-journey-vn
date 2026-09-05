@@ -11,7 +11,7 @@ public class CharacterPlayer : MonoBehaviour
     private readonly Dictionary<CharacterPosition, AsyncOperationHandle<Sprite>>
         currentHandles = new();
 
-    public void Show(string assetId, CharacterPosition position)
+    public void Show(string assetId, CharacterPosition position, float width, float height, float offsetX, float offsetY)
     {
         Release(position);
 
@@ -25,25 +25,22 @@ public class CharacterPlayer : MonoBehaviour
             if (completedHandle.Status != AsyncOperationStatus.Succeeded)
             {
                 Debug.LogError($"Failed to load character: {address}");
-
-                if (currentHandles.TryGetValue(position, out var currentHandle) &&
-                    currentHandle.Equals(completedHandle))
-                {
-                    currentHandles.Remove(position);
-                }
-
                 return;
             }
 
-            // ロード中に同じ位置が別キャラクターに変更された場合、
-            // 古いロード結果は表示しない。
             if (!currentHandles.TryGetValue(position, out var registeredHandle) ||
                 !registeredHandle.Equals(completedHandle))
             {
                 return;
             }
 
-            characterView.Show(completedHandle.Result, position);
+            characterView.Show(
+                completedHandle.Result,
+                position,
+                width,
+                height,
+                offsetX,
+                offsetY);
         };
     }
 

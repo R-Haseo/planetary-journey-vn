@@ -110,7 +110,13 @@ public class ScenarioRunner : MonoBehaviour
         switch (command.Action)
         {
             case "show":
-                characterPlayer.Show(command.AssetId, position);
+                characterPlayer.Show(
+                    command.AssetId,
+                    position,
+                    command.Width,
+                    command.Height,
+                    command.OffsetX,
+                    command.OffsetY);
                 break;
 
             case "hide":

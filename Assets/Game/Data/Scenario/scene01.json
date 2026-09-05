@@ -20,13 +20,18 @@
       "Type": "character",
       "AssetId": "roman/normal",
       "Action": "show",
-      "Position": "left"
+      "Position": "left",
+      "Width": 620,
+      "Height": 930
     },
     {
       "Type": "character",
       "AssetId": "ai/normal",
       "Action": "show",
-      "Position": "right"
+      "Position": "right",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120
     },
     {
       "Type": "description",

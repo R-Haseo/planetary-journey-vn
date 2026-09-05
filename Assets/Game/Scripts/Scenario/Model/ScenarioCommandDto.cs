@@ -10,4 +10,8 @@ public class ScenarioCommandDto
     public string AssetId;
     public string Action;
     public string Position;
+    public float Width;
+    public float Height;
+    public float OffsetX;
+    public float OffsetY;
 }
