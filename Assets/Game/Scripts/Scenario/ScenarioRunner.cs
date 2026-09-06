@@ -1,21 +1,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.AddressableAssets;
-using System.Threading.Tasks;
 
 public class ScenarioRunner : MonoBehaviour
 {
     [SerializeField] private CharacterPlayer characterPlayer;
     [SerializeField] private DialogueView dialogueView;
     [SerializeField] private BackgroundView backgroundView;
+    [SerializeField] private DialogueLogView dialogueLogView;
     [SerializeField] private VoicePlayer voicePlayer;
 
     [SerializeField] private TextAsset scenarioJson;
     [SerializeField] private List<BackgroundEntry> backgrounds;
 
+    [SerializeField] private float skipInterval = 0.08f;
+
     private List<ScenarioCommandDto> commands;
     private int currentIndex;
+    private float skipTimer;
 
     private void Awake()
     {
@@ -34,16 +36,58 @@ public class ScenarioRunner : MonoBehaviour
 
     private void Update()
     {
+        var logPressed = Keyboard.current?.lKey.wasPressedThisFrame == true;
+
+        if (logPressed)
+        {
+            dialogueLogView.Toggle();
+            return;
+        }
+
+        if (dialogueLogView.IsOpen)
+        {
+            return;
+        }
+
         var mouseClicked = Mouse.current?.leftButton.wasPressedThisFrame == true;
-
         var screenTouched = Touchscreen.current?.primaryTouch.press.wasPressedThisFrame == true;
-
         var spacePressed = Keyboard.current?.spaceKey.wasPressedThisFrame == true;
 
         if (mouseClicked || screenTouched || spacePressed)
         {
             NextLine();
         }
+
+        UpdateSkip();
+    }
+
+    private void UpdateSkip()
+    {
+        var keyboard = Keyboard.current;
+
+        if (keyboard == null)
+        {
+            return;
+        }
+
+        var skipPressed = keyboard.leftCtrlKey.isPressed || keyboard.rightCtrlKey.isPressed;
+
+        if (!skipPressed)
+        {
+            skipTimer = 0f;
+            return;
+        }
+
+        skipTimer += Time.unscaledDeltaTime;
+
+        if (skipTimer < skipInterval)
+        {
+            return;
+        }
+
+        skipTimer = 0f;
+
+        NextLine();
     }
 
     private void NextLine()
@@ -59,6 +103,8 @@ public class ScenarioRunner : MonoBehaviour
         {
             return;
         }
+
+        voicePlayer.Stop();
 
         MoveToNextCommand();
     }
@@ -84,19 +130,23 @@ public class ScenarioRunner : MonoBehaviour
             case "character":
                 ProcessCharacterCommand(scenarioCommand);
                 break;
+
             case "dialogue":
                 ShowDialogue(scenarioCommand);
                 break;
+
             case "background":
                 ShowBackground(scenarioCommand.AssetId);
                 MoveToNextCommand();
                 break;
+
             case "description":
                 ShowDescription(scenarioCommand);
                 break;
 
             default:
-                Debug.LogWarning($"Unknown scenario command type: {scenarioCommand.Type}");
+                Debug.LogWarning(
+                    $"Unknown scenario command type: {scenarioCommand.Type}");
 
                 MoveToNextCommand();
                 break;
@@ -145,6 +195,7 @@ public class ScenarioRunner : MonoBehaviour
     private void ShowDialogue(ScenarioCommandDto scenarioCommand)
     {
         dialogueView.Show(scenarioCommand.Speaker, scenarioCommand.Text);
+        dialogueLogView.AddDialogue(scenarioCommand.Speaker, scenarioCommand.Text);
         voicePlayer.Play(scenarioCommand.Id);
     }
 
@@ -164,5 +215,6 @@ public class ScenarioRunner : MonoBehaviour
     private void ShowDescription(ScenarioCommandDto command)
     {
         dialogueView.Show(string.Empty, command.Text);
+        dialogueLogView.AddDescription(command.Text);
     }
 }
