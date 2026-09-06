@@ -1,0 +1,447 @@
+{
+  "Commands": [
+    {
+      "Type": "background",
+      "AssetId": "planet_atmosphere"
+    },
+    {
+      "Type": "description",
+      "Text": "青白い惑星。"
+    },
+    {
+      "Type": "description",
+      "Text": "雲の切れ間から、巨大な都市が見えてくる。"
+    },
+    {
+      "Type": "description",
+      "Text": "整然と並ぶ高層建築。道路。公園。都市を縫うように走る交通網。"
+    },
+    {
+      "Type": "description",
+      "Text": "少女の宇宙船が、ゆっくりと高度を下げていく。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_001",
+      "Speaker": "AI",
+      "Text": "大気圏への突入を完了しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_002",
+      "Speaker": "少女",
+      "Text": "普通に街があるね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_003",
+      "Speaker": "AI",
+      "Text": "はい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_004",
+      "Speaker": "少女",
+      "Text": "もっとボロボロになってるのかと思った"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_005",
+      "Speaker": "AI",
+      "Text": "都市設備に、大規模な損傷は確認されていません"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_006",
+      "Speaker": "少女",
+      "Text": "じゃあ、本当に人がいるんじゃない？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_007",
+      "Speaker": "AI",
+      "Text": "登録人口は、十二億一千七百万人です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_008",
+      "Speaker": "少女",
+      "Text": "……多いなあ"
+    },
+    {
+      "Type": "description",
+      "Text": "少女は窓の外を眺める。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_009",
+      "Speaker": "少女",
+      "Text": "でも"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_010",
+      "Speaker": "AI",
+      "Text": "はい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_011",
+      "Speaker": "少女",
+      "Text": "人、見えなくない？"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "planet_landing_site"
+    },
+    {
+      "Type": "description",
+      "Text": "宇宙船が静かに着陸する。"
+    },
+    {
+      "Type": "description",
+      "Text": "遠くには巨大な都市。"
+    },
+    {
+      "Type": "description",
+      "Text": "建物は傷んでいない。道路にも瓦礫ひとつ落ちていない。"
+    },
+    {
+      "Type": "description",
+      "Text": "街灯が点灯し、広告ディスプレイには映像が流れている。"
+    },
+    {
+      "Type": "description",
+      "Text": "清掃ロボットが道路を走っていく。"
+    },
+    {
+      "Type": "description",
+      "Text": "だが、人間だけがいない。"
+    },
+    {
+      "Type": "character",
+      "Action": "show",
+      "AssetId": "roman/normal",
+      "Position": "left",
+      "Width": 600,
+      "Height": 900,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    {
+      "Type": "character",
+      "Action": "show",
+      "AssetId": "ai/normal",
+      "Position": "right",
+      "Width": 320,
+      "Height": 320,
+      "OffsetX": 0,
+      "OffsetY": 100
+    },
+    {
+      "Type": "description",
+      "Text": "少女とAIが宇宙船から降りる。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_012",
+      "Speaker": "少女",
+      "Text": "……静か"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_013",
+      "Speaker": "AI",
+      "Text": "騒音レベルは極めて低い状態です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_014",
+      "Speaker": "少女",
+      "Text": "そういう意味じゃない"
+    },
+    {
+      "Type": "description",
+      "Text": "少女は周囲を見回す。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_015",
+      "Speaker": "少女",
+      "Text": "本当に誰もいないね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_016",
+      "Speaker": "AI",
+      "Text": "半径五キロメートル以内に、人間の屋外活動は確認できません"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_017",
+      "Speaker": "少女",
+      "Text": "十二億人いるんだよね？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_018",
+      "Speaker": "AI",
+      "Text": "登録上は"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_019",
+      "Speaker": "少女",
+      "Text": "またそれ"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "empty_city"
+    },
+    {
+      "Type": "description",
+      "Text": "二人は市街地へ向かう。"
+    },
+    {
+      "Type": "description",
+      "Text": "信号機が規則正しく切り替わる。"
+    },
+    {
+      "Type": "description",
+      "Text": "無人の店では照明が点き、商品が整然と並んでいる。"
+    },
+    {
+      "Type": "description",
+      "Text": "大型ディスプレイには広告が流れ続けている。"
+    },
+    {
+      "Type": "description",
+      "Text": "清掃ロボットが少女の横を通り過ぎる。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_020",
+      "Speaker": "少女",
+      "Text": "お店も動いてる"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_021",
+      "Speaker": "AI",
+      "Text": "電力供給、通信網、上下水道。いずれも正常です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_022",
+      "Speaker": "少女",
+      "Text": "じゃあ、滅んだわけじゃない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_023",
+      "Speaker": "AI",
+      "Text": "少なくとも、一般的な意味での文明崩壊とは異なります"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_024",
+      "Speaker": "少女",
+      "Text": "……気味悪いなあ"
+    },
+    {
+      "Type": "description",
+      "Text": "AIが周囲をスキャンする。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_025",
+      "Speaker": "AI",
+      "Text": "生命反応を検出しました"
+    },
+    {
+      "Type": "description",
+      "Text": "少女が立ち止まる。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_026",
+      "Speaker": "少女",
+      "Text": "人？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_027",
+      "Speaker": "AI",
+      "Text": "はい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_028",
+      "Speaker": "少女",
+      "Text": "どこ？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_029",
+      "Speaker": "AI",
+      "Text": "周辺の建物内部です"
+    },
+    {
+      "Type": "description",
+      "Text": "少女が高層住宅を見上げる。"
+    },
+    {
+      "Type": "description",
+      "Text": "窓は無数にある。しかし、どの窓にも人影はない。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_030",
+      "Speaker": "少女",
+      "Text": "いるんだ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_031",
+      "Speaker": "AI",
+      "Text": "多数"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_032",
+      "Speaker": "少女",
+      "Text": "じゃあ、なんで誰も外に出てこないの？"
+    },
+    {
+      "Type": "description",
+      "Text": "AIは答えない。"
+    },
+
+    {
+      "Type": "description",
+      "Text": "少女がさらに街の奥へ進む。"
+    },
+    {
+      "Type": "description",
+      "Text": "そのとき、少女の携帯端末が警告音とともに光る。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_033",
+      "Speaker": "少女",
+      "Text": "ん？"
+    },
+    {
+      "Type": "description",
+      "Text": "画面に警告が表示される。"
+    },
+    {
+      "Type": "description",
+      "Text": "警告――視界侵入ハラスメントを検知しました。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_034",
+      "Speaker": "少女",
+      "Text": "……は？"
+    },
+    {
+      "Type": "description",
+      "Text": "AIが画面を確認する。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_035",
+      "Speaker": "AI",
+      "Text": "この惑星の公共安全システムからの警告です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_036",
+      "Speaker": "少女",
+      "Text": "視界侵入……？"
+    },
+    {
+      "Type": "description",
+      "Text": "少女が周囲を見る。誰もいない。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_037",
+      "Speaker": "少女",
+      "Text": "私、何もしてないけど"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_038",
+      "Speaker": "AI",
+      "Text": "正確には、存在しています"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_039",
+      "Speaker": "少女",
+      "Text": "それはしてるけど"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_040",
+      "Speaker": "AI",
+      "Text": "警告によれば、あなたの姿が第三者の視界に入る可能性があるようです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_041",
+      "Speaker": "少女",
+      "Text": "……誰の？"
+    },
+    {
+      "Type": "description",
+      "Text": "AIが周囲の建物を見上げる。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_042",
+      "Speaker": "AI",
+      "Text": "不明です"
+    },
+    {
+      "Type": "description",
+      "Text": "沈黙。風だけが無人の街を通り抜ける。"
+    },
+    {
+      "Type": "description",
+      "Text": "少女は、閉ざされた窓が並ぶ建物を見上げる。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_043",
+      "Speaker": "少女",
+      "Text": "……人はいるんだよね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_044",
+      "Speaker": "AI",
+      "Text": "はい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_045",
+      "Speaker": "少女",
+      "Text": "じゃあ――"
+    },
+    {
+      "Type": "description",
+      "Text": "少女は無人の通りを見渡す。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_046",
+      "Speaker": "少女",
+      "Text": "みんな、どこにいるの？"
+    }
+  ]
+}

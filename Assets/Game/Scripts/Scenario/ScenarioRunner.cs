@@ -10,28 +10,28 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private DialogueLogView dialogueLogView;
     [SerializeField] private VoicePlayer voicePlayer;
 
-    [SerializeField] private TextAsset scenarioJson;
+    [SerializeField] private List<TextAsset> scenarioJsons;
     [SerializeField] private List<BackgroundEntry> backgrounds;
 
     [SerializeField] private float skipInterval = 0.08f;
 
     private List<ScenarioCommandDto> commands;
+    private int currentScenarioIndex;
     private int currentIndex;
     private float skipTimer;
 
     private void Awake()
     {
-        var scenarioData = JsonUtility.FromJson<ScenarioDataDto>(scenarioJson.text);
-
-        commands = scenarioData.Commands;
-
-        Debug.Log($"Scenario loaded: {commands?.Count ?? 0} commands");
+        if (scenarioJsons == null || scenarioJsons.Count == 0)
+        {
+            Debug.LogError("Scenario JSON is not assigned.");
+        }
     }
 
     private void Start()
     {
-        currentIndex = 0;
-        ProcessCurrentCommand();
+        currentScenarioIndex = 0;
+        LoadScenario(currentScenarioIndex);
     }
 
     private void Update()
@@ -59,6 +59,27 @@ public class ScenarioRunner : MonoBehaviour
         }
 
         UpdateSkip();
+    }
+
+    private void LoadScenario(int scenarioIndex)
+    {
+        if (scenarioIndex >= scenarioJsons.Count)
+        {
+            Debug.Log("End of all scenarios");
+            return;
+        }
+
+        var scenarioJson = scenarioJsons[scenarioIndex];
+        var scenarioData =
+            JsonUtility.FromJson<ScenarioDataDto>(scenarioJson.text);
+
+        commands = scenarioData.Commands;
+        currentIndex = 0;
+
+        Debug.Log(
+            $"Scenario loaded: {scenarioJson.name} ({commands?.Count ?? 0} commands)");
+
+        ProcessCurrentCommand();
     }
 
     private void UpdateSkip()
@@ -119,7 +140,7 @@ public class ScenarioRunner : MonoBehaviour
     {
         if (currentIndex >= commands.Count)
         {
-            Debug.Log("End of scenario");
+            MoveToNextScenario();
             return;
         }
 
@@ -151,6 +172,12 @@ public class ScenarioRunner : MonoBehaviour
                 MoveToNextCommand();
                 break;
         }
+    }
+
+    private void MoveToNextScenario()
+    {
+        currentScenarioIndex++;
+        LoadScenario(currentScenarioIndex);
     }
 
     private void ProcessCharacterCommand(ScenarioCommandDto command)

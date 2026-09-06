@@ -716,7 +716,9 @@ MonoBehaviour:
   backgroundView: {fileID: 664555118}
   dialogueLogView: {fileID: 1569585915}
   voicePlayer: {fileID: 1057263792}
-  scenarioJson: {fileID: 4900000, guid: 00a10606e065d9c4786a8ae14c00e7a4, type: 3}
+  scenarioJsons:
+  - {fileID: 4900000, guid: 00a10606e065d9c4786a8ae14c00e7a4, type: 3}
+  - {fileID: 4900000, guid: 5fe2ac03b2329184e9017ed27e651ada, type: 3}
   backgrounds:
   - Id: space_exterior
     Sprite: {fileID: 2495107377974511851, guid: 2b4d87f1343e93e4eaac9f145251708c, type: 3}
@@ -1472,7 +1474,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1500743725}
   m_HandleRect: {fileID: 1500743724}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
