@@ -7,6 +7,7 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private CharacterPlayer characterPlayer;
     [SerializeField] private DialogueView dialogueView;
     [SerializeField] private BackgroundView backgroundView;
+    [SerializeField] private DialogueLogView dialogueLogView;
     [SerializeField] private VoicePlayer voicePlayer;
 
     [SerializeField] private TextAsset scenarioJson;
@@ -35,6 +36,19 @@ public class ScenarioRunner : MonoBehaviour
 
     private void Update()
     {
+        var logPressed = Keyboard.current?.lKey.wasPressedThisFrame == true;
+
+        if (logPressed)
+        {
+            dialogueLogView.Toggle();
+            return;
+        }
+
+        if (dialogueLogView.IsOpen)
+        {
+            return;
+        }
+
         var mouseClicked = Mouse.current?.leftButton.wasPressedThisFrame == true;
         var screenTouched = Touchscreen.current?.primaryTouch.press.wasPressedThisFrame == true;
         var spacePressed = Keyboard.current?.spaceKey.wasPressedThisFrame == true;
@@ -181,6 +195,7 @@ public class ScenarioRunner : MonoBehaviour
     private void ShowDialogue(ScenarioCommandDto scenarioCommand)
     {
         dialogueView.Show(scenarioCommand.Speaker, scenarioCommand.Text);
+        dialogueLogView.AddDialogue(scenarioCommand.Speaker, scenarioCommand.Text);
         voicePlayer.Play(scenarioCommand.Id);
     }
 
@@ -200,5 +215,6 @@ public class ScenarioRunner : MonoBehaviour
     private void ShowDescription(ScenarioCommandDto command)
     {
         dialogueView.Show(string.Empty, command.Text);
+        dialogueLogView.AddDescription(command.Text);
     }
 }
