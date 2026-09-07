@@ -4,12 +4,12 @@ using System.Linq;
 using UnityEditor;
 using UnityEditor.AddressableAssets;
 using UnityEditor.AddressableAssets.Settings;
-using UnityEditor.AddressableAssets.Settings.GroupSchemas;
 using UnityEngine;
 
 public class VoiceImportTool : EditorWindow
 {
     private DefaultAsset targetFolder;
+    private string episodeId = "episode01";
     private string sceneId = "s02";
     private int startNumber = 1;
 
@@ -29,6 +29,7 @@ public class VoiceImportTool : EditorWindow
             typeof(DefaultAsset),
             false);
 
+        episodeId = EditorGUILayout.TextField("Episode ID", episodeId);
         sceneId = EditorGUILayout.TextField("Scene ID", sceneId);
         startNumber = EditorGUILayout.IntField("Start Number", startNumber);
 
@@ -122,7 +123,7 @@ public class VoiceImportTool : EditorWindow
             }
 
             ApplyAudioImportSettings(newAssetPath);
-            SetupAddressable(addressableSettings, group, newAssetPath, fileId);
+            SetupAddressable(addressableSettings, group, newAssetPath, episodeId, fileId);
         }
 
         AssetDatabase.SaveAssets();
@@ -172,6 +173,7 @@ public class VoiceImportTool : EditorWindow
         AddressableAssetSettings settings,
         AddressableAssetGroup group,
         string assetPath,
+        string episodeId,
         string fileId)
     {
         var guid = AssetDatabase.AssetPathToGUID(assetPath);
@@ -182,6 +184,6 @@ public class VoiceImportTool : EditorWindow
             readOnly: false,
             postEvent: false);
 
-        entry.address = $"voice/{fileId}";
+        entry.address = $"voice/{episodeId}/{fileId}";
     }
 }

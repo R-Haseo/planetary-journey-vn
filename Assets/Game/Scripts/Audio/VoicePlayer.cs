@@ -5,6 +5,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 public class VoicePlayer : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private string episodeId = "episode01";
 
     private AsyncOperationHandle<AudioClip>? currentHandle;
     private int requestVersion;
@@ -13,7 +14,7 @@ public class VoicePlayer : MonoBehaviour
     {
         Stop();
 
-        var address = $"voice/{id}";
+        var address = $"voice/{episodeId}/{id}";
         var version = ++requestVersion;
 
         var handle = Addressables.LoadAssetAsync<AudioClip>(address);
