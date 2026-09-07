@@ -14,11 +14,18 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private List<BackgroundEntry> backgrounds;
 
     [SerializeField] private float skipInterval = 0.08f;
+    [SerializeField] private float autoDelay = 0.5f;
+    [SerializeField] private float descriptionBaseDuration = 1.5f;
+    [SerializeField] private float descriptionSecondsPerCharacter = 0.08f;
 
     private List<ScenarioCommandDto> commands;
     private int currentScenarioIndex;
     private int currentIndex;
     private float skipTimer;
+
+    private bool autoMode;
+    private float autoTimer;
+    private bool waitingForAutoAdvance;
 
     private void Awake()
     {
@@ -30,6 +37,8 @@ public class ScenarioRunner : MonoBehaviour
 
     private void Start()
     {
+        voicePlayer.PlaybackCompleted += OnVoicePlaybackCompleted;
+
         currentScenarioIndex = 0;
         LoadScenario(currentScenarioIndex);
     }
@@ -49,6 +58,25 @@ public class ScenarioRunner : MonoBehaviour
             return;
         }
 
+        var autoPressed = Keyboard.current?.aKey.wasPressedThisFrame == true;
+
+        if (autoPressed)
+        {
+            autoMode = !autoMode;
+
+            if (autoMode && !waitingForAutoAdvance && !voicePlayer.IsPlaying)
+            {
+                autoTimer = autoDelay;
+                waitingForAutoAdvance = true;
+            }
+            else if (!autoMode)
+            {
+                waitingForAutoAdvance = false;
+            }
+
+            Debug.Log($"Auto mode: {(autoMode ? "ON" : "OFF")}");
+        }
+
         var mouseClicked = Mouse.current?.leftButton.wasPressedThisFrame == true;
         var screenTouched = Touchscreen.current?.primaryTouch.press.wasPressedThisFrame == true;
         var spacePressed = Keyboard.current?.spaceKey.wasPressedThisFrame == true;
@@ -59,6 +87,7 @@ public class ScenarioRunner : MonoBehaviour
         }
 
         UpdateSkip();
+        UpdateAuto();
     }
 
     private void LoadScenario(int scenarioIndex)
@@ -109,6 +138,35 @@ public class ScenarioRunner : MonoBehaviour
         skipTimer = 0f;
 
         NextLine();
+    }
+
+    private void UpdateAuto()
+    {
+        if (!autoMode || !waitingForAutoAdvance)
+        {
+            return;
+        }
+
+        autoTimer -= Time.unscaledDeltaTime;
+
+        if (autoTimer > 0f)
+        {
+            return;
+        }
+
+        waitingForAutoAdvance = false;
+        NextLine();
+    }
+
+    private void OnVoicePlaybackCompleted()
+    {
+        if (!autoMode)
+        {
+            return;
+        }
+
+        autoTimer = autoDelay;
+        waitingForAutoAdvance = true;
     }
 
     private void NextLine()
@@ -243,5 +301,21 @@ public class ScenarioRunner : MonoBehaviour
     {
         dialogueView.Show(string.Empty, command.Text);
         dialogueLogView.AddDescription(command.Text);
+
+        if (!autoMode)
+        {
+            return;
+        }
+
+        autoTimer = descriptionBaseDuration + command.Text.Length * descriptionSecondsPerCharacter;
+        waitingForAutoAdvance = true;
+    }
+
+    private void OnDestroy()
+    {
+        if (voicePlayer != null)
+        {
+            voicePlayer.PlaybackCompleted -= OnVoicePlaybackCompleted;
+        }
     }
 }
