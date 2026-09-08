@@ -6,12 +6,11 @@ public class ScenarioRunner : MonoBehaviour
 {
     [SerializeField] private CharacterPlayer characterPlayer;
     [SerializeField] private DialogueView dialogueView;
-    [SerializeField] private BackgroundView backgroundView;
+    [SerializeField] private BackgroundPlayer backgroundPlayer;
     [SerializeField] private DialogueLogView dialogueLogView;
     [SerializeField] private VoicePlayer voicePlayer;
 
     [SerializeField] private List<TextAsset> scenarioJsons;
-    [SerializeField] private List<BackgroundEntry> backgrounds;
 
     [SerializeField] private float skipInterval = 0.08f;
     [SerializeField] private float autoDelay = 0.5f;
@@ -286,15 +285,7 @@ public class ScenarioRunner : MonoBehaviour
 
     private void ShowBackground(string assetId)
     {
-        var entry = backgrounds.Find(x => x.Id == assetId);
-
-        if (entry == null || entry.Sprite == null)
-        {
-            Debug.LogWarning($"Background not found: {assetId}");
-            return;
-        }
-
-        backgroundView.Show(entry.Sprite);
+        backgroundPlayer.Show(assetId);
     }
 
     private void ShowDescription(ScenarioCommandDto command)
