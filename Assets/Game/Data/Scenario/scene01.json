@@ -1,6 +1,11 @@
 {
   "Commands": [
     {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "scene01_space"
+    },
+    {
       "Type": "background",
       "AssetId": "space_exterior"
     },

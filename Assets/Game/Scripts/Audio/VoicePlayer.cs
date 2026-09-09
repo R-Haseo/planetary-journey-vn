@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -5,40 +6,87 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 public class VoicePlayer : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private string episodeId = "episode01";
 
     private AsyncOperationHandle<AudioClip>? currentHandle;
+    private int requestVersion;
+    private bool isPlaying;
+    public bool IsPlaying => isPlaying;
 
-    public async void Play(string id)
+    public event Action PlaybackCompleted;
+
+    public void Play(string id)
     {
         Stop();
 
-        var address = $"voice/{id}";
+        var address = $"voice/{episodeId}/{id}";
+        var version = ++requestVersion;
+
         var handle = Addressables.LoadAssetAsync<AudioClip>(address);
 
         currentHandle = handle;
 
-        var clip = await handle.Task;
-
-        if (handle.Status != AsyncOperationStatus.Succeeded)
+        handle.Completed += completedHandle =>
         {
-            Debug.LogWarning($"Failed to load voice: {address}");
-            currentHandle = null;
+            if (version != requestVersion)
+            {
+                return;
+            }
+
+            if (completedHandle.Status != AsyncOperationStatus.Succeeded)
+            {
+                Debug.LogWarning($"Failed to load voice: {address}");
+                ReleaseCurrentHandle();
+                return;
+            }
+
+            audioSource.clip = completedHandle.Result;
+            audioSource.Play();
+            isPlaying = true;
+        };
+    }
+
+    private void Update()
+    {
+        if (!isPlaying || audioSource.isPlaying)
+        {
             return;
         }
 
-        audioSource.clip = clip;
-        audioSource.Play();
+        isPlaying = false;
+        PlaybackCompleted?.Invoke();
     }
 
     public void Stop()
     {
+        requestVersion++;
+        isPlaying = false;
+
         audioSource.Stop();
         audioSource.clip = null;
 
-        if (currentHandle.HasValue)
+        ReleaseCurrentHandle();
+    }
+
+    private void ReleaseCurrentHandle()
+    {
+        if (!currentHandle.HasValue)
         {
-            Addressables.Release(currentHandle.Value);
-            currentHandle = null;
+            return;
         }
+
+        var handle = currentHandle.Value;
+
+        if (handle.IsValid())
+        {
+            Addressables.Release(handle);
+        }
+
+        currentHandle = null;
+    }
+
+    private void OnDestroy()
+    {
+        Stop();
     }
 }
