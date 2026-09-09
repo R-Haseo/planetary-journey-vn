@@ -270,6 +270,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91687102e535e5e468deb4dee749daf5
+    m_Address: bgm/scene02_city
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 92caa0a50f725b946b1f7c5505a90238
     m_Address: voice/episode01/s01_006
     m_ReadOnly: 0
@@ -372,6 +377,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cf961e3a74d4c484c898b5c1451a5d7d
     m_Address: voice/episode01/s02_022
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1c17f5fa7a06c14b826adaa053309b7
+    m_Address: bgm/scene01_space
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

@@ -716,6 +716,7 @@ MonoBehaviour:
   backgroundPlayer: {fileID: 1861427836}
   dialogueLogView: {fileID: 1569585915}
   voicePlayer: {fileID: 1057263792}
+  bgmPlayer: {fileID: 1104836996}
   scenarioJsons:
   - {fileID: 4900000, guid: 00a10606e065d9c4786a8ae14c00e7a4, type: 3}
   - {fileID: 4900000, guid: 5fe2ac03b2329184e9017ed27e651ada, type: 3}
@@ -970,6 +971,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1104836995}
+  - component: {fileID: 1104836996}
   m_Layer: 0
   m_Name: BGM
   m_TagString: Untagged
@@ -993,6 +995,19 @@ Transform:
   - {fileID: 1376626865}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1104836996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104836994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6ce967c7edd0c4da53c195d7ff3ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BGMPlayer
+  audioSource: {fileID: 1376626866}
 --- !u!1 &1151133283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,8 +1216,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: d1c17f5fa7a06c14b826adaa053309b7, type: 3}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 0.15
   m_Pitch: 1
   Loop: 1

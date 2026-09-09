@@ -1,6 +1,11 @@
 {
   "Commands": [
     {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "scene02_city"
+    },
+    {
       "Type": "background",
       "AssetId": "planet_atmosphere"
     },

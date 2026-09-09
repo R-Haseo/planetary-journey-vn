@@ -9,6 +9,7 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private BackgroundPlayer backgroundPlayer;
     [SerializeField] private DialogueLogView dialogueLogView;
     [SerializeField] private VoicePlayer voicePlayer;
+    [SerializeField] private BGMPlayer bgmPlayer;
 
     [SerializeField] private List<TextAsset> scenarioJsons;
 
@@ -222,6 +223,10 @@ public class ScenarioRunner : MonoBehaviour
                 ShowDescription(scenarioCommand);
                 break;
 
+            case "bgm":
+                ProcessBgmCommand(scenarioCommand);
+                break;
+
             default:
                 Debug.LogWarning(
                     $"Unknown scenario command type: {scenarioCommand.Type}");
@@ -300,6 +305,26 @@ public class ScenarioRunner : MonoBehaviour
 
         autoTimer = descriptionBaseDuration + command.Text.Length * descriptionSecondsPerCharacter;
         waitingForAutoAdvance = true;
+    }
+
+    private void ProcessBgmCommand(ScenarioCommandDto command)
+    {
+        switch (command.Action)
+        {
+            case "play":
+                bgmPlayer.Play(command.AssetId);
+                break;
+
+            case "stop":
+                bgmPlayer.Stop();
+                break;
+
+            default:
+                Debug.LogWarning($"Unknown BGM action: {command.Action}");
+                break;
+        }
+
+        MoveToNextCommand();
     }
 
     private void OnDestroy()
