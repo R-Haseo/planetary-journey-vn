@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -5,15 +6,20 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 public class VoicePlayer : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private string episodeId = "episode01";
 
     private AsyncOperationHandle<AudioClip>? currentHandle;
     private int requestVersion;
+    private bool isPlaying;
+    public bool IsPlaying => isPlaying;
+
+    public event Action PlaybackCompleted;
 
     public void Play(string id)
     {
         Stop();
 
-        var address = $"voice/{id}";
+        var address = $"voice/{episodeId}/{id}";
         var version = ++requestVersion;
 
         var handle = Addressables.LoadAssetAsync<AudioClip>(address);
@@ -36,12 +42,25 @@ public class VoicePlayer : MonoBehaviour
 
             audioSource.clip = completedHandle.Result;
             audioSource.Play();
+            isPlaying = true;
         };
+    }
+
+    private void Update()
+    {
+        if (!isPlaying || audioSource.isPlaying)
+        {
+            return;
+        }
+
+        isPlaying = false;
+        PlaybackCompleted?.Invoke();
     }
 
     public void Stop()
     {
         requestVersion++;
+        isPlaying = false;
 
         audioSource.Stop();
         audioSource.clip = null;

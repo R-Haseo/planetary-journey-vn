@@ -6,32 +6,41 @@ public class ScenarioRunner : MonoBehaviour
 {
     [SerializeField] private CharacterPlayer characterPlayer;
     [SerializeField] private DialogueView dialogueView;
-    [SerializeField] private BackgroundView backgroundView;
+    [SerializeField] private BackgroundPlayer backgroundPlayer;
     [SerializeField] private DialogueLogView dialogueLogView;
     [SerializeField] private VoicePlayer voicePlayer;
+    [SerializeField] private BGMPlayer bgmPlayer;
 
-    [SerializeField] private TextAsset scenarioJson;
-    [SerializeField] private List<BackgroundEntry> backgrounds;
+    [SerializeField] private List<TextAsset> scenarioJsons;
 
     [SerializeField] private float skipInterval = 0.08f;
+    [SerializeField] private float autoDelay = 0.5f;
+    [SerializeField] private float descriptionBaseDuration = 1.5f;
+    [SerializeField] private float descriptionSecondsPerCharacter = 0.08f;
 
     private List<ScenarioCommandDto> commands;
+    private int currentScenarioIndex;
     private int currentIndex;
     private float skipTimer;
 
+    private bool autoMode;
+    private float autoTimer;
+    private bool waitingForAutoAdvance;
+
     private void Awake()
     {
-        var scenarioData = JsonUtility.FromJson<ScenarioDataDto>(scenarioJson.text);
-
-        commands = scenarioData.Commands;
-
-        Debug.Log($"Scenario loaded: {commands?.Count ?? 0} commands");
+        if (scenarioJsons == null || scenarioJsons.Count == 0)
+        {
+            Debug.LogError("Scenario JSON is not assigned.");
+        }
     }
 
     private void Start()
     {
-        currentIndex = 0;
-        ProcessCurrentCommand();
+        voicePlayer.PlaybackCompleted += OnVoicePlaybackCompleted;
+
+        currentScenarioIndex = 0;
+        LoadScenario(currentScenarioIndex);
     }
 
     private void Update()
@@ -49,6 +58,25 @@ public class ScenarioRunner : MonoBehaviour
             return;
         }
 
+        var autoPressed = Keyboard.current?.aKey.wasPressedThisFrame == true;
+
+        if (autoPressed)
+        {
+            autoMode = !autoMode;
+
+            if (autoMode && !waitingForAutoAdvance && !voicePlayer.IsPlaying)
+            {
+                autoTimer = autoDelay;
+                waitingForAutoAdvance = true;
+            }
+            else if (!autoMode)
+            {
+                waitingForAutoAdvance = false;
+            }
+
+            Debug.Log($"Auto mode: {(autoMode ? "ON" : "OFF")}");
+        }
+
         var mouseClicked = Mouse.current?.leftButton.wasPressedThisFrame == true;
         var screenTouched = Touchscreen.current?.primaryTouch.press.wasPressedThisFrame == true;
         var spacePressed = Keyboard.current?.spaceKey.wasPressedThisFrame == true;
@@ -59,6 +87,28 @@ public class ScenarioRunner : MonoBehaviour
         }
 
         UpdateSkip();
+        UpdateAuto();
+    }
+
+    private void LoadScenario(int scenarioIndex)
+    {
+        if (scenarioIndex >= scenarioJsons.Count)
+        {
+            Debug.Log("End of all scenarios");
+            return;
+        }
+
+        var scenarioJson = scenarioJsons[scenarioIndex];
+        var scenarioData =
+            JsonUtility.FromJson<ScenarioDataDto>(scenarioJson.text);
+
+        commands = scenarioData.Commands;
+        currentIndex = 0;
+
+        Debug.Log(
+            $"Scenario loaded: {scenarioJson.name} ({commands?.Count ?? 0} commands)");
+
+        ProcessCurrentCommand();
     }
 
     private void UpdateSkip()
@@ -90,6 +140,35 @@ public class ScenarioRunner : MonoBehaviour
         NextLine();
     }
 
+    private void UpdateAuto()
+    {
+        if (!autoMode || !waitingForAutoAdvance)
+        {
+            return;
+        }
+
+        autoTimer -= Time.unscaledDeltaTime;
+
+        if (autoTimer > 0f)
+        {
+            return;
+        }
+
+        waitingForAutoAdvance = false;
+        NextLine();
+    }
+
+    private void OnVoicePlaybackCompleted()
+    {
+        if (!autoMode)
+        {
+            return;
+        }
+
+        autoTimer = autoDelay;
+        waitingForAutoAdvance = true;
+    }
+
     private void NextLine()
     {
         if (currentIndex >= commands.Count)
@@ -119,7 +198,7 @@ public class ScenarioRunner : MonoBehaviour
     {
         if (currentIndex >= commands.Count)
         {
-            Debug.Log("End of scenario");
+            MoveToNextScenario();
             return;
         }
 
@@ -144,6 +223,10 @@ public class ScenarioRunner : MonoBehaviour
                 ShowDescription(scenarioCommand);
                 break;
 
+            case "bgm":
+                ProcessBgmCommand(scenarioCommand);
+                break;
+
             default:
                 Debug.LogWarning(
                     $"Unknown scenario command type: {scenarioCommand.Type}");
@@ -151,6 +234,12 @@ public class ScenarioRunner : MonoBehaviour
                 MoveToNextCommand();
                 break;
         }
+    }
+
+    private void MoveToNextScenario()
+    {
+        currentScenarioIndex++;
+        LoadScenario(currentScenarioIndex);
     }
 
     private void ProcessCharacterCommand(ScenarioCommandDto command)
@@ -201,20 +290,48 @@ public class ScenarioRunner : MonoBehaviour
 
     private void ShowBackground(string assetId)
     {
-        var entry = backgrounds.Find(x => x.Id == assetId);
-
-        if (entry == null || entry.Sprite == null)
-        {
-            Debug.LogWarning($"Background not found: {assetId}");
-            return;
-        }
-
-        backgroundView.Show(entry.Sprite);
+        backgroundPlayer.Show(assetId);
     }
 
     private void ShowDescription(ScenarioCommandDto command)
     {
         dialogueView.Show(string.Empty, command.Text);
         dialogueLogView.AddDescription(command.Text);
+
+        if (!autoMode)
+        {
+            return;
+        }
+
+        autoTimer = descriptionBaseDuration + command.Text.Length * descriptionSecondsPerCharacter;
+        waitingForAutoAdvance = true;
+    }
+
+    private void ProcessBgmCommand(ScenarioCommandDto command)
+    {
+        switch (command.Action)
+        {
+            case "play":
+                bgmPlayer.Play(command.AssetId);
+                break;
+
+            case "stop":
+                bgmPlayer.Stop();
+                break;
+
+            default:
+                Debug.LogWarning($"Unknown BGM action: {command.Action}");
+                break;
+        }
+
+        MoveToNextCommand();
+    }
+
+    private void OnDestroy()
+    {
+        if (voicePlayer != null)
+        {
+            voicePlayer.PlaybackCompleted -= OnVoicePlaybackCompleted;
+        }
     }
 }

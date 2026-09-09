@@ -713,16 +713,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioRunner
   characterPlayer: {fileID: 122227944}
   dialogueView: {fileID: 1893812289}
-  backgroundView: {fileID: 664555118}
+  backgroundPlayer: {fileID: 1861427836}
   dialogueLogView: {fileID: 1569585915}
   voicePlayer: {fileID: 1057263792}
-  scenarioJson: {fileID: 4900000, guid: 00a10606e065d9c4786a8ae14c00e7a4, type: 3}
-  backgrounds:
-  - Id: space_exterior
-    Sprite: {fileID: 2495107377974511851, guid: 2b4d87f1343e93e4eaac9f145251708c, type: 3}
-  - Id: spaceship_interior
-    Sprite: {fileID: -445710961865628079, guid: f0cfe01679b968c459b221e3c6833970, type: 3}
+  bgmPlayer: {fileID: 1104836996}
+  scenarioJsons:
+  - {fileID: 4900000, guid: 00a10606e065d9c4786a8ae14c00e7a4, type: 3}
+  - {fileID: 4900000, guid: 5fe2ac03b2329184e9017ed27e651ada, type: 3}
   skipInterval: 0.08
+  autoDelay: 0.5
+  descriptionBaseDuration: 1.5
+  descriptionSecondsPerCharacter: 0.08
 --- !u!4 &668518700
 Transform:
   m_ObjectHideFlags: 0
@@ -739,6 +740,7 @@ Transform:
   - {fileID: 1881264567}
   - {fileID: 1057263791}
   - {fileID: 122227945}
+  - {fileID: 1861427835}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &842076748
@@ -959,6 +961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VoicePlayer
   audioSource: {fileID: 1881264566}
+  episodeId: episode01
 --- !u!1 &1104836994
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +971,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1104836995}
+  - component: {fileID: 1104836996}
   m_Layer: 0
   m_Name: BGM
   m_TagString: Untagged
@@ -991,6 +995,19 @@ Transform:
   - {fileID: 1376626865}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1104836996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104836994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6ce967c7edd0c4da53c195d7ff3ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BGMPlayer
+  audioSource: {fileID: 1376626866}
 --- !u!1 &1151133283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,8 +1216,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: d1c17f5fa7a06c14b826adaa053309b7, type: 3}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
@@ -1472,7 +1489,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1500743725}
   m_HandleRect: {fileID: 1500743724}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2002,6 +2019,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817057285}
   m_CullTransparentMesh: 1
+--- !u!1 &1861427834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1861427835}
+  - component: {fileID: 1861427836}
+  m_Layer: 0
+  m_Name: BackgroundPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1861427835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861427834}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 668518700}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1861427836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861427834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3638da6b51da07f428f40af7c6b66a97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundPlayer
+  backgroundView: {fileID: 664555118}
 --- !u!1 &1881264565
 GameObject:
   m_ObjectHideFlags: 0
