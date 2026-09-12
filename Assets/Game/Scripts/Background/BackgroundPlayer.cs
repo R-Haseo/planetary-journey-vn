@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -9,7 +10,7 @@ public class BackgroundPlayer : MonoBehaviour
     private AsyncOperationHandle<Sprite>? currentHandle;
     private int requestVersion;
 
-    public void Show(string assetId)
+    public void Show(string assetId, Action onCompleted = null)
     {
         ReleaseCurrentHandle();
 
@@ -30,10 +31,12 @@ public class BackgroundPlayer : MonoBehaviour
             {
                 Debug.LogError($"Failed to load background: {address}");
                 ReleaseCurrentHandle();
+                onCompleted?.Invoke();
                 return;
             }
 
             backgroundView.Show(completedHandle.Result);
+            onCompleted?.Invoke();
         };
     }
 

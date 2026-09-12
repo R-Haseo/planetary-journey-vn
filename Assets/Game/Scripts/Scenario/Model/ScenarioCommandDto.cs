@@ -14,4 +14,5 @@ public class ScenarioCommandDto
     public float Height;
     public float OffsetX;
     public float OffsetY;
+    public float Duration;
 }

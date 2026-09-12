@@ -10,6 +10,7 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private DialogueLogView dialogueLogView;
     [SerializeField] private VoicePlayer voicePlayer;
     [SerializeField] private BGMPlayer bgmPlayer;
+    [SerializeField] private FadeView fadeView;
 
     [SerializeField] private List<TextAsset> scenarioJsons;
 
@@ -216,7 +217,6 @@ public class ScenarioRunner : MonoBehaviour
 
             case "background":
                 ShowBackground(scenarioCommand.AssetId);
-                MoveToNextCommand();
                 break;
 
             case "description":
@@ -225,6 +225,10 @@ public class ScenarioRunner : MonoBehaviour
 
             case "bgm":
                 ProcessBgmCommand(scenarioCommand);
+                break;
+
+            case "fade":
+                ProcessFadeCommand(scenarioCommand);
                 break;
 
             default:
@@ -290,7 +294,9 @@ public class ScenarioRunner : MonoBehaviour
 
     private void ShowBackground(string assetId)
     {
-        backgroundPlayer.Show(assetId);
+        backgroundPlayer.Show(
+            assetId,
+            MoveToNextCommand);
     }
 
     private void ShowDescription(ScenarioCommandDto command)
@@ -325,6 +331,31 @@ public class ScenarioRunner : MonoBehaviour
         }
 
         MoveToNextCommand();
+    }
+
+    private void ProcessFadeCommand(ScenarioCommandDto command)
+    {
+        switch (command.Action)
+        {
+            case "out":
+                fadeView.FadeOut(
+                    command.Duration,
+                    MoveToNextCommand);
+                break;
+
+            case "in":
+                fadeView.FadeIn(
+                    command.Duration,
+                    MoveToNextCommand);
+                break;
+
+            default:
+                Debug.LogWarning(
+                    $"Unknown fade action: {command.Action}");
+
+                MoveToNextCommand();
+                break;
+        }
     }
 
     private void OnDestroy()
