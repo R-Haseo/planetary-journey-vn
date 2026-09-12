@@ -1,0 +1,253 @@
+{
+  "Commands": [
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.5
+    },
+    {
+      "Type": "background",
+      "AssetId": "empty_city"
+    },
+    {
+      "Type": "character",
+      "Action": "show",
+      "AssetId": "roman/normal",
+      "Position": "left",
+      "Width": 600,
+      "Height": 900,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    {
+      "Type": "character",
+      "Action": "show",
+      "AssetId": "ai/normal",
+      "Position": "right",
+      "Width": 320,
+      "Height": 320,
+      "OffsetX": 0,
+      "OffsetY": 100
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.5
+    },
+
+    {
+      "Type": "description",
+      "Text": "そのとき、近くの建物から通信が入った。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_001",
+      "Speaker": "AI",
+      "Text": "通信を受信しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_002",
+      "Speaker": "少女",
+      "Text": "誰から？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_003",
+      "Speaker": "AI",
+      "Text": "この建物の居住者と思われます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_004",
+      "Speaker": "少女",
+      "Text": "つないで"
+    },
+
+    {
+      "Type": "description",
+      "Text": "球体型AIから、老人の声が響いた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_005",
+      "Speaker": "老人",
+      "Text": "……あんた、外にいるのか？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_006",
+      "Speaker": "少女",
+      "Text": "うん。今、街の中にいるけど"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_007",
+      "Speaker": "老人",
+      "Text": "なんてことだ……早く建物の中に入ったほうがいい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_008",
+      "Speaker": "少女",
+      "Text": "どうして？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_009",
+      "Speaker": "老人",
+      "Text": "外を歩いていれば、誰かに見られるかもしれん"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_010",
+      "Speaker": "少女",
+      "Text": "……それが何か問題なの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_011",
+      "Speaker": "老人",
+      "Text": "問題に決まっているだろう"
+    },
+
+    {
+      "Type": "dialogue",
+      "Id": "s03_012",
+      "Speaker": "少女",
+      "Text": "あなたも、その建物にいるの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_013",
+      "Speaker": "老人",
+      "Text": "ああ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_014",
+      "Speaker": "少女",
+      "Text": "じゃあ、ちょっと外に出てきてよ。話を聞きたいんだけど"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_015",
+      "Speaker": "老人",
+      "Text": "外に？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_016",
+      "Speaker": "老人",
+      "Text": "冗談じゃない。もう何年も外には出ていない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_017",
+      "Speaker": "少女",
+      "Text": "何年も？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_018",
+      "Speaker": "老人",
+      "Text": "食料も日用品も、全部機械が届けてくれる。外へ出る必要などない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_019",
+      "Speaker": "少女",
+      "Text": "でも、この街には十二億人いるんでしょ？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_020",
+      "Speaker": "老人",
+      "Text": "いるさ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_021",
+      "Speaker": "少女",
+      "Text": "なのに、みんな家から出ないの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_022",
+      "Speaker": "老人",
+      "Text": "そのほうが、お互いのためだからな"
+    },
+
+    {
+      "Type": "dialogue",
+      "Id": "s03_023",
+      "Speaker": "少女",
+      "Text": "……この星、昔からこうだったの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_024",
+      "Speaker": "老人",
+      "Text": "いや"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_025",
+      "Speaker": "老人",
+      "Text": "昔はこんな星じゃなかった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_026",
+      "Speaker": "少女",
+      "Text": "じゃあ、何があったの？"
+    },
+
+    {
+      "Type": "description",
+      "Text": "老人はしばらく黙っていた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_027",
+      "Speaker": "老人",
+      "Text": "……長い話になる"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_028",
+      "Speaker": "少女",
+      "Text": "暇だから大丈夫"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_029",
+      "Speaker": "AI",
+      "Text": "先ほどまで退屈だと訴えていました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_030",
+      "Speaker": "少女",
+      "Text": "今それ言わなくていいから"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_031",
+      "Speaker": "老人",
+      "Text": "……そうだな。どこから話したものか"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_032",
+      "Speaker": "老人",
+      "Text": "始まりは、あの戦争が終わった頃だった"
+    },
+
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.8
+    }
+  ]
+}

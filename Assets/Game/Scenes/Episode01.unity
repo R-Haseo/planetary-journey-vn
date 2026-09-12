@@ -721,6 +721,7 @@ MonoBehaviour:
   scenarioJsons:
   - {fileID: 4900000, guid: 00a10606e065d9c4786a8ae14c00e7a4, type: 3}
   - {fileID: 4900000, guid: 5fe2ac03b2329184e9017ed27e651ada, type: 3}
+  - {fileID: 4900000, guid: 2917a6b4638ef854cad8aaa098ca12d3, type: 3}
   skipInterval: 0.08
   autoDelay: 0.5
   descriptionBaseDuration: 1.5
