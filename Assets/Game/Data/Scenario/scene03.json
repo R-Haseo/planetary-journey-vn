@@ -46,6 +46,16 @@
       "Text": "通信を受信しました"
     },
     {
+      "Type": "character",
+      "Action": "show",
+      "AssetId": "roman/surprised",
+      "Position": "left",
+      "Width": 600,
+      "Height": 900,
+      "OffsetX": 0,
+      "OffsetY": 0
+    },
+    {
       "Type": "dialogue",
       "Id": "s03_002",
       "Speaker": "少女",
