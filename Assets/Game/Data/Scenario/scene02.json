@@ -10,6 +10,11 @@
       "AssetId": "planet_atmosphere"
     },
     {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.5
+    },
+    {
       "Type": "description",
       "Text": "青白い惑星。"
     },
