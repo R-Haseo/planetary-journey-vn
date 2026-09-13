@@ -329,7 +329,9 @@
       "Text": "遠くに浮かぶ青白い惑星へ向かって加速していく。"
     },
     {
-      "Type": "fadeout"
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.5
     },
     {
       "Type": "scene",
