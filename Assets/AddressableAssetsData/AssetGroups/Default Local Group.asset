@@ -185,6 +185,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a99119f44fdd6f43807b6d753db1ffe
+    m_Address: character/roman/surprised
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4d7443709c4be9247a05d1af0194d1ab
     m_Address: voice/episode01/s01_032
     m_ReadOnly: 0
@@ -217,6 +222,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 543a4d1b876c5704d89e9e3a3d42233e
     m_Address: voice/episode01/s01_003
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5699296db662fda45828a63a137778c2
+    m_Address: background/empty_city_highrise
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -432,6 +442,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a56bf07ba4fc49848a5fde99b6b80680
     m_Address: voice/episode01/s01_027
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: acb9eb358da543343aa4a623a490fee8
+    m_Address: background/communication_old_man
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
