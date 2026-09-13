@@ -7,7 +7,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "empty_city"
+      "AssetId": "empty_city_highrise"
     },
     {
       "Type": "character",
@@ -63,7 +63,30 @@
       "Speaker": "少女",
       "Text": "つないで"
     },
-
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.5
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "left"
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "right"
+    },
+    {
+      "Type": "background",
+      "AssetId": "communication_old_man"
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.5
+    },
     {
       "Type": "description",
       "Text": "球体型AIから、老人の声が響いた。"
