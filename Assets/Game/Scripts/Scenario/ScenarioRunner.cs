@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 public class ScenarioRunner : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private DialogueView dialogueView;
     [SerializeField] private BackgroundPlayer backgroundPlayer;
     [SerializeField] private DialogueLogView dialogueLogView;
+    [SerializeField] private ScenarioControlView scenarioControlView;
     [SerializeField] private VoicePlayer voicePlayer;
     [SerializeField] private BGMPlayer bgmPlayer;
     [SerializeField] private FadeView fadeView;
@@ -22,6 +24,7 @@ public class ScenarioRunner : MonoBehaviour
     private List<ScenarioCommandDto> commands;
     private int currentScenarioIndex;
     private int currentIndex;
+    private bool skipMode;
     private float skipTimer;
 
     private bool autoMode;
@@ -40,6 +43,11 @@ public class ScenarioRunner : MonoBehaviour
     {
         voicePlayer.PlaybackCompleted += OnVoicePlaybackCompleted;
 
+        scenarioControlView.Initialize(
+            ToggleLog,
+            ToggleAuto,
+            ToggleSkip);
+
         currentScenarioIndex = 0;
         LoadScenario(currentScenarioIndex);
     }
@@ -50,7 +58,7 @@ public class ScenarioRunner : MonoBehaviour
 
         if (logPressed)
         {
-            dialogueLogView.Toggle();
+            ToggleLog();
             return;
         }
 
@@ -63,19 +71,7 @@ public class ScenarioRunner : MonoBehaviour
 
         if (autoPressed)
         {
-            autoMode = !autoMode;
-
-            if (autoMode && !waitingForAutoAdvance && !voicePlayer.IsPlaying)
-            {
-                autoTimer = autoDelay;
-                waitingForAutoAdvance = true;
-            }
-            else if (!autoMode)
-            {
-                waitingForAutoAdvance = false;
-            }
-
-            Debug.Log($"Auto mode: {(autoMode ? "ON" : "OFF")}");
+            ToggleAuto();
         }
 
         var mouseClicked = Mouse.current?.leftButton.wasPressedThisFrame == true;
@@ -121,9 +117,9 @@ public class ScenarioRunner : MonoBehaviour
             return;
         }
 
-        var skipPressed = keyboard.leftCtrlKey.isPressed || keyboard.rightCtrlKey.isPressed;
+        var ctrlPressed = keyboard.leftCtrlKey.isPressed || keyboard.rightCtrlKey.isPressed;
 
-        if (!skipPressed)
+        if (!skipMode && !ctrlPressed)
         {
             skipTimer = 0f;
             return;
@@ -356,6 +352,36 @@ public class ScenarioRunner : MonoBehaviour
                 MoveToNextCommand();
                 break;
         }
+    }
+
+    public void ToggleLog()
+    {
+        dialogueLogView.Toggle();
+    }
+
+    public void ToggleAuto()
+    {
+        autoMode = !autoMode;
+
+        if (autoMode && !waitingForAutoAdvance && !voicePlayer.IsPlaying)
+        {
+            autoTimer = autoDelay;
+            waitingForAutoAdvance = true;
+        }
+        else if (!autoMode)
+        {
+            waitingForAutoAdvance = false;
+        }
+
+        Debug.Log($"Auto mode: {(autoMode ? "ON" : "OFF")}");
+    }
+
+    public void ToggleSkip()
+    {
+        skipMode = !skipMode;
+        skipTimer = 0f;
+
+        Debug.Log($"Skip mode: {(skipMode ? "ON" : "OFF")}");
     }
 
     private void OnDestroy()
