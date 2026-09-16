@@ -1057,6 +1057,7 @@ MonoBehaviour:
   backgroundPlayer: {fileID: 1861427836}
   dialogueLogView: {fileID: 1569585915}
   scenarioControlView: {fileID: 176320204}
+  scenarioControlRoot: {fileID: 176320202}
   voicePlayer: {fileID: 1057263792}
   bgmPlayer: {fileID: 1104836996}
   fadeView: {fileID: 884716650}

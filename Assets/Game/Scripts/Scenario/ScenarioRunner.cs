@@ -10,6 +10,7 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private BackgroundPlayer backgroundPlayer;
     [SerializeField] private DialogueLogView dialogueLogView;
     [SerializeField] private ScenarioControlView scenarioControlView;
+    [SerializeField] private RectTransform scenarioControlRoot;
     [SerializeField] private VoicePlayer voicePlayer;
     [SerializeField] private BGMPlayer bgmPlayer;
     [SerializeField] private FadeView fadeView;
@@ -78,7 +79,9 @@ public class ScenarioRunner : MonoBehaviour
         var screenTouched = Touchscreen.current?.primaryTouch.press.wasPressedThisFrame == true;
         var spacePressed = Keyboard.current?.spaceKey.wasPressedThisFrame == true;
 
-        if (mouseClicked || screenTouched || spacePressed)
+        if ((mouseClicked && !IsPointerOverScenarioControls()) ||
+            screenTouched ||
+            spacePressed)
         {
             NextLine();
         }
@@ -382,6 +385,32 @@ public class ScenarioRunner : MonoBehaviour
         skipTimer = 0f;
 
         Debug.Log($"Skip mode: {(skipMode ? "ON" : "OFF")}");
+    }
+
+    private bool IsPointerOverScenarioControls()
+    {
+        if (EventSystem.current == null || Mouse.current == null)
+        {
+            return false;
+        }
+
+        var pointerEventData = new PointerEventData(EventSystem.current)
+        {
+            position = Mouse.current.position.ReadValue()
+        };
+
+        var results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointerEventData, results);
+
+        foreach (var result in results)
+        {
+            if (result.gameObject.transform.IsChildOf(scenarioControlRoot))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private void OnDestroy()
