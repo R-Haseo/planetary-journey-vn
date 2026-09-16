@@ -32,6 +32,8 @@ public class ScenarioRunner : MonoBehaviour
     private float autoTimer;
     private bool waitingForAutoAdvance;
 
+    [SerializeField] private int startScenarioIndex;
+
     private void Awake()
     {
         if (scenarioJsons == null || scenarioJsons.Count == 0)
@@ -49,7 +51,15 @@ public class ScenarioRunner : MonoBehaviour
             ToggleAuto,
             ToggleSkip);
 
+#if UNITY_EDITOR
+        currentScenarioIndex = Mathf.Clamp(
+            startScenarioIndex,
+            0,
+            scenarioJsons.Count - 1);
+#else
         currentScenarioIndex = 0;
+#endif
+
         LoadScenario(currentScenarioIndex);
     }
 
