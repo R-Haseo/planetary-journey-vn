@@ -1,0 +1,280 @@
+{
+  "Commands": [
+    {
+      "Type": "background",
+      "AssetId": "war_ruins"
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.8
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_001",
+      "Speaker": "老人",
+      "Text": "始まりは、第八次宇宙戦争が終わった頃だった"
+    },
+    {
+      "Type": "description",
+      "Id": "s04_002",
+      "Text": "戦争の傷跡が残る都市。崩れた建物の間を、人々が行き交っている。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_003",
+      "Speaker": "老人",
+      "Text": "戦争は終わった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_004",
+      "Speaker": "老人",
+      "Text": "だが、平和になったからといって、すべてが元に戻ったわけじゃない"
+    },
+    {
+      "Type": "background",
+      "AssetId": "city_reconstruction"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_005",
+      "Speaker": "老人",
+      "Text": "長い戦争で、この星の人間は荒んでいた"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_006",
+      "Speaker": "老人",
+      "Text": "暴力も、暴言も、珍しいものではなかった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_007",
+      "Speaker": "老人",
+      "Text": "職場でも、学校でも、家庭でもな"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_008",
+      "Speaker": "老人",
+      "Text": "それでも、復興は早かった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_009",
+      "Speaker": "老人",
+      "Text": "街が戻り、仕事が戻り、生活が戻った"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_010",
+      "Speaker": "老人",
+      "Text": "腹を満たすことだけで精一杯だった時代は、少しずつ終わっていった"
+    },
+    {
+      "Type": "background",
+      "AssetId": "prosperous_city"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_011",
+      "Speaker": "老人",
+      "Text": "すると、人々は別のものを求めるようになった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_012",
+      "Speaker": "老人",
+      "Text": "安心して働けること"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_013",
+      "Speaker": "老人",
+      "Text": "侮辱されないこと"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_014",
+      "Speaker": "老人",
+      "Text": "理不尽な暴力に怯えずに暮らせること"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_015",
+      "Speaker": "老人",
+      "Text": "そんな、今では当たり前に思えることをな"
+    },
+    {
+      "Type": "background",
+      "AssetId": "harassment_policy_news"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_016",
+      "Speaker": "老人",
+      "Text": "そこで政府は、新しい制度を作った"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_017",
+      "Speaker": "老人",
+      "Text": "暴力や暴言、立場を利用した嫌がらせを、ハラスメントとして禁止したんだ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_018",
+      "Speaker": "老人",
+      "Text": "被害を受けた者は相談できるようになり、悪質な行為には罰則も設けられた"
+    },
+    {
+      "Type": "background",
+      "AssetId": "peaceful_city"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_019",
+      "Speaker": "老人",
+      "Text": "効果はあった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_020",
+      "Speaker": "老人",
+      "Text": "職場で怒鳴り散らす者は減った"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_021",
+      "Speaker": "老人",
+      "Text": "弱い立場の者が、黙って耐える必要もなくなった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_022",
+      "Speaker": "老人",
+      "Text": "少なくとも――"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_023",
+      "Speaker": "老人",
+      "Text": "昔よりは、ずっと暮らしやすい社会になった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_024",
+      "Speaker": "少女",
+      "Text": "……いい制度じゃない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_025",
+      "Speaker": "老人",
+      "Text": "ああ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_026",
+      "Speaker": "老人",
+      "Text": "わしも、そう思っていた"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_027",
+      "Speaker": "少女",
+      "Text": "思っていた？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_028",
+      "Speaker": "老人",
+      "Text": "いや"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_029",
+      "Speaker": "老人",
+      "Text": "今でも、間違っていたとは思っていない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_030",
+      "Speaker": "少女",
+      "Text": "じゃあ、何があったの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_031",
+      "Speaker": "老人",
+      "Text": "人間というものはな"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_032",
+      "Speaker": "老人",
+      "Text": "一つ問題を解決すると、次の問題が見えるようになる"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_033",
+      "Speaker": "老人",
+      "Text": "暴力が減れば、暴言が気になる"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_034",
+      "Speaker": "老人",
+      "Text": "暴言が減れば、態度が気になる"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_035",
+      "Speaker": "老人",
+      "Text": "態度が改善されれば――"
+    },
+    {
+      "Type": "background",
+      "AssetId": "new_harassment_standards_news"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_036",
+      "Speaker": "老人",
+      "Text": "もっと安心できる社会を作れるはずだ、と考える"
+    },
+    {
+      "Type": "background",
+      "AssetId": "harassment_reports_news"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_037",
+      "Speaker": "老人",
+      "Text": "そして、誰かが言った"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.5
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_038",
+      "Speaker": "老人",
+      "Text": "『より完全な社会を作ろう』と"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s04_039",
+      "Speaker": "老人",
+      "Text": "誰も、反対しなかった"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.8
+    }
+  ]
+}
