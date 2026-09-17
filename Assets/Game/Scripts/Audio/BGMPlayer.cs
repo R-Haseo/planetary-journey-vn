@@ -7,12 +7,20 @@ public class BGMPlayer : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
 
+    private string currentAssetId;
     private AsyncOperationHandle<AudioClip>? currentHandle;
     private int requestVersion;
 
     public void Play(string assetId)
     {
+        if (currentAssetId == assetId && audioSource.isPlaying)
+        {
+            return;
+        }
+
         StopCurrent();
+
+        currentAssetId = assetId;
 
         var address = $"bgm/{assetId}";
         var version = ++requestVersion;
@@ -43,6 +51,7 @@ public class BGMPlayer : MonoBehaviour
     public void Stop()
     {
         requestVersion++;
+        currentAssetId = null;
         StopCurrent();
     }
 

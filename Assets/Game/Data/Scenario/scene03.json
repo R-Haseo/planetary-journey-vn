@@ -1,6 +1,11 @@
 {
   "Commands": [
     {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "scene02_city"
+    },
+    {
       "Type": "fade",
       "Action": "out",
       "Duration": 0.5
