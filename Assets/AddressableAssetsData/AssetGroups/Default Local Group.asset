@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08f752895e76c724f863e8b3c9a0cf16
+    m_Address: background/war_ruins
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0bbc323098247884db916f10d922f5a5
     m_Address: voice/episode01/s02_005
     m_ReadOnly: 0
