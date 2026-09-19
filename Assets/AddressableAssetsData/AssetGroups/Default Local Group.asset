@@ -150,6 +150,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3261727979efa9249b2e429c481c56d3
+    m_Address: background/prosperous_city
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 32733a356f928ad49a70fd63acefd88e
     m_Address: voice/episode01/s03_007
     m_ReadOnly: 0
@@ -307,6 +312,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 543a4d1b876c5704d89e9e3a3d42233e
     m_Address: voice/episode01/s01_003
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5533cce0587eb004b909612f92111d83
+    m_Address: background/city_reconstruction
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -592,6 +602,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a56bf07ba4fc49848a5fde99b6b80680
     m_Address: voice/episode01/s01_027
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab0d83ee96365a44d989201f3af70408
+    m_Address: background/news_harassment_policy
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

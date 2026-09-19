@@ -38,10 +38,6 @@
       "Text": "だが、平和になったからといって、すべてが元に戻ったわけじゃない"
     },
     {
-      "Type": "background",
-      "AssetId": "city_reconstruction"
-    },
-    {
       "Type": "dialogue",
       "Id": "s04_005",
       "Speaker": "老人",
@@ -66,6 +62,10 @@
       "Text": "それでも、復興は早かった"
     },
     {
+      "Type": "background",
+      "AssetId": "city_reconstruction"
+    },
+    {
       "Type": "dialogue",
       "Id": "s04_009",
       "Speaker": "老人",
@@ -76,10 +76,6 @@
       "Id": "s04_010",
       "Speaker": "老人",
       "Text": "腹を満たすことだけで精一杯だった時代は、少しずつ終わっていった"
-    },
-    {
-      "Type": "background",
-      "AssetId": "prosperous_city"
     },
     {
       "Type": "dialogue",
@@ -112,14 +108,14 @@
       "Text": "そんな、今では当たり前に思えることをな"
     },
     {
-      "Type": "background",
-      "AssetId": "harassment_policy_news"
-    },
-    {
       "Type": "dialogue",
       "Id": "s04_016",
       "Speaker": "老人",
       "Text": "そこで政府は、新しい制度を作った"
+    },
+    {
+      "Type": "background",
+      "AssetId": "news_harassment_policy"
     },
     {
       "Type": "dialogue",
@@ -132,10 +128,6 @@
       "Id": "s04_018",
       "Speaker": "老人",
       "Text": "被害を受けた者は相談できるようになり、悪質な行為には罰則も設けられた"
-    },
-    {
-      "Type": "background",
-      "AssetId": "peaceful_city"
     },
     {
       "Type": "dialogue",
@@ -160,6 +152,10 @@
       "Id": "s04_022",
       "Speaker": "老人",
       "Text": "少なくとも――"
+    },
+    {
+      "Type": "background",
+      "AssetId": "prosperous_city"
     },
     {
       "Type": "dialogue",
@@ -240,29 +236,16 @@
       "Text": "態度が改善されれば――"
     },
     {
-      "Type": "background",
-      "AssetId": "new_harassment_standards_news"
-    },
-    {
       "Type": "dialogue",
       "Id": "s04_036",
       "Speaker": "老人",
       "Text": "もっと安心できる社会を作れるはずだ、と考える"
     },
     {
-      "Type": "background",
-      "AssetId": "harassment_reports_news"
-    },
-    {
       "Type": "dialogue",
       "Id": "s04_037",
       "Speaker": "老人",
       "Text": "そして、誰かが言った"
-    },
-    {
-      "Type": "fade",
-      "Action": "out",
-      "Duration": 0.5
     },
     {
       "Type": "dialogue",
