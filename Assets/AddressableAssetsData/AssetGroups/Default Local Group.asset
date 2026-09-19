@@ -245,6 +245,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39371da4821789c41a79003f93c405bd
+    m_Address: background/episode01/scene05/office
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3a27b97ccd262d342b676a81a47a57dd
     m_Address: voice/episode01/s03_008
     m_ReadOnly: 0
@@ -1057,6 +1062,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e6bf6277a7392f444b0ede7ced3ba1ec
     m_Address: voice/episode01/s05_047
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6d2d16e04e1a2945be4f250387f143c
+    m_Address: background/episode01/scene05/office
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

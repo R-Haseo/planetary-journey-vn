@@ -1,8 +1,13 @@
 {
   "Commands": [
     {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "scene02_city"
+    },
+    {
       "Type": "background",
-      "AssetId": "episode01/scene05/office_compliment"
+      "AssetId": "episode01/scene05/office"
     },
     {
       "Type": "dialogue",
@@ -15,10 +20,6 @@
       "Id": "s05_002",
       "Speaker": "女性A",
       "Text": "ありがとう"
-    },
-    {
-      "Type": "background",
-      "AssetId": "episode01/scene05/office_discomfort"
     },
     {
       "Type": "dialogue",
@@ -174,7 +175,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "episode01/scene05/office_evaluation"
+      "AssetId": "episode01/scene05/office"
     },
     {
       "Type": "dialogue",
