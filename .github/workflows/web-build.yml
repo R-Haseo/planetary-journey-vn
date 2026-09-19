@@ -1,0 +1,38 @@
+name: Web CI
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  web-build:
+    name: Build Web
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Cache Library
+        uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-Web-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-Web-
+            Library-
+
+      - name: Build Web
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          unityVersion: 6000.3.18f1
+          targetPlatform: WebGL
+          buildMethod: WebBuildTool.BuildRelease
