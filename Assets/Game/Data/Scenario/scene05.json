@@ -1,0 +1,524 @@
+{
+  "Commands": [
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/office_compliment"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_001",
+      "Speaker": "男性",
+      "Text": "髪型変えた？　可愛いね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_002",
+      "Speaker": "女性A",
+      "Text": "ありがとう"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/office_discomfort"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_003",
+      "Speaker": "男性",
+      "Text": "髪型変えた？　可愛いね"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_004",
+      "Text": "女性は、わずかに表情を曇らせた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_005",
+      "Speaker": "老人",
+      "Text": "同じ言葉を喜ぶ者もいれば、不快に感じる者もいた"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/harassment_news"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_006",
+      "Speaker": "老人",
+      "Text": "発言だけではない。相手との関係、場所、立場――"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_007",
+      "Speaker": "老人",
+      "Text": "何をハラスメントとするかは、人によって違った"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_008",
+      "Speaker": "老人",
+      "Text": "そして判定する側も、人間だった"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/judgment_comparison"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_009",
+      "Text": "判定：問題なし"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_010",
+      "Text": "判定：ハラスメント認定"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_011",
+      "Speaker": "老人",
+      "Text": "同じような訴えでも、担当者によって結論が変わることがあった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_012",
+      "Speaker": "老人",
+      "Text": "当然、不満が出た"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/standardization_news"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_013",
+      "Text": "「ハラスメントに統一基準を」"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_014",
+      "Text": "「判定員の主観を排除すべき」"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_015",
+      "Text": "「公平な認定制度を求める声」"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_016",
+      "Speaker": "老人",
+      "Text": "そこで人々は、誰に対しても同じ基準を適用する仕組みを求めた"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/government_council"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_017",
+      "Speaker": "老人",
+      "Text": "惑星政府は、ハラスメント認定評議会を設置した"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_018",
+      "Speaker": "老人",
+      "Text": "だが、十二億人から寄せられる訴えを、人間だけで処理できるはずもない"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/ai_system"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_019",
+      "Speaker": "老人",
+      "Text": "だから、AIに任せることにしたんだ"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/ai_judgment_news"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_020",
+      "Text": "AIハラスメント判定システム、本格稼働"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_021",
+      "Text": "「公平・迅速な認定を実現」"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_022",
+      "Speaker": "老人",
+      "Text": "最初は評判が良かったよ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_023",
+      "Speaker": "老人",
+      "Text": "人間と違って、好き嫌いで判断しない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_024",
+      "Speaker": "老人",
+      "Text": "二十四時間、どんな小さな訴えにも対応してくれる"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_025",
+      "Speaker": "老人",
+      "Text": "そしてAIは学習した"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_026",
+      "Speaker": "老人",
+      "Text": "人間が、何を不快に感じるのかを"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/office_evaluation"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_027",
+      "Speaker": "男性",
+      "Text": "今日の発表、すごく良かったですよ"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_028",
+      "Text": "警告――評価ハラスメントを検知しました。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_029",
+      "Speaker": "男性",
+      "Text": "……え？"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_030",
+      "Text": "他者を一方的に評価する行為は、心理的圧力を与える可能性があります。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_031",
+      "Speaker": "老人",
+      "Text": "褒めることは、相手を勝手に評価する行為だと言われるようになった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_032",
+      "Speaker": "男性",
+      "Text": "じゃあ……何も言わなければいいのか"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/street_conversation"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_033",
+      "Speaker": "住民A",
+      "Text": "おはようございます"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_034",
+      "Text": "警告――会話強要ハラスメントを検知しました。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_035",
+      "Speaker": "住民A",
+      "Text": "……おはようって言っただけなんだけど"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_036",
+      "Text": "返答を期待する発言は、相手に会話を強制する可能性があります。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_037",
+      "Text": "住民は黙り込んだ。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_038",
+      "Text": "警告――無視ハラスメントを検知しました。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_039",
+      "Text": "他者への応答を拒否する行為は、心理的苦痛を与える可能性があります。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_040",
+      "Speaker": "住民A",
+      "Text": "どうすればいいんだよ"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_041",
+      "Text": "警告――威圧的発言を検知しました。"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/busy_street"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_042",
+      "Text": "一人の住民が道を歩いている。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_043",
+      "Text": "警告――歩行速度ハラスメントを検知しました。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_044",
+      "Speaker": "住民",
+      "Text": "……は？"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_045",
+      "Text": "後方の歩行者に進路変更を強いる可能性があります。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_046",
+      "Text": "住民は立ち止まった。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_047",
+      "Text": "警告――通行妨害ハラスメントを検知しました。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_048",
+      "Text": "住民は慌てて横へ移動した。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_049",
+      "Text": "警告――急移動ハラスメントを検知しました。"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/park_bench"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_050",
+      "Text": "別の住民がベンチに座っている。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_051",
+      "Text": "警告――座席占有ハラスメントを検知しました。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_052",
+      "Text": "住民は立ち上がった。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_053",
+      "Text": "警告――立位威圧ハラスメントを検知しました。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_054",
+      "Text": "住民はゆっくりとしゃがみ込んだ。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_055",
+      "Text": "警告――奇異行動ハラスメントを検知しました。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_056",
+      "Speaker": "住民",
+      "Text": "もう何もできないじゃないか！"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_057",
+      "Text": "警告――大声ハラスメントを検知しました。"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/declining_city"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_058",
+      "Text": "街から、少しずつ会話が消えていった。"
+    },
+    {
+      "Type": "description",
+      "Id": "s05_059",
+      "Text": "人々は互いに距離を取り、目を合わせず、動くことさえ慎重になっていった。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_060",
+      "Speaker": "老人",
+      "Text": "違反すれば、最初は警告だけだった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_061",
+      "Speaker": "老人",
+      "Text": "だが、違反件数は一向に減らなかった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_062",
+      "Speaker": "老人",
+      "Text": "そこで、繰り返す者には罰金が科された"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_063",
+      "Speaker": "老人",
+      "Text": "それでも違反は減らない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_064",
+      "Speaker": "老人",
+      "Text": "次に導入されたのが、外出制限だった"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_065",
+      "Speaker": "老人",
+      "Text": "みんな、学習したよ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_066",
+      "Speaker": "少女",
+      "Text": "……何を？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_067",
+      "Speaker": "老人",
+      "Text": "何もしないのが、一番安全だってことを"
+    },
+
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/emptying_city"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_068",
+      "Speaker": "老人",
+      "Text": "話さなければ、失言しない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_069",
+      "Speaker": "老人",
+      "Text": "近づかなければ、威圧しない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_070",
+      "Speaker": "老人",
+      "Text": "外に出なければ、誰かの邪魔になることもない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_071",
+      "Speaker": "老人",
+      "Text": "そうして、みんな家から出なくなった"
+    },
+
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.5
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene03/communication_old_man"
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.5
+    },
+
+    {
+      "Type": "dialogue",
+      "Id": "s05_072",
+      "Speaker": "少女",
+      "Text": "それで……あの街なの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_073",
+      "Speaker": "老人",
+      "Text": "いや"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_074",
+      "Speaker": "老人",
+      "Text": "まだだ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_075",
+      "Speaker": "少女",
+      "Text": "え？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_076",
+      "Speaker": "老人",
+      "Text": "この頃はまだ――"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_077",
+      "Speaker": "老人",
+      "Text": "家の中にいれば、安全だった"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.5
+    }
+  ]
+}
