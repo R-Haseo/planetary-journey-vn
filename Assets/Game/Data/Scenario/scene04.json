@@ -7,7 +7,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "war_ruins"
+      "AssetId": "episode01/scene04/war_ruins"
     },
     {
       "Type": "fade",
@@ -63,7 +63,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "city_reconstruction"
+      "AssetId": "episode01/scene04/city_reconstruction"
     },
     {
       "Type": "dialogue",
@@ -115,7 +115,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "news_harassment_policy"
+      "AssetId": "episode01/scene04/news_harassment_policy"
     },
     {
       "Type": "dialogue",
@@ -155,7 +155,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "prosperous_city"
+      "AssetId": "episode01/scene04/prosperous_city"
     },
     {
       "Type": "dialogue",

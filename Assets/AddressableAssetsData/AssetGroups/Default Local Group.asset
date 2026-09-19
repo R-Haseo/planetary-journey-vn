@@ -21,7 +21,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 08f752895e76c724f863e8b3c9a0cf16
-    m_Address: background/war_ruins
+    m_Address: background/episode01/scene04/war_ruins
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -81,7 +81,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 161d4b1a9bd5e5544ba24138ee1dea5e
-    m_Address: background/empty_city
+    m_Address: background/episode01/scene02/empty_city
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1d59f0d3a5c0abb4db61f183ba9c40e7
-    m_Address: background/planet_atmosphere
+    m_Address: background/episode01/scene02/planet_atmosphere
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2b4d87f1343e93e4eaac9f145251708c
-    m_Address: background/space_exterior
+    m_Address: background/episode01/scene01/space_exterior
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3261727979efa9249b2e429c481c56d3
-    m_Address: background/prosperous_city
+    m_Address: background/episode01/scene04/prosperous_city
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -316,7 +316,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5533cce0587eb004b909612f92111d83
-    m_Address: background/city_reconstruction
+    m_Address: background/episode01/scene04/city_reconstruction
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -326,7 +326,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5699296db662fda45828a63a137778c2
-    m_Address: background/empty_city_highrise
+    m_Address: background/episode01/scene03/empty_city_highrise
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -406,7 +406,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6982916196810f44e87c10c74790c8c4
-    m_Address: background/planet_landing_site
+    m_Address: background/episode01/scene02/planet_landing_site
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -606,12 +606,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ab0d83ee96365a44d989201f3af70408
-    m_Address: background/news_harassment_policy
+    m_Address: background/episode01/scene04/news_harassment_policy
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: acb9eb358da543343aa4a623a490fee8
-    m_Address: background/communication_old_man
+    m_Address: background/episode01/scene03/communication_old_man
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -836,7 +836,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f0cfe01679b968c459b221e3c6833970
-    m_Address: background/spaceship_interior
+    m_Address: background/episode01/scene01/spaceship_interior
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

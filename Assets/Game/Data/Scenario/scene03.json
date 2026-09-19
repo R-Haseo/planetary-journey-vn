@@ -12,7 +12,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "empty_city_highrise"
+      "AssetId": "episode01/scene03/empty_city_highrise"
     },
     {
       "Type": "character",
@@ -95,7 +95,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "communication_old_man"
+      "AssetId": "episode01/scene03/communication_old_man"
     },
     {
       "Type": "fade",

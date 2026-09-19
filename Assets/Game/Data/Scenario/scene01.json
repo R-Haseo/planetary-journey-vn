@@ -7,7 +7,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "space_exterior"
+      "AssetId": "episode01/scene01/space_exterior"
     },
     {
       "Type": "description",
@@ -19,7 +19,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "spaceship_interior"
+      "AssetId": "episode01/scene01/spaceship_interior"
     },
     {
       "Type": "character",
@@ -318,7 +318,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "space_exterior"
+      "AssetId": "episode01/scene01/space_exterior"
     },
     {
       "Type": "description",
