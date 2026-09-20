@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using Newtonsoft.Json;
 
 public class ScenarioRunner : MonoBehaviour
 {
@@ -110,7 +111,7 @@ public class ScenarioRunner : MonoBehaviour
 
         var scenarioJson = scenarioJsons[scenarioIndex];
         var scenarioData =
-            JsonUtility.FromJson<ScenarioDataDto>(scenarioJson.text);
+            JsonConvert.DeserializeObject<ScenarioDataDto>(scenarioJson.text);
 
         commands = scenarioData.Commands;
         currentIndex = 0;
