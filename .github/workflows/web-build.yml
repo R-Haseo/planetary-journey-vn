@@ -11,8 +11,8 @@ permissions:
   checks: write
 
 jobs:
-  web-build:
-    name: Test & Build Web
+  unity-test:
+    name: Run EditMode Tests
     runs-on: ubuntu-latest
 
     steps:
@@ -39,6 +39,26 @@ jobs:
         with:
           unityVersion: 6000.3.18f1
           testMode: EditMode
+
+  web-build:
+    name: Build Web
+    runs-on: ubuntu-latest
+    needs: unity-test
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Cache Library
+        uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-Web-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-Web-
+            Library-
 
       - name: Build Web
         uses: game-ci/unity-builder@v4
