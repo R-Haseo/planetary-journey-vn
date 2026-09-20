@@ -220,7 +220,8 @@ public class VoiceImportTool : EditorWindow
                     sceneId)
             })
             .Where(x => x.Number.HasValue)
-            .OrderBy(x => x.Number.Value)
+            .OrderBy(x => x.Number.Value.Number)
+            .ThenBy(x => x.Number.Value.SubNumber)
             .ToList();
 
         if (assets.Count == 0)
@@ -340,7 +341,7 @@ public class VoiceImportTool : EditorWindow
             $"{sceneId}_{startNumber + assets.Count - 1:000})");
     }
 
-    private static int? GetExistingVoiceNumber(
+    private static (int Number, int SubNumber)? GetExistingVoiceNumber(
         string fileName,
         string sceneId)
     {
@@ -354,9 +355,21 @@ public class VoiceImportTool : EditorWindow
         }
 
         var numberPart = fileName.Substring(prefix.Length);
+        var parts = numberPart.Split('_');
 
-        return int.TryParse(numberPart, out var value)
-            ? value
-            : null;
+        if (!int.TryParse(parts[0], out var number))
+        {
+            return null;
+        }
+
+        var subNumber = 0;
+
+        if (parts.Length >= 2 &&
+            !int.TryParse(parts[1], out subNumber))
+        {
+            return null;
+        }
+
+        return (number, subNumber);
     }
 }
