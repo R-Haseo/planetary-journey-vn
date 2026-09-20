@@ -35,6 +35,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08d63b65956464546a0a88f9f039a3a8
+    m_Address: background/episode01/scene05/declining_city
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 08f752895e76c724f863e8b3c9a0cf16
     m_Address: background/episode01/scene04/war_ruins
     m_ReadOnly: 0
@@ -145,6 +150,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 244c4bf92b9cf3f40b722dc9403defcd
+    m_Address: background/episode01/scene05/street_conversation
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 24b00d1d70c74cd4b865ced2d470bf1a
     m_Address: voice/episode01/s01_021
     m_ReadOnly: 0
@@ -242,6 +252,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 39371da4821789c41a79003f93c405bd
     m_Address: background/episode01/scene05/office
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39faddff5b41e0c40b819493e34c264b
+    m_Address: background/episode01/scene05/emptying_city
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -550,6 +565,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 734b3b535dc98644a9de74f3c243b150
+    m_Address: background/episode01/scene05/city_park_bench
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 73ac31507d1ee4d42a389fbac5585339
     m_Address: voice/episode01/s03_023
     m_ReadOnly: 0
@@ -572,6 +592,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 784d94684cf99d849867ae0c01ce6ba9
     m_Address: voice/episode01/s02_030
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7975413c34327a64a8382fc908af2b7a
+    m_Address: background/episode01/scene05/busy_street
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -642,6 +667,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 867ca24d27de22f4e8a540250245a70b
     m_Address: voice/episode01/s04_007
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8892871b4c71a694fb21d5335d4fe6d3
+    m_Address: background/episode01/scene05/standardization_news
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -782,6 +812,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a91fc151b62e2e64ca0c723039c6b511
     m_Address: voice/episode01/s05_025
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9ba819bdcfa5cd4bb7cc3156b502ed7
+    m_Address: background/episode01/scene05/ai_system
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

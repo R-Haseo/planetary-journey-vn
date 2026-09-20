@@ -15,22 +15,46 @@
       "Duration": 0.8
     },
     {
+      "Type": "description",
+      "Text": "ある職場で、身なりの整った若い男性が、同僚の女性に声をかけた。"
+    },
+    {
       "Type": "dialogue",
       "Id": "s05_001",
-      "Speaker": "男性",
+      "Speaker": "身なりの整った男性",
       "Text": "髪型変えた？　可愛いね"
     },
     {
       "Type": "dialogue",
       "Id": "s05_002",
-      "Speaker": "女性A",
+      "Speaker": "女性",
       "Text": "ありがとう"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.8
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.8
+    },
+    {
+      "Type": "description",
+      "Text": "別の職場で、冴えない地味な男性が、同僚の女性に声をかけた。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_003",
-      "Speaker": "男性",
+      "Speaker": "冴えない地味な男性",
       "Text": "髪型変えた？　可愛いね"
+    },
+        {
+      "Type": "dialogue",
+      "Id": "s05_003_2",
+      "Speaker": "女性",
+      "Text": "えっ？"
     },
     {
       "Type": "description",
@@ -145,6 +169,18 @@
       "Text": "AIハラスメント判定システム、本格稼働"
     },
     {
+      "Type": "dialogue",
+      "Id": "s05_013-2",
+      "Speaker": "ハル",
+      "Text": "はじめまして。ハラスメント判定AI『ハル』です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_013-3",
+      "Speaker": "ハル",
+      "Text": "ハラスメントをなくし、誰もが安心して暮らせる社会をつくれるよう、がんばります"
+    },
+    {
       "Type": "description",
       "Text": "「公平・迅速な認定を実現」"
     },
@@ -168,9 +204,27 @@
     },
     {
       "Type": "dialogue",
+      "Id": "s05_016-2",
+      "Speaker": "老人",
+      "Text": "ハルは街中のカメラや端末から、俺たちの行動を常に見ていた"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_016-3",
+      "Speaker": "老人",
+      "Text": "何かを検知すれば、すぐに個人端末へ警告が届く"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_016-4",
+      "Speaker": "老人",
+      "Text": "最初は、それだけだったんだ"
+    },
+    {
+      "Type": "dialogue",
       "Id": "s05_017",
       "Speaker": "老人",
-      "Text": "そしてAIは学習した"
+      "Text": "そしてハルは学習した"
     },
     {
       "Type": "dialogue",
@@ -185,25 +239,25 @@
     {
       "Type": "dialogue",
       "Id": "s05_019",
-      "Speaker": "男性",
+      "Speaker": "サラリーマン",
       "Text": "今日の発表、すごく良かったですよ"
     },
     {
       "Type": "dialogue",
       "Id": "s05_020",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――評価ハラスメントを検知しました。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_021",
-      "Speaker": "男性",
+      "Speaker": "サラリーマン",
       "Text": "……え？"
     },
     {
       "Type": "dialogue",
       "Id": "s05_022",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "他者を一方的に評価する行為は、心理的圧力を与える可能性があります。"
     },
     {
@@ -215,7 +269,7 @@
     {
       "Type": "dialogue",
       "Id": "s05_024",
-      "Speaker": "男性",
+      "Speaker": "サラリーマン",
       "Text": "じゃあ……何も言わなければいいのか"
     },
     {
@@ -225,53 +279,53 @@
     {
       "Type": "dialogue",
       "Id": "s05_025",
-      "Speaker": "住民A",
+      "Speaker": "市民A",
       "Text": "おはようございます"
     },
     {
       "Type": "dialogue",
       "Id": "s05_026",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――会話強要ハラスメントを検知しました。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_027",
-      "Speaker": "住民A",
+      "Speaker": "市民A",
       "Text": "……おはようって言っただけなんだけど"
     },
     {
       "Type": "dialogue",
       "Id": "s05_028",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "返答を期待する発言は、相手に会話を強制する可能性があります。"
     },
     {
       "Type": "description",
-      "Text": "住民は黙り込んだ。"
+      "Text": "市民は黙り込んだ。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_029",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――無視ハラスメントを検知しました。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_030",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "他者への応答を拒否する行為は、心理的苦痛を与える可能性があります。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_031",
-      "Speaker": "住民A",
+      "Speaker": "市民A",
       "Text": "どうすればいいんだよ"
     },
     {
       "Type": "dialogue",
       "Id": "s05_032",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――威圧的発言を検知しました。"
     },
     {
@@ -280,44 +334,44 @@
     },
     {
       "Type": "description",
-      "Text": "一人の住民が道を歩いている。"
+      "Text": "一人の市民が道を歩いている。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_033",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――歩行速度ハラスメントを検知しました。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_034",
-      "Speaker": "住民",
+      "Speaker": "市民B",
       "Text": "……は？"
     },
     {
       "Type": "dialogue",
       "Id": "s05_035",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "後方の歩行者に進路変更を強いる可能性があります。"
     },
     {
       "Type": "description",
-      "Text": "住民は立ち止まった。"
+      "Text": "市民は立ち止まった。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_036",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――通行妨害ハラスメントを検知しました。"
     },
     {
       "Type": "description",
-      "Text": "住民は慌てて横へ移動した。"
+      "Text": "市民は慌てて横へ移動した。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_037",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――急移動ハラスメントを検知しました。"
     },
     {
@@ -326,49 +380,61 @@
     },
     {
       "Type": "description",
-      "Text": "別の住民がベンチに座っている。"
+      "Text": "別の市民がベンチに座っている。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_038",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――座席占有ハラスメントを検知しました。"
     },
     {
       "Type": "description",
-      "Text": "住民は立ち上がった。"
+      "Text": "市民は立ち上がった。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_039",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――立位威圧ハラスメントを検知しました。"
     },
     {
       "Type": "description",
-      "Text": "住民はゆっくりとしゃがみ込んだ。"
+      "Text": "市民はゆっくりとしゃがみ込んだ。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_040",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――奇異行動ハラスメントを検知しました。"
     },
     {
       "Type": "dialogue",
       "Id": "s05_041",
-      "Speaker": "住民",
+      "Speaker": "市民C",
       "Text": "もう何もできないじゃないか！"
     },
     {
       "Type": "dialogue",
       "Id": "s05_042",
-      "Speaker": "",
+      "Speaker": "ハル",
       "Text": "警告――大声ハラスメントを検知しました。"
     },
     {
       "Type": "background",
       "AssetId": "episode01/scene04/prosperous_city"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_042-2",
+      "Speaker": "老人",
+      "Text": "どこにいても、ハルは見ていた"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_042-3",
+      "Speaker": "老人",
+      "Text": "逃げる場所なんて、なかったよ"
     },
     {
       "Type": "description",
@@ -471,6 +537,12 @@
       "Type": "fade",
       "Action": "in",
       "Duration": 0.5
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s05_054-2",
+      "Speaker": "少女",
+      "Text": "まるで、筒井康隆の小説みたいな話ね"
     },
     {
       "Type": "dialogue",
