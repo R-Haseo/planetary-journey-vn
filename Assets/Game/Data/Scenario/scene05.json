@@ -10,6 +10,11 @@
       "AssetId": "episode01/scene05/office"
     },
     {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.8
+    },
+    {
       "Type": "dialogue",
       "Id": "s05_001",
       "Speaker": "男性",
@@ -78,14 +83,14 @@
       "Text": "同じような訴えでも、担当者によって結論が変わることがあった"
     },
     {
+      "Type": "background",
+      "AssetId": "episode01/scene05/standardization_news"
+    },
+    {
       "Type": "dialogue",
       "Id": "s05_009",
       "Speaker": "老人",
       "Text": "当然、不満が出た"
-    },
-    {
-      "Type": "background",
-      "AssetId": "episode01/scene05/standardization_news"
     },
     {
       "Type": "description",
@@ -317,7 +322,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "episode01/scene05/park_bench"
+      "AssetId": "episode01/scene05/city_park_bench"
     },
     {
       "Type": "description",
@@ -363,11 +368,15 @@
     },
     {
       "Type": "background",
-      "AssetId": "episode01/scene05/declining_city"
+      "AssetId": "episode01/scene04/prosperous_city"
     },
     {
       "Type": "description",
       "Text": "街から、少しずつ会話が消えていった。"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene05/declining_city"
     },
     {
       "Type": "description",
@@ -404,6 +413,10 @@
       "Text": "次に導入されたのが、外出制限だった"
     },
     {
+      "Type": "background",
+      "AssetId": "episode01/scene05/emptying_city"
+    },
+    {
       "Type": "dialogue",
       "Id": "s05_048",
       "Speaker": "老人",
@@ -420,10 +433,6 @@
       "Id": "s05_050",
       "Speaker": "老人",
       "Text": "何もしないのが、一番安全だってことを"
-    },
-    {
-      "Type": "background",
-      "AssetId": "episode01/scene05/emptying_city"
     },
     {
       "Type": "dialogue",
