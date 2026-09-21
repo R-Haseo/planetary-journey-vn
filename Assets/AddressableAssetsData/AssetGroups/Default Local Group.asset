@@ -265,11 +265,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 39371da4821789c41a79003f93c405bd
-    m_Address: background/episode01/scene05/office
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 39faddff5b41e0c40b819493e34c264b
     m_Address: background/episode01/scene05/emptying_city
     m_ReadOnly: 0

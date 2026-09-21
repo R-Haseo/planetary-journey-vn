@@ -3,8 +3,8 @@ guid: f0cfe01679b968c459b221e3c6833970
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -445710961865628079
-    second: Spaceship_Interior_0
+      213: -1761803706754430813
+    second: spaceship_interior_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spaceship_Interior_0
+      name: spaceship_interior_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 156608ddd3480d9f0800000000000000
-      internalID: -445710961865628079
+      spriteID: 3a88fe6fcd0dc87e0800000000000000
+      internalID: -1761803706754430813
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Spaceship_Interior_0: -445710961865628079
+      spaceship_interior_0: -1761803706754430813
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

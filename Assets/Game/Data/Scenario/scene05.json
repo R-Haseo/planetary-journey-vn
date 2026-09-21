@@ -67,10 +67,6 @@
       "Text": "同じ言葉を喜ぶ者もいれば、不快に感じる者もいた"
     },
     {
-      "Type": "background",
-      "AssetId": "episode01/scene05/harassment_news"
-    },
-    {
       "Type": "dialogue",
       "Id": "s05_006",
       "Speaker": "老人",
@@ -87,10 +83,6 @@
       "Id": "s05_008",
       "Speaker": "老人",
       "Text": "そして判定する側も、人間だった"
-    },
-    {
-      "Type": "background",
-      "AssetId": "episode01/scene05/judgment_comparison"
     },
     {
       "Type": "description",
@@ -135,10 +127,6 @@
       "Text": "そこで人々は、誰に対しても同じ基準を適用する仕組みを求めた"
     },
     {
-      "Type": "background",
-      "AssetId": "episode01/scene05/government_council"
-    },
-    {
       "Type": "dialogue",
       "Id": "s05_012",
       "Speaker": "老人",
@@ -159,10 +147,6 @@
       "Id": "s05_014",
       "Speaker": "老人",
       "Text": "だから、AIに任せることにしたんだ"
-    },
-    {
-      "Type": "background",
-      "AssetId": "episode01/scene05/ai_judgment_news"
     },
     {
       "Type": "description",
