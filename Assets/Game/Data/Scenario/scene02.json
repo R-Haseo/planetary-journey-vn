@@ -7,7 +7,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "planet_atmosphere"
+      "AssetId": "episode01/scene02/planet_atmosphere"
     },
     {
       "Type": "fade",
@@ -103,7 +103,7 @@
 
     {
       "Type": "background",
-      "AssetId": "planet_landing_site"
+      "AssetId": "episode01/scene02/planet_landing_site"
     },
     {
       "Type": "description",
@@ -208,7 +208,7 @@
 
     {
       "Type": "background",
-      "AssetId": "empty_city"
+      "AssetId": "episode01/scene02/empty_city"
     },
     {
       "Type": "description",
