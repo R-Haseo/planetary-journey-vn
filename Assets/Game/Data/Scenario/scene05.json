@@ -568,6 +568,9 @@
       "Type": "fade",
       "Action": "out",
       "Duration": 0.5
+    },
+    {
+      "Type": "end"
     }
   ]
 }
