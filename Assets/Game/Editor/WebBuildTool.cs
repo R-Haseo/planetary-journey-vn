@@ -2,7 +2,6 @@ using System;
 using System.IO;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
-using UnityEditor.WebGL;
 using UnityEngine;
 
 public static class WebBuildTool

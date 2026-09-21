@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using Newtonsoft.Json;
 
 public class ScenarioRunner : MonoBehaviour
 {
@@ -110,7 +111,7 @@ public class ScenarioRunner : MonoBehaviour
 
         var scenarioJson = scenarioJsons[scenarioIndex];
         var scenarioData =
-            JsonUtility.FromJson<ScenarioDataDto>(scenarioJson.text);
+            JsonConvert.DeserializeObject<ScenarioDataDto>(scenarioJson.text);
 
         commands = scenarioData.Commands;
         currentIndex = 0;
@@ -370,6 +371,7 @@ public class ScenarioRunner : MonoBehaviour
     public void ToggleLog()
     {
         dialogueLogView.Toggle();
+        ClearButtonSelection();
     }
 
     public void ToggleAuto()
@@ -387,6 +389,7 @@ public class ScenarioRunner : MonoBehaviour
         }
 
         Debug.Log($"Auto mode: {(autoMode ? "ON" : "OFF")}");
+        ClearButtonSelection();
     }
 
     public void ToggleSkip()
@@ -395,6 +398,12 @@ public class ScenarioRunner : MonoBehaviour
         skipTimer = 0f;
 
         Debug.Log($"Skip mode: {(skipMode ? "ON" : "OFF")}");
+        ClearButtonSelection();
+    }
+
+    private static void ClearButtonSelection()
+    {
+        EventSystem.current?.SetSelectedGameObject(null);
     }
 
     private bool IsPointerOverScenarioControls()
