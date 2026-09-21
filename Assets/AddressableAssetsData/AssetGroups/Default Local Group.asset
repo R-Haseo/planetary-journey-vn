@@ -126,7 +126,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1eb80adf33cbba84781d432ed2bc30e2
-    m_Address: character/ai/normal
+    m_Address: character/ai/ai_normal
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2fa982f819ce6ed428104574d425b4fa
-    m_Address: character/roman/normal
+    m_Address: character/roman/roman_normal
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -371,7 +371,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4a99119f44fdd6f43807b6d753db1ffe
-    m_Address: character/roman/surprised
+    m_Address: character/roman/roman_surprised
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
