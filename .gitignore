@@ -107,3 +107,7 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# VoiceVox ImportText Generated folder
+Assets/Game/Generated/
+Assets/Game/Generated.meta

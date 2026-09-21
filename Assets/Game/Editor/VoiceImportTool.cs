@@ -13,7 +13,7 @@ public class VoiceImportTool : EditorWindow
     private string sceneId = "s02";
     private int startNumber = 1;
 
-    [MenuItem("Tools/VN/Voice Import Tool")]
+    [MenuItem("Tools/Voice/Voice Import Tool")]
     public static void ShowWindow()
     {
         GetWindow<VoiceImportTool>("Voice Import Tool");
