@@ -197,6 +197,11 @@
       "Duration": 0.7
     },
     {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "scene06_crisis"
+    },
+    {
       "Type": "background",
       "AssetId": "episode01/scene03/communication_old_man"
     },
@@ -268,7 +273,7 @@
     {
       "Type": "fade",
       "Action": "out",
-      "Duration": 0.3
+      "Duration": 0.7
     },
     {
       "Type": "background",
@@ -277,7 +282,7 @@
     {
       "Type": "fade",
       "Action": "in",
-      "Duration": 0.3
+      "Duration": 0.7
     },
     {
       "Type": "dialogue",
@@ -370,8 +375,18 @@
       "Text": "ご安心ください"
     },
     {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.7
+    },
+    {
       "Type": "background",
       "AssetId": "episode01/scene06/final_countdown"
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.7
     },
     {
       "Type": "dialogue",
