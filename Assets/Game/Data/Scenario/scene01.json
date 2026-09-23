@@ -23,7 +23,7 @@
     },
     {
       "Type": "character",
-      "AssetId": "roman/normal",
+      "AssetId": "roman/roman_normal",
       "Action": "show",
       "Position": "left",
       "Width": 620,
@@ -31,7 +31,7 @@
     },
     {
       "Type": "character",
-      "AssetId": "ai/normal",
+      "AssetId": "ai/ai_normal",
       "Action": "show",
       "Position": "right",
       "Width": 320,
