@@ -10,6 +10,11 @@
       "AssetId": "episode01/scene06/apartment_night"
     },
     {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.8
+    },
+    {
       "Type": "dialogue",
       "Id": "s06_001",
       "Speaker": "少女",
