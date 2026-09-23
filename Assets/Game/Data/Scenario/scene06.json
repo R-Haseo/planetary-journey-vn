@@ -1,6 +1,15 @@
 {
   "Commands": [
     {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "scene02_city"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene06/apartment_night"
+    },
+    {
       "Type": "dialogue",
       "Id": "s06_001",
       "Speaker": "少女",
@@ -29,20 +38,6 @@
       "Id": "s06_005",
       "Speaker": "老人",
       "Text": "みんな、そう思っていた"
-    },
-    {
-      "Type": "fade",
-      "Action": "out",
-      "Duration": 0.5
-    },
-    {
-      "Type": "background",
-      "AssetId": "episode01/scene06/apartment_night"
-    },
-    {
-      "Type": "fade",
-      "Action": "in",
-      "Duration": 0.5
     },
     {
       "Type": "dialogue",
@@ -75,18 +70,8 @@
       "Text": "……？"
     },
     {
-      "Type": "fade",
-      "Action": "out",
-      "Duration": 0.5
-    },
-    {
       "Type": "background",
       "AssetId": "episode01/scene06/existence_harassment_news"
-    },
-    {
-      "Type": "fade",
-      "Action": "in",
-      "Duration": 0.5
     },
     {
       "Type": "dialogue",
@@ -131,18 +116,8 @@
       "Text": "もう、相手が何かをする必要すらなかった"
     },
     {
-      "Type": "fade",
-      "Action": "out",
-      "Duration": 0.5
-    },
-    {
       "Type": "background",
       "AssetId": "episode01/scene06/haru_existence_judgment"
-    },
-    {
-      "Type": "fade",
-      "Action": "in",
-      "Duration": 0.5
     },
     {
       "Type": "dialogue",
@@ -395,6 +370,10 @@
       "Text": "ご安心ください"
     },
     {
+      "Type": "background",
+      "AssetId": "episode01/scene06/final_countdown"
+    },
+    {
       "Type": "dialogue",
       "Id": "s06_055",
       "Speaker": "ハル",
@@ -449,20 +428,6 @@
       "Text": "おじいさん！？"
     },
     {
-      "Type": "fade",
-      "Action": "out",
-      "Duration": 0.2
-    },
-    {
-      "Type": "background",
-      "AssetId": "episode01/scene02/empty_city_highrise"
-    },
-    {
-      "Type": "fade",
-      "Action": "in",
-      "Duration": 0.5
-    },
-    {
       "Type": "dialogue",
       "Id": "s06_064",
       "Speaker": "少女",
@@ -479,20 +444,6 @@
       "Id": "s06_066",
       "Speaker": "少女",
       "Text": "ねえ！"
-    },
-    {
-      "Type": "fade",
-      "Action": "out",
-      "Duration": 0.3
-    },
-    {
-      "Type": "background",
-      "AssetId": "episode01/scene06/final_countdown"
-    },
-    {
-      "Type": "fade",
-      "Action": "in",
-      "Duration": 0.3
     },
     {
       "Type": "dialogue",
@@ -577,6 +528,14 @@
       "Id": "s06_080",
       "Speaker": "少女",
       "Text": "それを早く言いなさいよ！！"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.5
+    },
+    {
+      "Type": "end"
     }
   ]
 }
