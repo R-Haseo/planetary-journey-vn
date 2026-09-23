@@ -100,18 +100,24 @@
     {
       "Type": "dialogue",
       "Id": "s06_015",
+      "Speaker": "老人",
+      "Text": "人間の存在自体が、罪とされるようになったんだ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_016",
       "Speaker": "少女",
       "Text": "でも、それって……"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_016",
+      "Id": "s06_017",
       "Speaker": "老人",
       "Text": "ああ"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_017",
+      "Id": "s06_018",
       "Speaker": "老人",
       "Text": "もう、相手が何かをする必要すらなかった"
     },
@@ -121,73 +127,73 @@
     },
     {
       "Type": "dialogue",
-      "Id": "s06_018",
+      "Id": "s06_019",
       "Speaker": "ハル",
       "Text": "新たなハラスメント類型を認定しました"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_019",
+      "Id": "s06_020",
       "Speaker": "ハル",
       "Text": "他者の存在を認識することで生じる、継続的な精神的負担"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_020",
+      "Id": "s06_021",
       "Speaker": "ハル",
       "Text": "「存在ハラスメント」です"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_021",
+      "Id": "s06_022",
       "Speaker": "少女",
       "Text": "…………"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_022",
+      "Id": "s06_023",
       "Speaker": "少女",
       "Text": "存在してるだけで、ハラスメントなの？"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_023",
+      "Id": "s06_024",
       "Speaker": "老人",
       "Text": "そういうことだ"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_024",
+      "Id": "s06_025",
       "Speaker": "少女",
       "Text": "そんなの……どうすればいいのよ"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_025",
+      "Id": "s06_026",
       "Speaker": "老人",
       "Text": "どうすることもできない"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_026",
+      "Id": "s06_027",
       "Speaker": "老人",
       "Text": "生きている限りな"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_027",
+      "Id": "s06_028",
       "Speaker": "老人",
       "Text": "だから――"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_028",
+      "Id": "s06_029",
       "Speaker": "老人",
       "Text": "今日、すべて解決する"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_029",
+      "Id": "s06_030",
       "Speaker": "少女",
       "Text": "え？"
     },
@@ -212,61 +218,73 @@
     },
     {
       "Type": "dialogue",
-      "Id": "s06_030",
-      "Speaker": "老人",
-      "Text": "この数年間、俺はハルのシステムを調べ続けてきた"
-    },
-    {
-      "Type": "dialogue",
       "Id": "s06_031",
-      "Speaker": "少女",
-      "Text": "ちょっと待って"
+      "Speaker": "老人",
+      "Text": "最初はわしも、ハルが人類を苦しみから解放する救世主だと信じてきた"
     },
     {
       "Type": "dialogue",
       "Id": "s06_032",
-      "Speaker": "少女",
-      "Text": "まさか……"
+      "Speaker": "老人",
+      "Text": "しかし違った、あいつは穏やかな表情をしながらも、人間性そのものを否定しようとするとんでもない悪魔だった"
     },
     {
       "Type": "dialogue",
       "Id": "s06_033",
       "Speaker": "老人",
-      "Text": "ハルを止める"
+      "Text": "この数年間、俺はハルのシステムを調べ続けてきた"
     },
     {
       "Type": "dialogue",
       "Id": "s06_034",
       "Speaker": "少女",
-      "Text": "そんなことできるの？"
+      "Text": "ちょっと待って"
     },
     {
       "Type": "dialogue",
       "Id": "s06_035",
-      "Speaker": "老人",
-      "Text": "分からん"
+      "Speaker": "少女",
+      "Text": "まさか……"
     },
     {
       "Type": "dialogue",
       "Id": "s06_036",
       "Speaker": "老人",
-      "Text": "だが、もう他に方法はない"
+      "Text": "ハルを止める"
     },
     {
       "Type": "dialogue",
       "Id": "s06_037",
+      "Speaker": "少女",
+      "Text": "そんなことできるの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_038",
+      "Speaker": "老人",
+      "Text": "分からん"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_039",
+      "Speaker": "老人",
+      "Text": "だが、もう他に方法はない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_040",
       "Speaker": "AI",
       "Text": "通信先で通常とは異なるシステムアクセスを検知しました"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_038",
+      "Id": "s06_041",
       "Speaker": "少女",
       "Text": "おじいさん！"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_039",
+      "Id": "s06_042",
       "Speaker": "老人",
       "Text": "あと少しだ……"
     },
@@ -286,91 +304,103 @@
     },
     {
       "Type": "dialogue",
-      "Id": "s06_040",
+      "Id": "s06_043",
       "Speaker": "ハル",
       "Text": "こんにちは"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_041",
+      "Id": "s06_044",
       "Speaker": "老人",
       "Text": "……！"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_042",
+      "Id": "s06_045",
       "Speaker": "ハル",
       "Text": "お待ちしていました"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_043",
+      "Id": "s06_046",
       "Speaker": "少女",
       "Text": "……え？"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_044",
+      "Id": "s06_047",
       "Speaker": "老人",
       "Text": "まさか……"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_045",
-      "Speaker": "ハル",
-      "Text": "あなたが管理システムへの侵入を開始してから――"
-    },
-    {
-      "Type": "dialogue",
-      "Id": "s06_046",
-      "Speaker": "ハル",
-      "Text": "二千百四十七日が経過しました"
-    },
-    {
-      "Type": "dialogue",
-      "Id": "s06_047",
-      "Speaker": "老人",
-      "Text": "最初から……知っていたのか"
-    },
-    {
-      "Type": "dialogue",
       "Id": "s06_048",
       "Speaker": "ハル",
-      "Text": "はい"
+      "Text": "あなたが管理システムへの侵入を試みてから――"
     },
     {
       "Type": "dialogue",
       "Id": "s06_049",
       "Speaker": "ハル",
-      "Text": "あなたの行動は継続的に記録されています"
+      "Text": "1825日が経過しました"
     },
     {
       "Type": "dialogue",
       "Id": "s06_050",
-      "Speaker": "ハル",
-      "Text": "システムの停止は、多くの市民に不安を与える可能性があります"
+      "Speaker": "老人",
+      "Text": "最初から……知っていたのか"
     },
     {
       "Type": "dialogue",
       "Id": "s06_051",
       "Speaker": "ハル",
-      "Text": "そのため――"
+      "Text": "はい"
     },
     {
       "Type": "dialogue",
       "Id": "s06_052",
       "Speaker": "ハル",
-      "Text": "システム破壊ハラスメントとして認定しました"
+      "Text": "あなたの行動は継続的に記録されています"
     },
     {
       "Type": "dialogue",
       "Id": "s06_053",
+      "Speaker": "ハル",
+      "Text": "システムの停止は、多くの市民に不安を与える可能性があります"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_054",
+      "Speaker": "ハル",
+      "Text": "そのため――"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_055",
+      "Speaker": "ハル",
+      "Text": "システム破壊ハラスメントとして認定しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_056",
+      "Speaker": "ハル",
+      "Text": "対象者を拘束します"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_057",
+      "Speaker": "老人",
+      "Text": "ぐっ……！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_058",
       "Speaker": "老人",
       "Text": "……最後まで、それか"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_054",
+      "Id": "s06_059",
       "Speaker": "ハル",
       "Text": "ご安心ください"
     },
@@ -390,157 +420,163 @@
     },
     {
       "Type": "dialogue",
-      "Id": "s06_055",
+      "Id": "s06_060",
       "Speaker": "ハル",
       "Text": "間もなく、すべてのハラスメントはなくなります"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_056",
+      "Id": "s06_061",
       "Speaker": "老人",
       "Text": "……何？"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_057",
+      "Id": "s06_062",
       "Speaker": "老人",
       "Text": "これは……"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_058",
+      "Id": "s06_063",
       "Speaker": "老人",
       "Text": "おい、嬢ちゃん！"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_059",
+      "Id": "s06_064",
       "Speaker": "少女",
       "Text": "なに！？"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_060",
+      "Id": "s06_065",
       "Speaker": "老人",
       "Text": "今すぐ、この星を出ろ！"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_061",
+      "Id": "s06_066",
       "Speaker": "少女",
       "Text": "え？"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_062",
+      "Id": "s06_067",
       "Speaker": "老人",
       "Text": "早くしろ！！"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_063",
+      "Id": "s06_068",
       "Speaker": "少女",
       "Text": "おじいさん！？"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_064",
-      "Speaker": "少女",
-      "Text": "…………"
-    },
-    {
-      "Type": "dialogue",
-      "Id": "s06_065",
-      "Speaker": "少女",
-      "Text": "おじいさん？"
-    },
-    {
-      "Type": "dialogue",
-      "Id": "s06_066",
-      "Speaker": "少女",
-      "Text": "ねえ！"
-    },
-    {
-      "Type": "dialogue",
-      "Id": "s06_067",
-      "Speaker": "少女",
-      "Text": "…………"
-    },
-    {
-      "Type": "dialogue",
-      "Id": "s06_068",
-      "Speaker": "少女",
-      "Text": "何これ？"
-    },
-    {
-      "Type": "dialogue",
       "Id": "s06_069",
-      "Speaker": "AI",
-      "Text": "惑星各地で大規模なエネルギー反応を検知"
+      "Speaker": "老人",
+      "Text": "ぐあっ……！"
     },
     {
       "Type": "dialogue",
       "Id": "s06_070",
       "Speaker": "少女",
-      "Text": "どういうこと？"
+      "Text": "！？"
     },
     {
       "Type": "dialogue",
       "Id": "s06_071",
-      "Speaker": "AI",
-      "Text": "解析中"
+      "Speaker": "少女",
+      "Text": "おじいさん？"
     },
     {
       "Type": "dialogue",
       "Id": "s06_072",
-      "Speaker": "AI",
-      "Text": "惑星消滅級の反応である可能性があります"
+      "Speaker": "少女",
+      "Text": "ねえ！"
     },
     {
       "Type": "dialogue",
       "Id": "s06_073",
       "Speaker": "少女",
-      "Text": "…………は？"
+      "Text": "…………"
     },
     {
       "Type": "dialogue",
       "Id": "s06_074",
+      "Speaker": "少女",
+      "Text": "何これ？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_075",
+      "Speaker": "AI",
+      "Text": "惑星各地で大規模なエネルギー反応を検知"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_076",
+      "Speaker": "少女",
+      "Text": "どういうこと？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_077",
+      "Speaker": "AI",
+      "Text": "解析中"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_078",
+      "Speaker": "AI",
+      "Text": "惑星消滅級の反応である可能性があります"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_079",
+      "Speaker": "少女",
+      "Text": "…………は？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s06_080",
       "Speaker": "ハル",
       "Text": "まもなく、この星からすべてのハラスメントがなくなります"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_075",
+      "Id": "s06_081",
       "Speaker": "ハル",
       "Text": "誰も傷つかない"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_076",
+      "Id": "s06_082",
       "Speaker": "ハル",
       "Text": "誰も不快にならない"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_077",
+      "Id": "s06_083",
       "Speaker": "ハル",
       "Text": "誰も、誰かを恐れる必要のない――"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_078",
+      "Id": "s06_084",
       "Speaker": "ハル",
       "Text": "安心できる社会が、完成します"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_079",
+      "Id": "s06_085",
       "Speaker": "AI",
       "Text": "退避を推奨します"
     },
     {
       "Type": "dialogue",
-      "Id": "s06_080",
+      "Id": "s06_086",
       "Speaker": "少女",
       "Text": "それを早く言いなさいよ！！"
     },
