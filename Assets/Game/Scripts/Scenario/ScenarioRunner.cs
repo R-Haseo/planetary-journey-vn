@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using Newtonsoft.Json;
 
 public class ScenarioRunner : MonoBehaviour
@@ -15,6 +16,7 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private VoicePlayer voicePlayer;
     [SerializeField] private BGMPlayer bgmPlayer;
     [SerializeField] private FadeView fadeView;
+    [SerializeField] private EndView endView;
 
     [SerializeField] private List<TextAsset> scenarioJsons;
 
@@ -51,6 +53,8 @@ public class ScenarioRunner : MonoBehaviour
             ToggleLog,
             ToggleAuto,
             ToggleSkip);
+
+        endView.Initialize(Restart);
 
 #if UNITY_EDITOR
         currentScenarioIndex = Mathf.Clamp(
@@ -239,6 +243,9 @@ public class ScenarioRunner : MonoBehaviour
 
             case "fade":
                 ProcessFadeCommand(scenarioCommand);
+                break;
+            case "end":
+                endView.Show();
                 break;
 
             default:
@@ -430,6 +437,11 @@ public class ScenarioRunner : MonoBehaviour
         }
 
         return false;
+    }
+
+    private void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void OnDestroy()
