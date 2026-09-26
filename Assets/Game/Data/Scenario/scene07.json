@@ -5,6 +5,23 @@
       "AssetId": "episode01/scene07/empty_city"
     },
     {
+      "Type": "character",
+      "AssetId": "roman/roman_normal",
+      "Action": "show",
+      "Position": "left",
+      "Width": 620,
+      "Height": 930
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/ai_normal",
+      "Action": "show",
+      "Position": "right",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120
+    },
+    {
       "Type": "fade",
       "Action": "in",
       "Duration": 0.8
