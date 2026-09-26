@@ -168,8 +168,18 @@
       "Text": "離陸します"
     },
     {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.2
+    },
+    {
       "Type": "background",
       "AssetId": "episode01/scene07/planet_escape"
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.2
     },
     {
       "Type": "dialogue",

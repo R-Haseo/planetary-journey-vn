@@ -245,6 +245,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24f39cd44bb73d94394cae26fe07b904
+    m_Address: background/episode01/scene07/empty_city
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 256691c7f36be814a813a4398e2e97e1
     m_Address: voice/episode01/s06_011
     m_ReadOnly: 0
@@ -547,6 +552,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4f676a90eac60de488af982442d8f22a
     m_Address: voice/episode01/s02_040
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f73e0865df07c94ebfe558fe1f51041
+    m_Address: background/episode01/scene07/planet_escape
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -987,6 +997,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 859906c07ec313049b668ff4fedc42f8
     m_Address: voice/episode01/s01_029
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85dc1c92886eed040a08749243102b10
+    m_Address: background/episode01/scene07/spaceship_interior_planet
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
