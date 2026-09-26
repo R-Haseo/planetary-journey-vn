@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bbf6d7b95f70a4d4b81b5b0fa94efec5
+guid: 610306085e019ce428fe67498d926a68
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7342043554139580329
-    second: planet_landing_site_0
+      213: 2028911687377175701
+    second: empty_city_sunset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: planet_landing_site_0
+      name: empty_city_sunset_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a7afe176bd24e560800000000000000
-      internalID: 7342043554139580329
+      spriteID: 59441c61e64282c10800000000000000
+      internalID: 2028911687377175701
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      planet_landing_site_0: 7342043554139580329
+      empty_city_sunset_0: 2028911687377175701
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

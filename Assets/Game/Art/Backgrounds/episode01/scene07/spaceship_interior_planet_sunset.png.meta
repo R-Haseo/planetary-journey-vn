@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 85dc1c92886eed040a08749243102b10
+guid: 6dab1da05a354e947881209f5f2e1e86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3211209298305055028
-    second: spaceship_interior_planet_0
+      213: -4119821787507913177
+    second: spaceship_interior_planet_sunset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spaceship_interior_planet_0
+      name: spaceship_interior_planet_sunset_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43977e4d7d1809c20800000000000000
-      internalID: 3211209298305055028
+      spriteID: 72e0da979e373d6c0800000000000000
+      internalID: -4119821787507913177
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      spaceship_interior_planet_0: 3211209298305055028
+      spaceship_interior_planet_sunset_0: -4119821787507913177
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

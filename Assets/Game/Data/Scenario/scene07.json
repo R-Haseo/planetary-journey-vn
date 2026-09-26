@@ -7,7 +7,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "episode01/scene07/empty_city"
+      "AssetId": "episode01/scene07/empty_city_sunset"
     },
     {
       "Type": "character",
@@ -123,7 +123,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "episode01/scene07/planet_landing_site"
+      "AssetId": "episode01/scene07/planet_landing_site_sunset"
     },
     {
       "Type": "dialogue",
@@ -133,7 +133,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "episode01/scene07/spaceship_interior_planet"
+      "AssetId": "episode01/scene07/spaceship_interior_planet_sunset"
     },
     {
       "Type": "dialogue",
@@ -196,7 +196,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "episode01/scene07/planet_escape"
+      "AssetId": "episode01/scene07/planet_escape_sunset"
     },
     {
       "Type": "fade",

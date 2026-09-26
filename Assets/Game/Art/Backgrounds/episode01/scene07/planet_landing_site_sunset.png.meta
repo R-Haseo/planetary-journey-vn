@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4f73e0865df07c94ebfe558fe1f51041
+guid: 9db3fc56d207ae54ba5f652a12f54240
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4577944206068357458
-    second: planet_escape_0
+      213: 4812292916822022780
+    second: planet_landing_site_sunset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: planet_escape_0
+      name: planet_landing_site_sunset_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 576
+        width: 2048
+        height: 1152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 259134c1000288f30800000000000000
-      internalID: 4577944206068357458
+      spriteID: c7a1e4649e2b8c240800000000000000
+      internalID: 4812292916822022780
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      planet_escape_0: 4577944206068357458
+      planet_landing_site_sunset_0: 4812292916822022780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
