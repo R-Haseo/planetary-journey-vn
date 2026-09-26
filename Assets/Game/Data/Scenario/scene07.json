@@ -1,6 +1,11 @@
 {
   "Commands": [
     {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "high_tension"
+    },
+    {
       "Type": "background",
       "AssetId": "episode01/scene07/empty_city"
     },
