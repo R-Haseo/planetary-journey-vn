@@ -1,0 +1,228 @@
+{
+  "Commands": [
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene07/city_escape"
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.8
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_001",
+      "Speaker": "AI",
+      "Text": "急いでください。宇宙船まで戻ります"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_002",
+      "Speaker": "少女",
+      "Text": "分かってる！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_003",
+      "Speaker": "ハル",
+      "Text": "警告"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_004",
+      "Speaker": "ハル",
+      "Text": "周囲に不快感を与える騒音を検知しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_005",
+      "Speaker": "ハル",
+      "Text": "『騒音ハラスメント』に該当します"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_006",
+      "Speaker": "少女",
+      "Text": "今それどころじゃないでしょ！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_007",
+      "Speaker": "AI",
+      "Text": "走りながら叫ぶのは効率が悪いですよ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_008",
+      "Speaker": "少女",
+      "Text": "誰のせいで走ってると思ってるの！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_009",
+      "Speaker": "ハル",
+      "Text": "警告"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_010",
+      "Speaker": "ハル",
+      "Text": "公共空間における急速な移動を検知しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_011",
+      "Speaker": "ハル",
+      "Text": "『通行妨害ハラスメント』に該当します"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_012",
+      "Speaker": "少女",
+      "Text": "誰も歩いてないじゃない！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_013",
+      "Speaker": "ハル",
+      "Text": "潜在的な通行者への配慮が必要です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_014",
+      "Speaker": "少女",
+      "Text": "知らないってば！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_015",
+      "Speaker": "AI",
+      "Text": "宇宙船まで、あと三百メートルです"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene07/spaceship_arrival"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_016",
+      "Speaker": "少女",
+      "Text": "あった！"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene07/spaceship_interior"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_017",
+      "Speaker": "少女",
+      "Text": "出して！　早く！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_018",
+      "Speaker": "AI",
+      "Text": "了解しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_019",
+      "Speaker": "ハル",
+      "Text": "警告"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_020",
+      "Speaker": "ハル",
+      "Text": "推進機関からの排気を検知しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_021",
+      "Speaker": "ハル",
+      "Text": "『排気ハラスメント』に該当します"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_022",
+      "Speaker": "少女",
+      "Text": "…………"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_023",
+      "Speaker": "ハル",
+      "Text": "直ちに停止してください"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_024",
+      "Speaker": "少女",
+      "Text": "知らないってば！！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_025",
+      "Speaker": "AI",
+      "Text": "離陸します"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene07/planet_escape"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_026",
+      "Speaker": "ハル",
+      "Text": "警告"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_027",
+      "Speaker": "ハル",
+      "Text": "許可されていない惑星圏からの離脱を検知しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_028",
+      "Speaker": "少女",
+      "Text": "それもハラスメントって言うんでしょ！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_029",
+      "Speaker": "ハル",
+      "Text": "――"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_030",
+      "Speaker": "AI",
+      "Text": "惑星圏を離脱しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_031",
+      "Speaker": "少女",
+      "Text": "…………助かった？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_032",
+      "Speaker": "AI",
+      "Text": "少なくとも、現時点では問題ありません"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s07_033",
+      "Speaker": "少女",
+      "Text": "おじいさん……"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.8
+    }
+  ]
+}
