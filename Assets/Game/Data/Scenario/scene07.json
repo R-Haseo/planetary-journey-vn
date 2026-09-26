@@ -11,7 +11,7 @@
     },
     {
       "Type": "character",
-      "AssetId": "roman/roman_normal",
+      "AssetId": "roman/roman_surprised",
       "Action": "show",
       "Position": "left",
       "Width": 620,
