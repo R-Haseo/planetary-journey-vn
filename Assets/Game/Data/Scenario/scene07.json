@@ -77,7 +77,7 @@
       "Type": "dialogue",
       "Id": "s07_008",
       "Speaker": "少女",
-      "Text": "誰のせいで走ってると思ってるの！"
+      "Text": "うるさいっ！"
     },
     {
       "Type": "dialogue",
@@ -116,24 +116,20 @@
       "Text": "知らないってば！"
     },
     {
-      "Type": "dialogue",
-      "Id": "s07_015",
-      "Speaker": "AI",
-      "Text": "宇宙船まで、あと三百メートルです"
-    },
-    {
       "Type": "background",
       "AssetId": "episode01/scene07/planet_landing_site_sunset"
     },
     {
       "Type": "dialogue",
-      "Id": "s07_016",
-      "Speaker": "少女",
-      "Text": "あった！"
+      "Id": "s07_015",
+      "Speaker": "AI",
+      "Text": "宇宙船まで、あと300メートルです"
     },
     {
-      "Type": "background",
-      "AssetId": "episode01/scene07/spaceship_interior_planet_sunset"
+      "Type": "dialogue",
+      "Id": "s07_016",
+      "Speaker": "少女",
+      "Text": "着いた！"
     },
     {
       "Type": "dialogue",
@@ -146,6 +142,10 @@
       "Id": "s07_018",
       "Speaker": "AI",
       "Text": "了解しました"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene07/spaceship_interior_planet_sunset"
     },
     {
       "Type": "dialogue",
@@ -213,7 +213,7 @@
       "Type": "dialogue",
       "Id": "s07_027",
       "Speaker": "ハル",
-      "Text": "許可されていない惑星圏からの離脱を検知しました"
+      "Text": "許可されていない惑星からの離脱を検知しました"
     },
     {
       "Type": "dialogue",
@@ -231,7 +231,7 @@
       "Type": "dialogue",
       "Id": "s07_030",
       "Speaker": "AI",
-      "Text": "惑星圏を離脱しました"
+      "Text": "惑星を離脱しました"
     },
     {
       "Type": "dialogue",
@@ -255,6 +255,9 @@
       "Type": "fade",
       "Action": "out",
       "Duration": 0.8
+    },
+    {
+      "Type": "end"
     }
   ]
 }
