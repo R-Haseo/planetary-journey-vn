@@ -2,7 +2,7 @@
   "Commands": [
     {
       "Type": "background",
-      "AssetId": "episode01/scene07/city_escape"
+      "AssetId": "episode01/scene07/empty_city"
     },
     {
       "Type": "fade",
@@ -101,7 +101,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "episode01/scene07/spaceship_arrival"
+      "AssetId": "episode01/scene07/planet_landing_site"
     },
     {
       "Type": "dialogue",
@@ -111,7 +111,7 @@
     },
     {
       "Type": "background",
-      "AssetId": "episode01/scene07/spaceship_interior"
+      "AssetId": "episode01/scene07/spaceship_interior_planet"
     },
     {
       "Type": "dialogue",

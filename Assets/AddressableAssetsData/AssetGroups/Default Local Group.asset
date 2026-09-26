@@ -1340,6 +1340,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bbf6d7b95f70a4d4b81b5b0fa94efec5
+    m_Address: background/episode01/scene07/planet_landing_site
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc44fb05448a6414abe21a2f9de15cf8
     m_Address: voice/episode01/s06_031
     m_ReadOnly: 0
