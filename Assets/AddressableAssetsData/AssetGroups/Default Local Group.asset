@@ -575,6 +575,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4935cc26c31e70b46b3c5035c8a04787
+    m_Address: background/episode01/scene08/spaceship_planet
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 49a4635e2f020a640b4c6601f0196b88
     m_Address: voice/episode01/s02_038
     m_ReadOnly: 0
@@ -682,6 +687,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5533cce0587eb004b909612f92111d83
     m_Address: background/episode01/scene04/city_reconstruction
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56063a7937d357a4a901863a037a240f
+    m_Address: background/episode01/scene08/spaceship_planet_explosion
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

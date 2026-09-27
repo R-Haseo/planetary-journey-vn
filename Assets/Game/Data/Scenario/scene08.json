@@ -6,6 +6,10 @@
       "AssetId": "high_tension"
     },
     {
+      "Type": "background",
+      "AssetId": "episode01/scene08/spaceship_planet"
+    },
+    {
       "Type": "character",
       "AssetId": "roman/roman_surprised",
       "Action": "show",
@@ -54,6 +58,10 @@
       "Id": "s08_004",
       "Speaker": "少女",
       "Text": "あれまあ……"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene08/spaceship_planet_explosion"
     },
     {
       "Type": "description",
