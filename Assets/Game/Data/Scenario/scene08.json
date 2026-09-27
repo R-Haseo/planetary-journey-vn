@@ -133,10 +133,6 @@
       "Duration": 0.7
     },
     {
-    "Type": "bgm",
-    "Action": "stop"
-    },
-    {
       "Type": "bgm",
       "Action": "play",
       "AssetId": "scene01_space"
@@ -282,7 +278,7 @@
       "Type": "dialogue",
       "Id": "s08_035",
       "Speaker": "少女",
-      "Text": "AIと、それを操作する奇特な男性……？"
+      "Text": "生成AIと、それを操作する奇特な男性……？"
     },
     {
       "Type": "dialogue",
