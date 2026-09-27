@@ -134,6 +134,10 @@
       "AssetId": "scene01_space"
     },
     {
+      "Type": "background",
+      "AssetId": "episode01/scene01/spaceship_interior"
+    },
+    {
       "Type": "character",
       "AssetId": "roman/roman_normal",
       "Action": "show",
@@ -319,6 +323,20 @@
       "Id": "s08_043",
       "Speaker": "少女",
       "Text": "だよね……"
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "right"
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "left"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode01/scene01/space_exterior"
     },
     {
       "Type": "description",

@@ -110,6 +110,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1044a9c5a8dece74f93634fbea8a5419
+    m_Address: background/episode01/scene08/spaceship_interior
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 104b23300cbe52742a66149a9553b687
     m_Address: voice/episode01/s03_003
     m_ReadOnly: 0
@@ -1392,6 +1397,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a4ad176742670fd418b3895d56ae47bf
     m_Address: voice/episode01/s06_002
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a564ec4e8adb53049adb789db65936d6
+    m_Address: background/episode01/scene08/space_exterior
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
