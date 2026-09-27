@@ -12,6 +12,11 @@ public static class WebBuildTool
     [MenuItem("Build/Web/Development")]
     public static void BuildDevelopment()
     {
+        if (!Application.isBatchMode && !ConfirmVersion(false))
+        {
+            return;
+        }
+
         Build(
             DevelopmentBuildPath,
             WebGLCompressionFormat.Disabled,
@@ -21,10 +26,32 @@ public static class WebBuildTool
     [MenuItem("Build/Web/Release")]
     public static void BuildRelease()
     {
+        if (!Application.isBatchMode && !ConfirmVersion(true))
+        {
+            return;
+        }
+
         Build(
             ReleaseBuildPath,
             WebGLCompressionFormat.Brotli,
             BuildOptions.None);
+    }
+
+    private static bool ConfirmVersion(bool isRelease)
+    {
+        string version = PlayerSettings.bundleVersion;
+
+        string message = isRelease
+            ? $"Current application version: {version}\n\n" +
+            "Have you updated the application version for this release?"
+            : $"Current application version: {version}\n\n" +
+            "Please confirm that this version is correct for the next release.";
+
+        return EditorUtility.DisplayDialog(
+            isRelease ? "Release Build" : "Development Build",
+            message,
+            "Build",
+            "Cancel");
     }
 
     private static void Build(
