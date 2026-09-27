@@ -920,6 +920,7 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 36d971e820cded54a8fa13fd13d05158, type: 3}
   - {fileID: 4900000, guid: 32332d06e283eb241893c60902640cca, type: 3}
   - {fileID: 4900000, guid: 093b0a4ab6a02d543b009b1f4d357cb3, type: 3}
+  - {fileID: 4900000, guid: c72fab694e7bf514da7ee44b66f65e0e, type: 3}
   skipInterval: 0.08
   autoDelay: 0.5
   descriptionBaseDuration: 1.5

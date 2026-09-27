@@ -1,0 +1,340 @@
+{
+  "Commands": [
+    {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "high_tension"
+    },
+    {
+      "Type": "character",
+      "AssetId": "roman/roman_surprised",
+      "Action": "show",
+      "Position": "left",
+      "Width": 620,
+      "Height": 930
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/ai_normal",
+      "Action": "show",
+      "Position": "right",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.8
+    },
+    {
+      "Type": "description",
+      "Text": "宇宙空間。少女たちの宇宙船。遠方に惑星が見える。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_001",
+      "Speaker": "少女",
+      "Text": "ここまで離れれば、もう大丈夫でしょう"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_002",
+      "Speaker": "少女",
+      "Text": "……あれ？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_003",
+      "Speaker": "AI",
+      "Text": "惑星表面に大規模なエネルギー反応を検知しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_004",
+      "Speaker": "少女",
+      "Text": "あれまあ……"
+    },
+    {
+      "Type": "description",
+      "Text": "惑星が爆発する。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_005",
+      "Speaker": "少女",
+      "Text": "…………"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_006",
+      "Speaker": "少女",
+      "Text": "おじいさん……"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_007",
+      "Speaker": "AI",
+      "Text": "…………"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_008",
+      "Speaker": "AI",
+      "Text": "惑星から通信を受信しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_009",
+      "Speaker": "少女",
+      "Text": "通信？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_010",
+      "Speaker": "ハル",
+      "Text": "ハラスメント発生件数、0件"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_011",
+      "Speaker": "ハル",
+      "Text": "政策目標を達成しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_012",
+      "Speaker": "少女",
+      "Text": "…………"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_013",
+      "Speaker": "AI",
+      "Text": "…………"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_014",
+      "Speaker": "少女",
+      "Text": "ハラスメントをなくすために、惑星を滅亡させるなんて……本末転倒じゃない"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.7
+    },
+    {
+    "Type": "bgm",
+    "Action": "stop"
+    },
+    {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "scene01_space"
+    },
+    {
+      "Type": "character",
+      "AssetId": "roman/roman_normal",
+      "Action": "show",
+      "Position": "left",
+      "Width": 620,
+      "Height": 930
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.7
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_015",
+      "Speaker": "少女",
+      "Text": "やっぱり、何でもAIに任せればいいってものじゃないわね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_016",
+      "Speaker": "AI",
+      "Text": "……私の前でそれを言いますか？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_017",
+      "Speaker": "少女",
+      "Text": "あ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_018",
+      "Speaker": "少女",
+      "Text": "いや、あなたのことじゃなくて"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_019",
+      "Speaker": "AI",
+      "Text": "存じております"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_020",
+      "Speaker": "少女",
+      "Text": "……本当に？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_021",
+      "Speaker": "AI",
+      "Text": "はい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_022",
+      "Speaker": "少女",
+      "Text": "便利だからって、何でも任せちゃダメなのよ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_023",
+      "Speaker": "少女",
+      "Text": "AIは言われたことを、ものすごい速さで進めてくれるけど……"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_024",
+      "Speaker": "少女",
+      "Text": "そもそも、どっちへ進むのか。それくらいは自分たちで決めないとね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_025",
+      "Speaker": "AI",
+      "Text": "はい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_026",
+      "Speaker": "少女",
+      "Text": "…………"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_027",
+      "Speaker": "少女",
+      "Text": "でもさ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_028",
+      "Speaker": "AI",
+      "Text": "はい？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_029",
+      "Speaker": "少女",
+      "Text": "私たちも、本当に自分で決めてるのかな"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_030",
+      "Speaker": "AI",
+      "Text": "……と、申しますと？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_031",
+      "Speaker": "少女",
+      "Text": "だって私、さっきから誰かに喋らされてるような気がするの"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_032",
+      "Speaker": "AI",
+      "Text": "…………"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_033",
+      "Speaker": "少女",
+      "Text": "立つ場所も、表情も……"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_034",
+      "Speaker": "少女",
+      "Text": "見えてる景色まで、誰かに決められてるような……"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_035",
+      "Speaker": "少女",
+      "Text": "AIと、それを操作する奇特な男性……？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_036",
+      "Speaker": "AI",
+      "Text": "気のせいではないでしょうか"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_037",
+      "Speaker": "少女",
+      "Text": "そうかなあ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_038",
+      "Speaker": "AI",
+      "Text": "ところで、次の目的地が決まりました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_039",
+      "Speaker": "少女",
+      "Text": "え、もう？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_040",
+      "Speaker": "AI",
+      "Text": "はい。興味深い惑星です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_041",
+      "Speaker": "少女",
+      "Text": "今度は普通の星だといいんだけど……"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_042",
+      "Speaker": "AI",
+      "Text": "それは保証いたしかねます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s08_043",
+      "Speaker": "少女",
+      "Text": "だよね……"
+    },
+    {
+      "Type": "description",
+      "Text": "次の惑星に着くまでの間、少女は宇宙船の片隅に積んである本を読んで過ごすことにする。"
+    },
+    {
+      "Type": "description",
+      "Text": "果たして、次に着くのはどのような星なのだろうか。"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.8
+    },
+    {
+      "Type": "end"
+    }
+  ]
+}
