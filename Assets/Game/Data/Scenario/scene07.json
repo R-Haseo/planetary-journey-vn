@@ -255,9 +255,6 @@
       "Type": "fade",
       "Action": "out",
       "Duration": 0.8
-    },
-    {
-      "Type": "end"
     }
   ]
 }
