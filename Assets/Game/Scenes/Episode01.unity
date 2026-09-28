@@ -119,6 +119,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &77605547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77605549}
+  - component: {fileID: 77605548}
+  m_Layer: 0
+  m_Name: ScenarioRewindController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &77605548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77605547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2154dc29f6e63ac4cb5d2f8c5bf6a1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScenarioRewindController
+  characterPlayer: {fileID: 122227944}
+  backgroundPlayer: {fileID: 1861427836}
+  bgmPlayer: {fileID: 1104836996}
+--- !u!4 &77605549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77605547}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1030.3876, y: -142.35442, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &122227943
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +959,7 @@ MonoBehaviour:
   bgmPlayer: {fileID: 1104836996}
   fadeView: {fileID: 884716650}
   endView: {fileID: 225606746}
+  scenarioRewindController: {fileID: 77605548}
   scenarioJsons:
   - {fileID: 4900000, guid: 00a10606e065d9c4786a8ae14c00e7a4, type: 3}
   - {fileID: 4900000, guid: 5fe2ac03b2329184e9017ed27e651ada, type: 3}
@@ -3687,4 +3735,5 @@ SceneRoots:
   - {fileID: 1416895605}
   - {fileID: 211291517}
   - {fileID: 668518700}
+  - {fileID: 77605549}
   - {fileID: 1104836995}

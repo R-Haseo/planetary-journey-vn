@@ -17,6 +17,9 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private BGMPlayer bgmPlayer;
     [SerializeField] private FadeView fadeView;
     [SerializeField] private EndView endView;
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+    [SerializeField] private ScenarioRewindController scenarioRewindController;
+#endif
 
     [SerializeField] private List<TextAsset> scenarioJsons;
 
@@ -70,6 +73,16 @@ public class ScenarioRunner : MonoBehaviour
 
     private void Update()
     {
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+        var rewindPressed = Keyboard.current?.rKey.wasPressedThisFrame == true;
+
+        if (rewindPressed)
+        {
+            Rewind();
+            return;
+        }
+#endif
+
         var logPressed = Keyboard.current?.lKey.wasPressedThisFrame == true;
 
         if (logPressed)
@@ -438,6 +451,34 @@ public class ScenarioRunner : MonoBehaviour
 
         return false;
     }
+
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+    private void Rewind()
+    {
+        voicePlayer.Stop();
+
+        skipMode = false;
+        skipTimer = 0f;
+
+        waitingForAutoAdvance = false;
+        autoTimer = 0f;
+
+        if (!scenarioRewindController.TryRewind(
+                scenarioJsons,
+                currentScenarioIndex,
+                currentIndex,
+                out var result))
+        {
+            return;
+        }
+
+        currentScenarioIndex = result.ScenarioIndex;
+        commands = result.Commands;
+        currentIndex = result.CommandIndex;
+
+        ProcessCurrentCommand();
+    }
+#endif
 
     private void Restart()
     {
