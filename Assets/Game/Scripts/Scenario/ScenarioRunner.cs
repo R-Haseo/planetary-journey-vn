@@ -17,9 +17,7 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private BGMPlayer bgmPlayer;
     [SerializeField] private FadeView fadeView;
     [SerializeField] private EndView endView;
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
     [SerializeField] private ScenarioRewindController scenarioRewindController;
-#endif
 
     [SerializeField] private List<TextAsset> scenarioJsons;
 

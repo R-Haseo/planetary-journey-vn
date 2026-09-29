@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using UnityEngine;
 
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
 public class ScenarioRewindController : MonoBehaviour
 {
     [SerializeField] private CharacterPlayer characterPlayer;
@@ -317,4 +316,3 @@ public class RewindResult
         Commands = commands;
     }
 }
-#endif
