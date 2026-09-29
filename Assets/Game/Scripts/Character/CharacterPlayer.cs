@@ -50,13 +50,6 @@ public class CharacterPlayer : MonoBehaviour
         Release(position);
     }
 
-    public void HideAll()
-    {
-        Hide(CharacterPosition.Left);
-        Hide(CharacterPosition.Center);
-        Hide(CharacterPosition.Right);
-    }
-
     private void Release(CharacterPosition position)
     {
         if (!currentHandles.TryGetValue(position, out var handle))

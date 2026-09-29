@@ -28,21 +28,22 @@ public class ScenarioRewindController : MonoBehaviour
             return false;
         }
 
-        var targetCommands =
-            GetScenarioCommands(scenarioJsons, targetScenarioIndex);
+        var targetCommands = GetScenarioCommands(scenarioJsons, targetScenarioIndex);
+
+        var currentCharacterStates = GetCharacterStates(scenarioJsons, currentScenarioIndex, currentCommandIndex);
 
         RestoreScenarioState(
             scenarioJsons,
             targetScenarioIndex,
-            targetCommandIndex);
+            targetCommandIndex,
+            currentCharacterStates);
 
         result = new RewindResult(
             targetScenarioIndex,
             targetCommandIndex,
             targetCommands);
 
-        Debug.Log(
-            $"Rewind: scenario={targetScenarioIndex}, command={targetCommandIndex}");
+        Debug.Log($"Rewind: scenario={targetScenarioIndex}, command={targetCommandIndex}");
 
         return true;
     }
@@ -56,8 +57,7 @@ public class ScenarioRewindController : MonoBehaviour
     {
         for (var i = scenarioIndex; i >= 0; i--)
         {
-            var scenarioCommands =
-                GetScenarioCommands(scenarioJsons, i);
+            var scenarioCommands = GetScenarioCommands(scenarioJsons, i);
 
             var startIndex = i == scenarioIndex
                 ? commandIndex - 1
@@ -86,29 +86,24 @@ public class ScenarioRewindController : MonoBehaviour
     private void RestoreScenarioState(
         IReadOnlyList<TextAsset> scenarioJsons,
         int targetScenarioIndex,
-        int targetCommandIndex)
+        int targetCommandIndex,
+        Dictionary<CharacterPosition, ScenarioCommandDto> currentCharacterStates)
     {
         string backgroundAssetId = null;
         string bgmAssetId = null;
         var bgmPlaying = false;
 
-        var characterStates =
-            new Dictionary<CharacterPosition, ScenarioCommandDto>();
+        var targetCharacterStates = new Dictionary<CharacterPosition, ScenarioCommandDto>();
 
-        for (var scenarioIndex = 0;
-             scenarioIndex <= targetScenarioIndex;
-             scenarioIndex++)
+        for (var scenarioIndex = 0; scenarioIndex <= targetScenarioIndex; scenarioIndex++)
         {
-            var scenarioCommands =
-                GetScenarioCommands(scenarioJsons, scenarioIndex);
+            var scenarioCommands = GetScenarioCommands(scenarioJsons, scenarioIndex);
 
             var endIndex = scenarioIndex == targetScenarioIndex
                 ? targetCommandIndex
                 : scenarioCommands.Count - 1;
 
-            for (var commandIndex = 0;
-                 commandIndex <= endIndex;
-                 commandIndex++)
+            for (var commandIndex = 0; commandIndex <= endIndex; commandIndex++)
             {
                 var command = scenarioCommands[commandIndex];
 
@@ -119,24 +114,52 @@ public class ScenarioRewindController : MonoBehaviour
                         break;
 
                     case "character":
-                        UpdateCharacterState(
-                            characterStates,
-                            command);
+                        UpdateCharacterState(targetCharacterStates, command);
                         break;
 
                     case "bgm":
-                        UpdateBgmState(
-                            command,
-                            ref bgmAssetId,
-                            ref bgmPlaying);
+                        UpdateBgmState(command, ref bgmAssetId, ref bgmPlaying);
                         break;
                 }
             }
         }
 
         RestoreBackground(backgroundAssetId);
-        RestoreCharacters(characterStates);
+
+        RestoreCharacters(currentCharacterStates, targetCharacterStates);
+
         RestoreBgm(bgmAssetId, bgmPlaying);
+    }
+
+    private Dictionary<CharacterPosition, ScenarioCommandDto> GetCharacterStates(
+            IReadOnlyList<TextAsset> scenarioJsons,
+            int targetScenarioIndex,
+            int targetCommandIndex)
+    {
+        var characterStates =  new Dictionary<CharacterPosition, ScenarioCommandDto>();
+
+        for (var scenarioIndex = 0; scenarioIndex <= targetScenarioIndex; scenarioIndex++)
+        {
+            var scenarioCommands = GetScenarioCommands(scenarioJsons, scenarioIndex);
+
+            var endIndex = scenarioIndex == targetScenarioIndex
+                ? targetCommandIndex
+                : scenarioCommands.Count - 1;
+
+            for (var commandIndex = 0; commandIndex <= endIndex; commandIndex++)
+            {
+                var command = scenarioCommands[commandIndex];
+
+                if (command.Type != "character")
+                {
+                    continue;
+                }
+
+                UpdateCharacterState(characterStates, command);
+            }
+        }
+
+        return characterStates;
     }
 
     private static void UpdateCharacterState(
@@ -187,27 +210,48 @@ public class ScenarioRewindController : MonoBehaviour
     }
 
     private void RestoreCharacters(
-        Dictionary<CharacterPosition, ScenarioCommandDto> characterStates)
+        Dictionary<CharacterPosition, ScenarioCommandDto> currentStates,
+        Dictionary<CharacterPosition, ScenarioCommandDto> targetStates)
     {
-        characterPlayer.HideAll();
-
-        foreach (var pair in characterStates)
+        var positions = new[]
         {
-            var command = pair.Value;
+            CharacterPosition.Left,
+            CharacterPosition.Center,
+            CharacterPosition.Right
+        };
+
+        foreach (var position in positions)
+        {
+            var hasCurrent = currentStates.TryGetValue(position, out var currentCommand);
+
+            var hasTarget = targetStates.TryGetValue(position, out var targetCommand);
+
+            if (!hasTarget)
+            {
+                if (hasCurrent)
+                {
+                    characterPlayer.Hide(position);
+                }
+
+                continue;
+            }
+
+            if (hasCurrent && IsSameCharacterState(currentCommand, targetCommand))
+            {
+                continue;
+            }
 
             characterPlayer.Show(
-                command.AssetId,
-                pair.Key,
-                command.Width,
-                command.Height,
-                command.OffsetX,
-                command.OffsetY);
+                targetCommand.AssetId,
+                position,
+                targetCommand.Width,
+                targetCommand.Height,
+                targetCommand.OffsetX,
+                targetCommand.OffsetY);
         }
     }
 
-    private void RestoreBgm(
-        string assetId,
-        bool isPlaying)
+    private void RestoreBgm(string assetId, bool isPlaying)
     {
         if (isPlaying && !string.IsNullOrEmpty(assetId))
         {
@@ -218,8 +262,18 @@ public class ScenarioRewindController : MonoBehaviour
         bgmPlayer.Stop();
     }
 
-    private static bool IsDisplayCommand(
-        ScenarioCommandDto command)
+    private static bool IsSameCharacterState(
+        ScenarioCommandDto current,
+        ScenarioCommandDto target)
+    {
+        return current.AssetId == target.AssetId &&
+               current.Width == target.Width &&
+               current.Height == target.Height &&
+               current.OffsetX == target.OffsetX &&
+               current.OffsetY == target.OffsetY;
+    }
+
+    private static bool IsDisplayCommand(ScenarioCommandDto command)
     {
         return command.Type == "dialogue" ||
                command.Type == "description";
@@ -241,10 +295,7 @@ public class ScenarioRewindController : MonoBehaviour
         int scenarioIndex)
     {
         var scenarioJson = scenarioJsons[scenarioIndex];
-
-        var scenarioData =
-            JsonConvert.DeserializeObject<ScenarioDataDto>(
-                scenarioJson.text);
+        var scenarioData = JsonConvert.DeserializeObject<ScenarioDataDto>(scenarioJson.text);
 
         return scenarioData.Commands;
     }
