@@ -18,9 +18,7 @@ public class AddressableRegistrationTool : EditorWindow
 
     private void OnGUI()
     {
-        EditorGUILayout.LabelField(
-            "Addressable Registration Tool",
-            EditorStyles.boldLabel);
+        EditorGUILayout.LabelField("Addressable Registration Tool", EditorStyles.boldLabel);
 
         EditorGUILayout.Space();
 
@@ -73,9 +71,7 @@ public class AddressableRegistrationTool : EditorWindow
 
         foreach (var assetPath in assetPaths)
         {
-            if (!TryCreateAddress(
-                    assetPath,
-                    out var address))
+            if (!TryCreateAddress(assetPath, out var address))
             {
                 Debug.LogWarning($"Skipped unsupported asset: {assetPath}");
 
@@ -83,10 +79,7 @@ public class AddressableRegistrationTool : EditorWindow
                 continue;
             }
 
-            if (RegisterAsset(
-                    settings,
-                    assetPath,
-                    address))
+            if (RegisterAsset(settings, assetPath, address))
             {
                 registeredCount++;
             }
@@ -104,8 +97,7 @@ public class AddressableRegistrationTool : EditorWindow
             $"Skipped: {skippedCount}");
     }
 
-    private static List<string> GetTargetAssetPaths(
-        string targetPath)
+    private static List<string> GetTargetAssetPaths(string targetPath)
     {
         var assetPaths = new List<string>();
 
@@ -115,15 +107,11 @@ public class AddressableRegistrationTool : EditorWindow
             return assetPaths;
         }
 
-        var guids =
-            AssetDatabase.FindAssets(
-                string.Empty,
-                new[] { targetPath });
+        var guids = AssetDatabase.FindAssets(string.Empty, new[] { targetPath });
 
         foreach (var guid in guids)
         {
-            var assetPath =
-                AssetDatabase.GUIDToAssetPath(guid);
+            var assetPath = AssetDatabase.GUIDToAssetPath(guid);
 
             if (AssetDatabase.IsValidFolder(assetPath))
             {
@@ -136,39 +124,28 @@ public class AddressableRegistrationTool : EditorWindow
         return assetPaths;
     }
 
-    private static bool TryCreateAddress(
-        string assetPath,
-        out string address)
+    private static bool TryCreateAddress(string assetPath, out string address)
     {
         address = null;
 
-        var normalizedPath =
-            assetPath.Replace("\\", "/");
+        var normalizedPath = assetPath.Replace("\\", "/");
 
-        if (TryCreateBackgroundAddress(
-                normalizedPath,
-                out address))
+        if (TryCreateBackgroundAddress(normalizedPath, out address))
         {
             return true;
         }
 
-        if (TryCreateCharacterAddress(
-                normalizedPath,
-                out address))
+        if (TryCreateCharacterAddress(normalizedPath, out address))
         {
             return true;
         }
 
-        if (TryCreateVoiceAddress(
-                normalizedPath,
-                out address))
+        if (TryCreateVoiceAddress(normalizedPath, out address))
         {
             return true;
         }
 
-        if (TryCreateBgmAddress(
-                normalizedPath,
-                out address))
+        if (TryCreateBgmAddress(normalizedPath, out address))
         {
             return true;
         }
@@ -176,80 +153,56 @@ public class AddressableRegistrationTool : EditorWindow
         return false;
     }
 
-    private static bool TryCreateBackgroundAddress(
-        string assetPath,
-        out string address)
+    private static bool TryCreateBackgroundAddress(string assetPath, out string address)
     {
-        const string root =
-            "Assets/Game/Art/Backgrounds/";
+        const string root = "Assets/Game/Art/Backgrounds/";
 
         address = null;
 
-        if (!assetPath.StartsWith(
-                root,
-                StringComparison.OrdinalIgnoreCase))
+        if (!assetPath.StartsWith(root, StringComparison.OrdinalIgnoreCase))
         {
             return false;
         }
 
-        var relativePath =
-            RemoveExtension(
-                assetPath.Substring(root.Length));
+        var relativePath = RemoveExtension(assetPath.Substring(root.Length));
 
-        address =
-            $"background/{relativePath.ToLowerInvariant()}";
+        address = $"background/{relativePath.ToLowerInvariant()}";
 
         return true;
     }
 
-    private static bool TryCreateCharacterAddress(
-        string assetPath,
-        out string address)
+    private static bool TryCreateCharacterAddress(string assetPath, out string address)
     {
-        const string root =
-            "Assets/Game/Art/Characters/";
+        const string root = "Assets/Game/Art/Characters/";
 
         address = null;
 
-        if (!assetPath.StartsWith(
-                root,
-                StringComparison.OrdinalIgnoreCase))
+        if (!assetPath.StartsWith(root, StringComparison.OrdinalIgnoreCase))
         {
             return false;
         }
 
-        var relativePath =
-            RemoveExtension(
-                assetPath.Substring(root.Length));
+        var relativePath = RemoveExtension(assetPath.Substring(root.Length));
 
-        address =
-            $"character/{relativePath.ToLowerInvariant()}";
+        address = $"character/{relativePath.ToLowerInvariant()}";
 
         return true;
     }
 
-    private static bool TryCreateVoiceAddress(
-        string assetPath,
-        out string address)
+    private static bool TryCreateVoiceAddress(string assetPath, out string address)
     {
-        const string root =
-            "Assets/Game/Audio/Voice/";
+        const string root = "Assets/Game/Audio/Voice/";
 
         address = null;
 
-        if (!assetPath.StartsWith(
-                root,
-                StringComparison.OrdinalIgnoreCase))
+        if (!assetPath.StartsWith(root, StringComparison.OrdinalIgnoreCase))
         {
             return false;
         }
 
-        var relativePath =
-            RemoveExtension(
-                assetPath.Substring(root.Length));
+        var relativePath =  RemoveExtension(assetPath.Substring(root.Length));
 
-        var parts =
-            relativePath.Split('/');
+        var parts = relativePath.Split('/');
 
         // Physical:
         // episode01/scene08/s08_001.wav
@@ -259,54 +212,39 @@ public class AddressableRegistrationTool : EditorWindow
 
         if (parts.Length != 3)
         {
-            Debug.LogWarning(
-                $"Unexpected voice path structure: {assetPath}");
+            Debug.LogWarning($"Unexpected voice path structure: {assetPath}");
 
             return false;
         }
 
-        var episode =
-            parts[0].ToLowerInvariant();
+        var episode = parts[0].ToLowerInvariant();
 
-        var fileName =
-            parts[2].ToLowerInvariant();
+        var fileName = parts[2].ToLowerInvariant();
 
-        address =
-            $"voice/{episode}/{fileName}";
+        address = $"voice/{episode}/{fileName}";
 
         return true;
     }
 
-    private static bool TryCreateBgmAddress(
-        string assetPath,
-        out string address)
+    private static bool TryCreateBgmAddress(string assetPath, out string address)
     {
-        const string root =
-            "Assets/Game/Audio/BGM/";
+        const string root = "Assets/Game/Audio/BGM/";
 
         address = null;
 
-        if (!assetPath.StartsWith(
-                root,
-                StringComparison.OrdinalIgnoreCase))
+        if (!assetPath.StartsWith(root, StringComparison.OrdinalIgnoreCase))
         {
             return false;
         }
 
-        var relativePath =
-            RemoveExtension(
-                assetPath.Substring(root.Length));
+        var relativePath = RemoveExtension(assetPath.Substring(root.Length));
 
-        address =
-            $"bgm/{relativePath.ToLowerInvariant()}";
+        address = $"bgm/{relativePath.ToLowerInvariant()}";
 
         return true;
     }
 
-    private static bool RegisterAsset(
-        AddressableAssetSettings settings,
-        string assetPath,
-        string address)
+    private static bool RegisterAsset(AddressableAssetSettings settings, string assetPath, string address)
     {
         var guid = AssetDatabase.AssetPathToGUID(assetPath);
 
@@ -348,8 +286,7 @@ public class AddressableRegistrationTool : EditorWindow
         return true;
     }
 
-    private static string RemoveExtension(
-        string path)
+    private static string RemoveExtension(string path)
     {
         var extension = Path.GetExtension(path);
 
@@ -358,8 +295,6 @@ public class AddressableRegistrationTool : EditorWindow
             return path;
         }
 
-        return path.Substring(
-            0,
-            path.Length - extension.Length);
+        return path.Substring(0, path.Length - extension.Length);
     }
 }
