@@ -15,6 +15,7 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private RectTransform scenarioControlRoot;
     [SerializeField] private VoicePlayer voicePlayer;
     [SerializeField] private BGMPlayer bgmPlayer;
+    [SerializeField] private SEPlayer sePlayer;
     [SerializeField] private FadeView fadeView;
     [SerializeField] private EndView endView;
     [SerializeField] private ScenarioRewindController scenarioRewindController;
@@ -252,6 +253,10 @@ public class ScenarioRunner : MonoBehaviour
                 ProcessBgmCommand(scenarioCommand);
                 break;
 
+            case "se":
+                ProcessSeCommand(scenarioCommand);
+                break;
+
             case "fade":
                 ProcessFadeCommand(scenarioCommand);
                 break;
@@ -358,6 +363,12 @@ public class ScenarioRunner : MonoBehaviour
                 break;
         }
 
+        MoveToNextCommand();
+    }
+
+    private void ProcessSeCommand(ScenarioCommandDto command)
+    {
+        sePlayer.Play(command.AssetId);
         MoveToNextCommand();
     }
 
