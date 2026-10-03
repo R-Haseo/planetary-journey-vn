@@ -2,7 +2,349 @@
   "Commands": [
     {
       "Type": "description",
-      "Text": "Episode 2 test."
+      "Text": "星々の間を、一隻の小型宇宙船が進んでいる。"
+    },
+    {
+      "Type": "description",
+      "Text": "ろまんは座席に腰掛け、一冊の本を読んでいる。"
+    },
+    {
+      "Type": "description",
+      "Text": "傍らには、球体型AI――ハウエルが静かに浮かんでいる。"
+    },
+    {
+      "Type": "description",
+      "Text": "本の表紙には『東海道戦争』と書かれている。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_001",
+      "Speaker": "ろまん",
+      "Text": "…………"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_002",
+      "Speaker": "ハウエル",
+      "Text": "同じページを三度読み返しています"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_003",
+      "Speaker": "ろまん",
+      "Text": "読んでる途中なんだから、話しかけないでよ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_004",
+      "Speaker": "ハウエル",
+      "Text": "はい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_005",
+      "Speaker": "ろまん",
+      "Text": "…………"
+    },
+    {
+      "Type": "description",
+      "Text": "ろまんは再び本へ視線を落とす。"
+    },
+    {
+      "Type": "description",
+      "Text": "そのとき、船内に通信音が鳴る。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_006",
+      "Speaker": "ハウエル",
+      "Text": "通信を受信しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_007",
+      "Speaker": "ろまん",
+      "Text": "誰？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_008",
+      "Speaker": "ハウエル",
+      "Text": "教授です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_009",
+      "Speaker": "ろまん",
+      "Text": "……また？"
+    },
+    {
+      "Type": "description",
+      "Text": "ろまんは本を閉じる。"
+    },
+    {
+      "Type": "description",
+      "Text": "通信が接続される。画面に映像は表示されない。女性の声だけが船内に響く。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_010",
+      "Speaker": "教授",
+      "Text": "ろまん、聞こえてる？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_011",
+      "Speaker": "ろまん",
+      "Text": "聞こえてるよ。今度はどこ？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_012",
+      "Speaker": "教授",
+      "Text": "まだ何も言ってないんだけど"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_013",
+      "Speaker": "ろまん",
+      "Text": "教授から連絡が来るとき、だいたい次の調査だから"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_014",
+      "Speaker": "教授",
+      "Text": "ふふっ。話が早くて助かるわ"
+    },
+    {
+      "Type": "description",
+      "Text": "船内モニターに、一つの惑星が表示される。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_015",
+      "Speaker": "教授",
+      "Text": "次に向かってほしいのは、この惑星"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_016",
+      "Speaker": "ろまん",
+      "Text": "今度は何があるの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_017",
+      "Speaker": "教授",
+      "Text": "それが、よく分からないのよ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_018",
+      "Speaker": "ろまん",
+      "Text": "分からない？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_019",
+      "Speaker": "教授",
+      "Text": "人口は多い。都市もある。文明水準も決して低くない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_020",
+      "Speaker": "ろまん",
+      "Text": "普通じゃない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_021",
+      "Speaker": "教授",
+      "Text": "普通の惑星なら、わざわざあなたに頼まないわ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_022",
+      "Speaker": "ろまん",
+      "Text": "やっぱり"
+    },
+    {
+      "Type": "description",
+      "Text": "教授から送信されたデータがモニターに表示される。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_023",
+      "Speaker": "教授",
+      "Text": "妙なのは、外部へ出てくる情報が極端に少ないこと"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_024",
+      "Speaker": "ろまん",
+      "Text": "情報？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_025",
+      "Speaker": "教授",
+      "Text": "外部ネットワークとの通信も制限されているみたい。こちらから調べても、断片的な情報しか出てこないの"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_026",
+      "Speaker": "ろまん",
+      "Text": "ハウエル"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_027",
+      "Speaker": "ハウエル",
+      "Text": "確認します"
+    },
+    {
+      "Type": "description",
+      "Text": "短い間。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_028",
+      "Speaker": "ハウエル",
+      "Text": "過去三十日間の外部通信量を確認しました。同程度の人口を持つ惑星と比較して、著しく低い値です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_029",
+      "Speaker": "ろまん",
+      "Text": "じゃあ、本当にネットが使えないんだ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_030",
+      "Speaker": "ハウエル",
+      "Text": "そこまでは判断できません。外部との通信量が少ないという事実のみ確認できます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_031",
+      "Speaker": "教授",
+      "Text": "そういうこと。中で何が起きているのか、こちらからでは分からない"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_032",
+      "Speaker": "ろまん",
+      "Text": "それを見てこい、と"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_033",
+      "Speaker": "教授",
+      "Text": "お願いできる？"
+    },
+    {
+      "Type": "description",
+      "Text": "ろまんは閉じた本を見る。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_034",
+      "Speaker": "ろまん",
+      "Text": "……まだ途中なんだけどなあ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_035",
+      "Speaker": "教授",
+      "Text": "本なら帰ってからでも読めるでしょ？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_036",
+      "Speaker": "ろまん",
+      "Text": "惑星だって逃げないでしょ"
+    },
+    {
+      "Type": "description",
+      "Text": "一瞬、沈黙。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_037",
+      "Speaker": "教授",
+      "Text": "…………じゃ、よろしくね"
+    },
+    {
+      "Type": "description",
+      "Text": "通信が切れる。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_038",
+      "Speaker": "ろまん",
+      "Text": "逃げた"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_039",
+      "Speaker": "ハウエル",
+      "Text": "通信は正常に終了しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_040",
+      "Speaker": "ろまん",
+      "Text": "そういう意味じゃない"
+    },
+    {
+      "Type": "description",
+      "Text": "ろまんは窓の外を見る。"
+    },
+    {
+      "Type": "description",
+      "Text": "モニターには、目的地となる惑星が浮かんでいる。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_041",
+      "Speaker": "ろまん",
+      "Text": "ハウエル。どれくらい？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_042",
+      "Speaker": "ハウエル",
+      "Text": "現在位置から、およそ――"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_043",
+      "Speaker": "ろまん",
+      "Text": "いや、いいや。その間にこれ読んじゃおう"
+    },
+    {
+      "Type": "description",
+      "Text": "ろまんは再び『東海道戦争』を開く。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_044",
+      "Speaker": "ハウエル",
+      "Text": "先ほどと同じページです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s01_045",
+      "Speaker": "ろまん",
+      "Text": "うるさい"
+    },
+    {
+      "Type": "description",
+      "Text": "宇宙船が進路を変える。"
+    },
+    {
+      "Type": "description",
+      "Text": "遠くに浮かぶ惑星へ向かって、静かに加速していく。"
     },
     {
       "Type": "end"
