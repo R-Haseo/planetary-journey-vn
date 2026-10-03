@@ -120,6 +120,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 10be6c8948601b745817207b4eac292b
+    m_Address: se/bird
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 11e288cbfedfcdf4c8c7c3161b9298bb
     m_Address: voice/episode01/s04_035
     m_ReadOnly: 0

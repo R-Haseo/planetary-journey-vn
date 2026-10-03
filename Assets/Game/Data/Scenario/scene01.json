@@ -117,10 +117,6 @@
       "Text": "少女が座席に深く身体を沈める。"
     },
     {
-      "Type": "se",
-      "AssetId": "notification"
-    },
-    {
       "Type": "description",
       "Text": "モニターに通信が表示される。"
     },
@@ -332,10 +328,6 @@
       "Type": "fade",
       "Action": "out",
       "Duration": 0.5
-    },
-    {
-      "Type": "scene",
-      "AssetId": "Scene02"
     }
   ]
 }

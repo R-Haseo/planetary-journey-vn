@@ -15,8 +15,10 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private RectTransform scenarioControlRoot;
     [SerializeField] private VoicePlayer voicePlayer;
     [SerializeField] private BGMPlayer bgmPlayer;
+    [SerializeField] private SEPlayer sePlayer;
     [SerializeField] private FadeView fadeView;
     [SerializeField] private EndView endView;
+    [SerializeField] private ScenarioRewindController scenarioRewindController;
 
     [SerializeField] private List<TextAsset> scenarioJsons;
 
@@ -70,6 +72,16 @@ public class ScenarioRunner : MonoBehaviour
 
     private void Update()
     {
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+        var rewindPressed = Keyboard.current?.rKey.wasPressedThisFrame == true;
+
+        if (rewindPressed)
+        {
+            Rewind();
+            return;
+        }
+#endif
+
         var logPressed = Keyboard.current?.lKey.wasPressedThisFrame == true;
 
         if (logPressed)
@@ -241,6 +253,10 @@ public class ScenarioRunner : MonoBehaviour
                 ProcessBgmCommand(scenarioCommand);
                 break;
 
+            case "se":
+                ProcessSeCommand(scenarioCommand);
+                break;
+
             case "fade":
                 ProcessFadeCommand(scenarioCommand);
                 break;
@@ -350,6 +366,12 @@ public class ScenarioRunner : MonoBehaviour
         MoveToNextCommand();
     }
 
+    private void ProcessSeCommand(ScenarioCommandDto command)
+    {
+        sePlayer.Play(command.AssetId);
+        MoveToNextCommand();
+    }
+
     private void ProcessFadeCommand(ScenarioCommandDto command)
     {
         switch (command.Action)
@@ -438,6 +460,34 @@ public class ScenarioRunner : MonoBehaviour
 
         return false;
     }
+
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+    private void Rewind()
+    {
+        voicePlayer.Stop();
+
+        skipMode = false;
+        skipTimer = 0f;
+
+        waitingForAutoAdvance = false;
+        autoTimer = 0f;
+
+        if (!scenarioRewindController.TryRewind(
+                scenarioJsons,
+                currentScenarioIndex,
+                currentIndex,
+                out var result))
+        {
+            return;
+        }
+
+        currentScenarioIndex = result.ScenarioIndex;
+        commands = result.Commands;
+        currentIndex = result.CommandIndex;
+
+        ProcessCurrentCommand();
+    }
+#endif
 
     private void Restart()
     {
