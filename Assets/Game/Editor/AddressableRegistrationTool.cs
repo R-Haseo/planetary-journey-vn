@@ -150,6 +150,11 @@ public class AddressableRegistrationTool : EditorWindow
             return true;
         }
 
+        if (TryCreateSeAddress(normalizedPath, out address))
+        {
+            return true;
+        }
+
         return false;
     }
 
@@ -240,6 +245,24 @@ public class AddressableRegistrationTool : EditorWindow
         var relativePath = RemoveExtension(assetPath.Substring(root.Length));
 
         address = $"bgm/{relativePath.ToLowerInvariant()}";
+
+        return true;
+    }
+
+    private static bool TryCreateSeAddress(string assetPath, out string address)
+    {
+        const string root = "Assets/Game/Audio/SE/";
+
+        address = null;
+
+        if (!assetPath.StartsWith(root, StringComparison.OrdinalIgnoreCase))
+        {
+            return false;
+        }
+
+        var relativePath = RemoveExtension(assetPath.Substring(root.Length));
+
+        address = $"se/{relativePath.ToLowerInvariant()}";
 
         return true;
     }
