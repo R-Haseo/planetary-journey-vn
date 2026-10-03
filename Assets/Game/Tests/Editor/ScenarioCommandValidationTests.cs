@@ -19,7 +19,10 @@ public class ScenarioCommandValidationTests
     public void ScenarioCommands_ShouldFollowCommandRules()
     {
         var scenarioFiles = Directory
-            .GetFiles(ScenarioDirectory, "scene*.json")
+            .GetFiles(
+                ScenarioDirectory,
+                "scene*.json",
+                SearchOption.AllDirectories)
             .OrderBy(path => path)
             .ToArray();
 

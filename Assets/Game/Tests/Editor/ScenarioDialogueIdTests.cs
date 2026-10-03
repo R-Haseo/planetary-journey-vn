@@ -14,7 +14,7 @@ public class ScenarioDialogueIdTests
         var scenarioFiles = Directory.GetFiles(
             ScenarioDirectory,
             "scene*.json",
-            SearchOption.TopDirectoryOnly);
+            SearchOption.AllDirectories);
 
         Assert.That(
             scenarioFiles,
