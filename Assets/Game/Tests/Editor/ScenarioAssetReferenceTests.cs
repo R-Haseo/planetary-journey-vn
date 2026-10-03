@@ -91,6 +91,14 @@ public class ScenarioAssetReferenceTests
                         "bgm",
                         addressEntries);
                     break;
+
+                case "se":
+                    ValidateAssetIdCommand(
+                        command,
+                        scenarioName,
+                        "se",
+                        addressEntries);
+                    break;
             }
         }
     }

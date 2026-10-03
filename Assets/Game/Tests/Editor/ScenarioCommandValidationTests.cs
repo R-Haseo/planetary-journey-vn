@@ -95,6 +95,10 @@ public class ScenarioCommandValidationTests
                 ValidateBgm(command, scenarioFile, commandIndex);
                 break;
 
+            case "se":
+                ValidateSe(command, scenarioFile, commandIndex);
+                break;
+
             case "fade":
                 ValidateFade(command, scenarioFile, commandIndex);
                 break;
@@ -316,6 +320,24 @@ public class ScenarioCommandValidationTests
                     "Action");
                 break;
         }
+    }
+
+    private static void ValidateSe(
+        JObject command,
+        string scenarioFile,
+        int commandIndex)
+    {
+        ValidateAllowedProperties(
+            command,
+            scenarioFile,
+            commandIndex,
+            "AssetId");
+
+        RequireNonEmptyString(
+            command,
+            "AssetId",
+            scenarioFile,
+            commandIndex);
     }
 
     private static void ValidateFade(
