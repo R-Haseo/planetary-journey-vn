@@ -12,8 +12,9 @@ public static class VoiceVoxImportTextGenerator
 
     private static readonly Dictionary<string, string> SpeakerMap = new()
     {
-        { "少女", "小夜/SAYO" },
-        { "AI", "青山龍星" },
+        { "ろまん", "小夜/SAYO" },
+        { "ハウエル", "青山龍星" },
+        { "教授", "No.7" },
         { "老人", "麒ヶ島宗麟" },
         { "身なりの整った男性", "玄野武宏" },
         { "冴えない地味な男性", "白上虎太郎" },
