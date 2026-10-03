@@ -38,25 +38,25 @@
     {
       "Type": "dialogue",
       "Id": "s08_001",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "ここまで離れれば、もう大丈夫でしょう"
     },
     {
       "Type": "dialogue",
       "Id": "s08_002",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……あれ？"
     },
     {
       "Type": "dialogue",
       "Id": "s08_003",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "惑星表面に大規模なエネルギー反応を検知しました"
     },
     {
       "Type": "dialogue",
       "Id": "s08_004",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "あれまあ……"
     },
     {
@@ -70,31 +70,31 @@
     {
       "Type": "dialogue",
       "Id": "s08_005",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "…………"
     },
     {
       "Type": "dialogue",
       "Id": "s08_006",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "おじいさん……"
     },
     {
       "Type": "dialogue",
       "Id": "s08_007",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "…………"
     },
     {
       "Type": "dialogue",
       "Id": "s08_008",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "惑星から通信を受信しました"
     },
     {
       "Type": "dialogue",
       "Id": "s08_009",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "通信？"
     },
     {
@@ -112,19 +112,19 @@
     {
       "Type": "dialogue",
       "Id": "s08_012",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "…………"
     },
     {
       "Type": "dialogue",
       "Id": "s08_013",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "…………"
     },
     {
       "Type": "dialogue",
       "Id": "s08_014",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "ハラスメントをなくすために、惑星を滅亡させるなんて……本末転倒じゃない"
     },
     {
@@ -157,175 +157,175 @@
     {
       "Type": "dialogue",
       "Id": "s08_015",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "やっぱり、何でもAIに任せればいいってものじゃないわね"
     },
     {
       "Type": "dialogue",
       "Id": "s08_016",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "……私の前でそれを言いますか？"
     },
     {
       "Type": "dialogue",
       "Id": "s08_017",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "あ"
     },
     {
       "Type": "dialogue",
       "Id": "s08_018",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "いや、あなたのことじゃなくて"
     },
     {
       "Type": "dialogue",
       "Id": "s08_019",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "存じております"
     },
     {
       "Type": "dialogue",
       "Id": "s08_020",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……本当に？"
     },
     {
       "Type": "dialogue",
       "Id": "s08_021",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "はい"
     },
     {
       "Type": "dialogue",
       "Id": "s08_022",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "便利だからって、何でも任せちゃダメなのよ"
     },
     {
       "Type": "dialogue",
       "Id": "s08_023",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "AIは言われたことを、ものすごい速さで進めてくれるけど……"
     },
     {
       "Type": "dialogue",
       "Id": "s08_024",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "そもそも、どっちへ進むのか。それくらいは自分たちで決めないとね"
     },
     {
       "Type": "dialogue",
       "Id": "s08_025",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "はい"
     },
     {
       "Type": "dialogue",
       "Id": "s08_026",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "…………"
     },
     {
       "Type": "dialogue",
       "Id": "s08_027",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "でもさ"
     },
     {
       "Type": "dialogue",
       "Id": "s08_028",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "はい？"
     },
     {
       "Type": "dialogue",
       "Id": "s08_029",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "私たちも、本当に自分で決めてるのかな"
     },
     {
       "Type": "dialogue",
       "Id": "s08_030",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "……と、申しますと？"
     },
     {
       "Type": "dialogue",
       "Id": "s08_031",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "だって私、さっきから誰かに喋らされてるような気がするの"
     },
     {
       "Type": "dialogue",
       "Id": "s08_032",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "…………"
     },
     {
       "Type": "dialogue",
       "Id": "s08_033",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "立つ場所も、表情も……"
     },
     {
       "Type": "dialogue",
       "Id": "s08_034",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "見えてる景色まで、誰かに決められてるような……"
     },
     {
       "Type": "dialogue",
       "Id": "s08_035",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "生成AIと、それを操作する奇特な男性……？"
     },
     {
       "Type": "dialogue",
       "Id": "s08_036",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "気のせいではないでしょうか"
     },
     {
       "Type": "dialogue",
       "Id": "s08_037",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "そうかなあ"
     },
     {
       "Type": "dialogue",
       "Id": "s08_038",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "ところで、次の目的地が決まりました"
     },
     {
       "Type": "dialogue",
       "Id": "s08_039",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "え、もう？"
     },
     {
       "Type": "dialogue",
       "Id": "s08_040",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "はい。興味深い惑星です"
     },
     {
       "Type": "dialogue",
       "Id": "s08_041",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "今度は普通の星だといいんだけど……"
     },
     {
       "Type": "dialogue",
       "Id": "s08_042",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "それは保証いたしかねます"
     },
     {
       "Type": "dialogue",
       "Id": "s08_043",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "だよね……"
     },
     {

@@ -49,67 +49,67 @@
     {
       "Type": "dialogue",
       "Id": "s01_001",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……何もないね"
     },
     {
       "Type": "dialogue",
       "Id": "s01_002",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "はい"
     },
     {
       "Type": "dialogue",
       "Id": "s01_003",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "ずっと？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_004",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "少なくとも、ここ三日間は"
     },
     {
       "Type": "dialogue",
       "Id": "s01_005",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "退屈"
     },
     {
       "Type": "dialogue",
       "Id": "s01_006",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "宇宙調査とは、本来そういうものです"
     },
     {
       "Type": "dialogue",
       "Id": "s01_007",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "私は調査員じゃないんだけど"
     },
     {
       "Type": "dialogue",
       "Id": "s01_008",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "では、観光ですか？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_009",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "それも違う"
     },
     {
       "Type": "dialogue",
       "Id": "s01_010",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "目的のない旅行を、一般に観光と――"
     },
     {
       "Type": "dialogue",
       "Id": "s01_011",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "うるさい"
     },
     {
@@ -123,19 +123,19 @@
     {
       "Type": "dialogue",
       "Id": "s01_012",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "博士から？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_013",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "はい。次の調査対象が指定されました"
     },
     {
       "Type": "dialogue",
       "Id": "s01_014",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "今度はどんなところ？"
     },
     {
@@ -145,73 +145,73 @@
     {
       "Type": "dialogue",
       "Id": "s01_015",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "惑星――"
     },
     {
       "Type": "dialogue",
       "Id": "s01_016",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "人口、およそ十二億。大気組成、重力ともに人類の生存に適しています"
     },
     {
       "Type": "dialogue",
       "Id": "s01_017",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "普通の星じゃない"
     },
     {
       "Type": "dialogue",
       "Id": "s01_018",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "かつては"
     },
     {
       "Type": "dialogue",
       "Id": "s01_019",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "かつて？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_020",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "この惑星では現在、生命活動が極端に減少していると推定されています"
     },
     {
       "Type": "dialogue",
       "Id": "s01_021",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "生命活動が？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_022",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "都市からの通信、交通、商業活動。いずれも数年前から急速に減少しています"
     },
     {
       "Type": "dialogue",
       "Id": "s01_023",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "人口は十二億人いるんでしょ？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_024",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "登録上は"
     },
     {
       "Type": "dialogue",
       "Id": "s01_025",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "じゃあ、みんなどこに行ったの？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_026",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "不明です"
     },
     {
@@ -221,37 +221,37 @@
     {
       "Type": "dialogue",
       "Id": "s01_027",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "滅んじゃったとか？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_028",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "その可能性は低いと思われます"
     },
     {
       "Type": "dialogue",
       "Id": "s01_029",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "どうして？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_030",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "都市インフラは現在も稼働しています"
     },
     {
       "Type": "dialogue",
       "Id": "s01_031",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "人はいる。でも、何もしてない？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_032",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "そのようです"
     },
     {
@@ -265,31 +265,31 @@
     {
       "Type": "dialogue",
       "Id": "s01_033",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "面白そう"
     },
     {
       "Type": "dialogue",
       "Id": "s01_034",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "危険そう、の間違いでは？"
     },
     {
       "Type": "dialogue",
       "Id": "s01_035",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "行けば分かるよ"
     },
     {
       "Type": "dialogue",
       "Id": "s01_036",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "博士からも調査するよう指示されています"
     },
     {
       "Type": "dialogue",
       "Id": "s01_037",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "じゃ、決まり"
     },
     {
@@ -299,7 +299,7 @@
     {
       "Type": "dialogue",
       "Id": "s01_038",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "次はここ"
     },
     {

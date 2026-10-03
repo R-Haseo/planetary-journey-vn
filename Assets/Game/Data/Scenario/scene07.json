@@ -34,13 +34,13 @@
     {
       "Type": "dialogue",
       "Id": "s07_001",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "急いでください。宇宙船まで戻ります"
     },
     {
       "Type": "dialogue",
       "Id": "s07_002",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "分かってる！"
     },
     {
@@ -64,19 +64,19 @@
     {
       "Type": "dialogue",
       "Id": "s07_006",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "今それどころじゃないでしょ！"
     },
     {
       "Type": "dialogue",
       "Id": "s07_007",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "走りながら叫ぶのは効率が悪いですよ"
     },
     {
       "Type": "dialogue",
       "Id": "s07_008",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "うるさいっ！"
     },
     {
@@ -100,7 +100,7 @@
     {
       "Type": "dialogue",
       "Id": "s07_012",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "誰も歩いてないじゃない！"
     },
     {
@@ -112,7 +112,7 @@
     {
       "Type": "dialogue",
       "Id": "s07_014",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "知らないってば！"
     },
     {
@@ -122,25 +122,25 @@
     {
       "Type": "dialogue",
       "Id": "s07_015",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "宇宙船まで、あと300メートルです"
     },
     {
       "Type": "dialogue",
       "Id": "s07_016",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "着いた！"
     },
     {
       "Type": "dialogue",
       "Id": "s07_017",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "出して！　早く！"
     },
     {
       "Type": "dialogue",
       "Id": "s07_018",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "了解しました"
     },
     {
@@ -168,7 +168,7 @@
     {
       "Type": "dialogue",
       "Id": "s07_022",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "…………"
     },
     {
@@ -180,13 +180,13 @@
     {
       "Type": "dialogue",
       "Id": "s07_024",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "知らないってば！！"
     },
     {
       "Type": "dialogue",
       "Id": "s07_025",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "離陸します"
     },
     {
@@ -218,7 +218,7 @@
     {
       "Type": "dialogue",
       "Id": "s07_028",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "それもハラスメントって言うんでしょ！"
     },
     {
@@ -230,25 +230,25 @@
     {
       "Type": "dialogue",
       "Id": "s07_030",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "惑星を離脱しました"
     },
     {
       "Type": "dialogue",
       "Id": "s07_031",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "…………助かった？"
     },
     {
       "Type": "dialogue",
       "Id": "s07_032",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "少なくとも、現時点では問題ありません"
     },
     {
       "Type": "dialogue",
       "Id": "s07_033",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "おじいさん……"
     },
     {

@@ -33,49 +33,49 @@
     {
       "Type": "dialogue",
       "Id": "s02_001",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "大気圏への突入を完了しました"
     },
     {
       "Type": "dialogue",
       "Id": "s02_002",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "普通に街があるね"
     },
     {
       "Type": "dialogue",
       "Id": "s02_003",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "はい"
     },
     {
       "Type": "dialogue",
       "Id": "s02_004",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "もっとボロボロになってるのかと思った"
     },
     {
       "Type": "dialogue",
       "Id": "s02_005",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "都市設備に、大規模な損傷は確認されていません"
     },
     {
       "Type": "dialogue",
       "Id": "s02_006",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "じゃあ、本当に人がいるんじゃない？"
     },
     {
       "Type": "dialogue",
       "Id": "s02_007",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "登録人口は、十二億一千七百万人です"
     },
     {
       "Type": "dialogue",
       "Id": "s02_008",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……多いなあ"
     },
     {
@@ -85,19 +85,19 @@
     {
       "Type": "dialogue",
       "Id": "s02_009",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "でも"
     },
     {
       "Type": "dialogue",
       "Id": "s02_010",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "はい"
     },
     {
       "Type": "dialogue",
       "Id": "s02_011",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "人、見えなくない？"
     },
 
@@ -156,19 +156,19 @@
     {
       "Type": "dialogue",
       "Id": "s02_012",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……静か"
     },
     {
       "Type": "dialogue",
       "Id": "s02_013",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "騒音レベルは極めて低い状態です"
     },
     {
       "Type": "dialogue",
       "Id": "s02_014",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "そういう意味じゃない"
     },
     {
@@ -178,31 +178,31 @@
     {
       "Type": "dialogue",
       "Id": "s02_015",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "本当に誰もいないね"
     },
     {
       "Type": "dialogue",
       "Id": "s02_016",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "半径五キロメートル以内に、人間の屋外活動は確認できません"
     },
     {
       "Type": "dialogue",
       "Id": "s02_017",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "十二億人いるんだよね？"
     },
     {
       "Type": "dialogue",
       "Id": "s02_018",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "登録上は"
     },
     {
       "Type": "dialogue",
       "Id": "s02_019",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "またそれ"
     },
 
@@ -233,31 +233,31 @@
     {
       "Type": "dialogue",
       "Id": "s02_020",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "お店も動いてる"
     },
     {
       "Type": "dialogue",
       "Id": "s02_021",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "電力供給、通信網、上下水道。いずれも正常です"
     },
     {
       "Type": "dialogue",
       "Id": "s02_022",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "じゃあ、滅んだわけじゃない"
     },
     {
       "Type": "dialogue",
       "Id": "s02_023",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "少なくとも、一般的な意味での文明崩壊とは異なります"
     },
     {
       "Type": "dialogue",
       "Id": "s02_024",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……気味悪いなあ"
     },
     {
@@ -267,7 +267,7 @@
     {
       "Type": "dialogue",
       "Id": "s02_025",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "生命反応を検出しました"
     },
     {
@@ -277,25 +277,25 @@
     {
       "Type": "dialogue",
       "Id": "s02_026",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "人？"
     },
     {
       "Type": "dialogue",
       "Id": "s02_027",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "はい"
     },
     {
       "Type": "dialogue",
       "Id": "s02_028",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "どこ？"
     },
     {
       "Type": "dialogue",
       "Id": "s02_029",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "周辺の建物内部です"
     },
     {
@@ -309,19 +309,19 @@
     {
       "Type": "dialogue",
       "Id": "s02_030",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "いるんだ"
     },
     {
       "Type": "dialogue",
       "Id": "s02_031",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "多数"
     },
     {
       "Type": "dialogue",
       "Id": "s02_032",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "じゃあ、なんで誰も外に出てこないの？"
     },
     {
@@ -340,7 +340,7 @@
     {
       "Type": "dialogue",
       "Id": "s02_033",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "ん？"
     },
     {
@@ -354,7 +354,7 @@
     {
       "Type": "dialogue",
       "Id": "s02_034",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……は？"
     },
     {
@@ -364,13 +364,13 @@
     {
       "Type": "dialogue",
       "Id": "s02_035",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "この惑星の公共安全システムからの警告です"
     },
     {
       "Type": "dialogue",
       "Id": "s02_036",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "視界侵入……？"
     },
     {
@@ -380,31 +380,31 @@
     {
       "Type": "dialogue",
       "Id": "s02_037",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "私、何もしてないけど"
     },
     {
       "Type": "dialogue",
       "Id": "s02_038",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "正確には、存在しています"
     },
     {
       "Type": "dialogue",
       "Id": "s02_039",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "それはしてるけど"
     },
     {
       "Type": "dialogue",
       "Id": "s02_040",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "警告によれば、あなたの姿が第三者の視界に入る可能性があるようです"
     },
     {
       "Type": "dialogue",
       "Id": "s02_041",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……誰の？"
     },
     {
@@ -414,7 +414,7 @@
     {
       "Type": "dialogue",
       "Id": "s02_042",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "不明です"
     },
     {
@@ -428,19 +428,19 @@
     {
       "Type": "dialogue",
       "Id": "s02_043",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……人はいるんだよね"
     },
     {
       "Type": "dialogue",
       "Id": "s02_044",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "はい"
     },
     {
       "Type": "dialogue",
       "Id": "s02_045",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "じゃあ――"
     },
     {
@@ -450,7 +450,7 @@
     {
       "Type": "dialogue",
       "Id": "s02_046",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "みんな、どこにいるの？"
     }
   ]

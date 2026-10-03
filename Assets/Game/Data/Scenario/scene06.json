@@ -17,7 +17,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_001",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "家の中にいれば、安全だった……？"
     },
     {
@@ -59,7 +59,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_008",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "どうして？"
     },
     {
@@ -71,7 +71,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_010",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……？"
     },
     {
@@ -111,7 +111,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_016",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "でも、それって……"
     },
     {
@@ -151,13 +151,13 @@
     {
       "Type": "dialogue",
       "Id": "s06_022",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "…………"
     },
     {
       "Type": "dialogue",
       "Id": "s06_023",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "存在してるだけで、ハラスメントなの？"
     },
     {
@@ -169,7 +169,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_025",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "そんなの……どうすればいいのよ"
     },
     {
@@ -199,7 +199,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_030",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "え？"
     },
     {
@@ -242,13 +242,13 @@
     {
       "Type": "dialogue",
       "Id": "s06_034",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "ちょっと待って"
     },
     {
       "Type": "dialogue",
       "Id": "s06_035",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "まさか……"
     },
     {
@@ -260,7 +260,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_037",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "そんなことできるの？"
     },
     {
@@ -278,13 +278,13 @@
     {
       "Type": "dialogue",
       "Id": "s06_040",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "通信先で通常とは異なるシステムアクセスを検知しました"
     },
     {
       "Type": "dialogue",
       "Id": "s06_041",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "おじいさん！"
     },
     {
@@ -328,7 +328,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_046",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……え？"
     },
     {
@@ -450,7 +450,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_064",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "なに！？"
     },
     {
@@ -462,7 +462,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_066",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "え？"
     },
     {
@@ -474,7 +474,7 @@
     {
       "Type": "dialogue",
       "Id": "s06_068",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "おじいさん！？"
     },
     {
@@ -486,61 +486,61 @@
     {
       "Type": "dialogue",
       "Id": "s06_070",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "！？"
     },
     {
       "Type": "dialogue",
       "Id": "s06_071",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "おじいさん？"
     },
     {
       "Type": "dialogue",
       "Id": "s06_072",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "ねえ！"
     },
     {
       "Type": "dialogue",
       "Id": "s06_073",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "…………"
     },
     {
       "Type": "dialogue",
       "Id": "s06_074",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "何これ？"
     },
     {
       "Type": "dialogue",
       "Id": "s06_075",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "惑星各地で大規模なエネルギー反応を検知"
     },
     {
       "Type": "dialogue",
       "Id": "s06_076",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "どういうこと？"
     },
     {
       "Type": "dialogue",
       "Id": "s06_077",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "解析中"
     },
     {
       "Type": "dialogue",
       "Id": "s06_078",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "惑星消滅級の反応である可能性があります"
     },
     {
       "Type": "dialogue",
       "Id": "s06_079",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "…………は？"
     },
     {
@@ -576,13 +576,13 @@
     {
       "Type": "dialogue",
       "Id": "s06_085",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "退避を推奨します"
     },
     {
       "Type": "dialogue",
       "Id": "s06_086",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "それを早く言いなさいよ！！"
     },
     {

@@ -47,7 +47,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_001",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "通信を受信しました"
     },
     {
@@ -63,19 +63,19 @@
     {
       "Type": "dialogue",
       "Id": "s03_002",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "誰から？"
     },
     {
       "Type": "dialogue",
       "Id": "s03_003",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "この建物の居住者と思われます"
     },
     {
       "Type": "dialogue",
       "Id": "s03_004",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "つないで"
     },
     {
@@ -115,7 +115,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_006",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "うん。今、街の中にいるけど"
     },
     {
@@ -127,7 +127,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_008",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "どうして？"
     },
     {
@@ -139,7 +139,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_010",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……それが何か問題なの？"
     },
     {
@@ -152,7 +152,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_012",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "あなたも、その建物にいるの？"
     },
     {
@@ -164,7 +164,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_014",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "じゃあ、ちょっと外に出てきてよ。話を聞きたいんだけど"
     },
     {
@@ -182,7 +182,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_017",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "何年も？"
     },
     {
@@ -194,7 +194,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_019",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "でも、この街には十二億人いるんでしょ？"
     },
     {
@@ -206,7 +206,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_021",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "なのに、みんな家から出ないの？"
     },
     {
@@ -219,7 +219,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_023",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "……この星、昔からこうだったの？"
     },
     {
@@ -237,7 +237,7 @@
     {
       "Type": "dialogue",
       "Id": "s03_026",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "じゃあ、何があったの？"
     },
 
@@ -254,19 +254,19 @@
     {
       "Type": "dialogue",
       "Id": "s03_028",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "暇だから大丈夫"
     },
     {
       "Type": "dialogue",
       "Id": "s03_029",
-      "Speaker": "AI",
+      "Speaker": "ハウエル",
       "Text": "先ほどまで退屈だと訴えていました"
     },
     {
       "Type": "dialogue",
       "Id": "s03_030",
-      "Speaker": "少女",
+      "Speaker": "ろまん",
       "Text": "今それ言わなくていいから"
     },
     {
