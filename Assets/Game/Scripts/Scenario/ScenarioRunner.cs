@@ -20,7 +20,7 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private EndView endView;
     [SerializeField] private ScenarioRewindController scenarioRewindController;
 
-    [SerializeField] private List<TextAsset> scenarioJsons;
+    private IReadOnlyList<TextAsset> scenarioJsons;
 
     [SerializeField] private float skipInterval = 0.08f;
     [SerializeField] private float autoDelay = 0.5f;
@@ -39,12 +39,15 @@ public class ScenarioRunner : MonoBehaviour
 
     [SerializeField] private int startScenarioIndex;
 
-    private void Awake()
+    public void Initialize(IReadOnlyList<TextAsset> scenarioJsons)
     {
         if (scenarioJsons == null || scenarioJsons.Count == 0)
         {
             Debug.LogError("Scenario JSON is not assigned.");
+            return;
         }
+
+        this.scenarioJsons = scenarioJsons;
     }
 
     private void Start()
