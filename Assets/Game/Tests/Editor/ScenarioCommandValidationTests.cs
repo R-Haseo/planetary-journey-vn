@@ -8,8 +8,7 @@ using UnityEngine;
 
 public class ScenarioCommandValidationTests
 {
-    private const string ScenarioDirectory =
-        "Assets/Game/Data/Scenario";
+    private const string ScenarioDirectory = "Assets/Game/Data/Scenario";
 
     private static readonly HashSet<string> CommonProperties = new()
     {
@@ -370,8 +369,7 @@ public class ScenarioCommandValidationTests
         int commandIndex,
         params string[] additionalAllowedProperties)
     {
-        var allowedProperties =
-            new HashSet<string>(CommonProperties);
+        var allowedProperties = new HashSet<string>(CommonProperties);
 
         foreach (var property in additionalAllowedProperties)
         {
