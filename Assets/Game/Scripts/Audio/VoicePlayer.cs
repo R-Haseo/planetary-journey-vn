@@ -6,7 +6,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 public class VoicePlayer : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private string episodeId = "episode01";
+    private string episodeId;
 
     private AsyncOperationHandle<AudioClip>? currentHandle;
     private int requestVersion;
@@ -14,6 +14,11 @@ public class VoicePlayer : MonoBehaviour
     public bool IsPlaying => isPlaying;
 
     public event Action PlaybackCompleted;
+
+    public void Initialize(string episodeId)
+    {
+        this.episodeId = episodeId;
+    }
 
     public void Play(string id)
     {

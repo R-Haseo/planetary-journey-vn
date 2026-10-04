@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using Newtonsoft.Json;
 
 public class ScenarioRunner : MonoBehaviour
@@ -15,10 +14,12 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private RectTransform scenarioControlRoot;
     [SerializeField] private VoicePlayer voicePlayer;
     [SerializeField] private BGMPlayer bgmPlayer;
+    [SerializeField] private SEPlayer sePlayer;
     [SerializeField] private FadeView fadeView;
     [SerializeField] private EndView endView;
+    [SerializeField] private ScenarioRewindController scenarioRewindController;
 
-    [SerializeField] private List<TextAsset> scenarioJsons;
+    private IReadOnlyList<TextAsset> scenarioJsons;
 
     [SerializeField] private float skipInterval = 0.08f;
     [SerializeField] private float autoDelay = 0.5f;
@@ -37,12 +38,15 @@ public class ScenarioRunner : MonoBehaviour
 
     [SerializeField] private int startScenarioIndex;
 
-    private void Awake()
+    public void Initialize(IReadOnlyList<TextAsset> scenarioJsons)
     {
         if (scenarioJsons == null || scenarioJsons.Count == 0)
         {
             Debug.LogError("Scenario JSON is not assigned.");
+            return;
         }
+
+        this.scenarioJsons = scenarioJsons;
     }
 
     private void Start()
@@ -53,8 +57,6 @@ public class ScenarioRunner : MonoBehaviour
             ToggleLog,
             ToggleAuto,
             ToggleSkip);
-
-        endView.Initialize(Restart);
 
 #if UNITY_EDITOR
         currentScenarioIndex = Mathf.Clamp(
@@ -70,6 +72,16 @@ public class ScenarioRunner : MonoBehaviour
 
     private void Update()
     {
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+        var rewindPressed = Keyboard.current?.rKey.wasPressedThisFrame == true;
+
+        if (rewindPressed)
+        {
+            Rewind();
+            return;
+        }
+#endif
+
         var logPressed = Keyboard.current?.lKey.wasPressedThisFrame == true;
 
         if (logPressed)
@@ -241,6 +253,10 @@ public class ScenarioRunner : MonoBehaviour
                 ProcessBgmCommand(scenarioCommand);
                 break;
 
+            case "se":
+                ProcessSeCommand(scenarioCommand);
+                break;
+
             case "fade":
                 ProcessFadeCommand(scenarioCommand);
                 break;
@@ -350,6 +366,12 @@ public class ScenarioRunner : MonoBehaviour
         MoveToNextCommand();
     }
 
+    private void ProcessSeCommand(ScenarioCommandDto command)
+    {
+        sePlayer.Play(command.AssetId);
+        MoveToNextCommand();
+    }
+
     private void ProcessFadeCommand(ScenarioCommandDto command)
     {
         switch (command.Action)
@@ -439,10 +461,33 @@ public class ScenarioRunner : MonoBehaviour
         return false;
     }
 
-    private void Restart()
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+    private void Rewind()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        voicePlayer.Stop();
+
+        skipMode = false;
+        skipTimer = 0f;
+
+        waitingForAutoAdvance = false;
+        autoTimer = 0f;
+
+        if (!scenarioRewindController.TryRewind(
+                scenarioJsons,
+                currentScenarioIndex,
+                currentIndex,
+                out var result))
+        {
+            return;
+        }
+
+        currentScenarioIndex = result.ScenarioIndex;
+        commands = result.Commands;
+        currentIndex = result.CommandIndex;
+
+        ProcessCurrentCommand();
     }
+#endif
 
     private void OnDestroy()
     {
