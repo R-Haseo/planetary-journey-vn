@@ -3,7 +3,7 @@
     {
       "Type": "bgm",
       "Action": "play",
-      "AssetId": "scene01_space"
+      "AssetId": "space"
     },
     {
       "Type": "background",

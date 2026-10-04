@@ -1,8 +1,51 @@
 {
   "Commands": [
     {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "space"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode02/scene01/space_exterior"
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.8
+    },
+    {
       "Type": "description",
       "Text": "星々の間を、一隻の小型宇宙船が進んでいる。"
+    },
+    {
+      "Type": "description",
+      "Text": "船は静かに、宇宙の闇を滑っていく。"
+    },
+    {
+      "Type": "description",
+      "Text": "その船内では――"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode02/scene01/spaceship_interior"
+    },
+    {
+      "Type": "character",
+      "AssetId": "roman/roman_normal",
+      "Action": "show",
+      "Position": "left",
+      "Width": 620,
+      "Height": 930
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/ai_normal",
+      "Action": "show",
+      "Position": "right",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120
     },
     {
       "Type": "description",
@@ -49,6 +92,10 @@
     {
       "Type": "description",
       "Text": "ろまんは再び本へ視線を落とす。"
+    },
+    {
+      "Type": "se",
+      "AssetId": "communication"
     },
     {
       "Type": "description",
@@ -203,6 +250,10 @@
       "Text": "確認します"
     },
     {
+      "Type": "se",
+      "AssetId": "analysis"
+    },
+    {
       "Type": "description",
       "Text": "短い間。"
     },
@@ -339,12 +390,31 @@
       "Text": "うるさい"
     },
     {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "right"
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "left"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode02/scene01/space_exterior"
+    },
+    {
       "Type": "description",
       "Text": "宇宙船が進路を変える。"
     },
     {
       "Type": "description",
       "Text": "遠くに浮かぶ惑星へ向かって、静かに加速していく。"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.8
     },
     {
       "Type": "end"
