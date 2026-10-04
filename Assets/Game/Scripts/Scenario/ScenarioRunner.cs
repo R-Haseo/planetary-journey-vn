@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using Newtonsoft.Json;
 
 public class ScenarioRunner : MonoBehaviour
@@ -58,8 +57,6 @@ public class ScenarioRunner : MonoBehaviour
             ToggleLog,
             ToggleAuto,
             ToggleSkip);
-
-        endView.Initialize(Restart);
 
 #if UNITY_EDITOR
         currentScenarioIndex = Mathf.Clamp(
@@ -491,11 +488,6 @@ public class ScenarioRunner : MonoBehaviour
         ProcessCurrentCommand();
     }
 #endif
-
-    private void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
 
     private void OnDestroy()
     {
