@@ -1305,6 +1305,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88f729bf1cb825c42838adba72bc2a52
+    m_Address: background/episode02/scene01/planet_monitor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 890275efcd79d484293e425d9ab8688c
     m_Address: voice/episode01/s07_008
     m_ReadOnly: 0
@@ -2002,6 +2007,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d45a0f4c0610c7b48948019d332ac047
     m_Address: voice/episode01/s06_084
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d47bc2a07a5eb404e926d418d8b1f309
+    m_Address: background/episode02/scene01/communication_console
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

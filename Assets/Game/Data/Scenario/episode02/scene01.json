@@ -130,6 +130,20 @@
       "Text": "ろまんは本を閉じる。"
     },
     {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "right"
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "left"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode02/scene01/communication_console"
+    },
+    {
       "Type": "description",
       "Text": "通信が接続される。画面に映像は表示されない。女性の声だけが船内に響く。"
     },
@@ -164,14 +178,18 @@
       "Text": "ふふっ。話が早くて助かるわ"
     },
     {
-      "Type": "description",
-      "Text": "船内モニターに、一つの惑星が表示される。"
-    },
-    {
       "Type": "dialogue",
       "Id": "s01_015",
       "Speaker": "教授",
       "Text": "次に向かってほしいのは、この惑星"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode02/scene01/planet_monitor"
+    },
+    {
+      "Type": "description",
+      "Text": "船内モニターに、一つの惑星が表示される。"
     },
     {
       "Type": "dialogue",
@@ -328,6 +346,27 @@
     {
       "Type": "description",
       "Text": "通信が切れる。"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode02/scene01/spaceship_interior"
+    },
+    {
+      "Type": "character",
+      "AssetId": "roman/roman_normal",
+      "Action": "show",
+      "Position": "left",
+      "Width": 620,
+      "Height": 930
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/ai_normal",
+      "Action": "show",
+      "Position": "right",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120
     },
     {
       "Type": "dialogue",
