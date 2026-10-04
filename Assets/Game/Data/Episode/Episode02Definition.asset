@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e322bd6285585440a62072f2d2d9cc0, type: 3}
+  m_Name: Episode02Definition
+  m_EditorClassIdentifier: Assembly-CSharp::EpisodeDefinition
+  episodeId: episode02
+  scenarioJsons:
+  - {fileID: 4900000, guid: e9f1f1093120c944a950c5eb81d7f25f, type: 3}
+  endMessage: To be continued...

@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using Newtonsoft.Json;
 
 public class ScenarioRunner : MonoBehaviour
@@ -20,7 +19,7 @@ public class ScenarioRunner : MonoBehaviour
     [SerializeField] private EndView endView;
     [SerializeField] private ScenarioRewindController scenarioRewindController;
 
-    [SerializeField] private List<TextAsset> scenarioJsons;
+    private IReadOnlyList<TextAsset> scenarioJsons;
 
     [SerializeField] private float skipInterval = 0.08f;
     [SerializeField] private float autoDelay = 0.5f;
@@ -39,12 +38,15 @@ public class ScenarioRunner : MonoBehaviour
 
     [SerializeField] private int startScenarioIndex;
 
-    private void Awake()
+    public void Initialize(IReadOnlyList<TextAsset> scenarioJsons)
     {
         if (scenarioJsons == null || scenarioJsons.Count == 0)
         {
             Debug.LogError("Scenario JSON is not assigned.");
+            return;
         }
+
+        this.scenarioJsons = scenarioJsons;
     }
 
     private void Start()
@@ -55,8 +57,6 @@ public class ScenarioRunner : MonoBehaviour
             ToggleLog,
             ToggleAuto,
             ToggleSkip);
-
-        endView.Initialize(Restart);
 
 #if UNITY_EDITOR
         currentScenarioIndex = Mathf.Clamp(
@@ -488,11 +488,6 @@ public class ScenarioRunner : MonoBehaviour
         ProcessCurrentCommand();
     }
 #endif
-
-    private void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
 
     private void OnDestroy()
     {
