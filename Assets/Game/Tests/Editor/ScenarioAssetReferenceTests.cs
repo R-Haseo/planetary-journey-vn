@@ -54,6 +54,15 @@ public class ScenarioAssetReferenceTests
         var commands = (JArray)root["Commands"];
         var scenarioName = Path.GetFileName(scenarioPath);
 
+        var episodeDirectory = Path.GetDirectoryName(scenarioPath);
+
+        Assert.That(
+            episodeDirectory,
+            Is.Not.Null.And.Not.Empty,
+            $"Episode directory could not be determined from {scenarioPath}.");
+
+        var episodeId = Path.GetFileName(episodeDirectory);
+
         foreach (var token in commands)
         {
             if (token is not JObject command)
@@ -66,7 +75,11 @@ public class ScenarioAssetReferenceTests
             switch (type)
             {
                 case "dialogue":
-                    ValidateVoice(command, scenarioName, addressEntries);
+                    ValidateVoice(
+                        command,
+                        scenarioName,
+                        episodeId,
+                        addressEntries);
                     break;
 
                 case "background":
@@ -106,6 +119,7 @@ public class ScenarioAssetReferenceTests
     private static void ValidateVoice(
         JObject command,
         string scenarioName,
+        string episodeId,
         IReadOnlyDictionary<string, AddressableAssetEntry> addressEntries)
     {
         var dialogueId = command.Value<string>("Id");
@@ -116,7 +130,7 @@ public class ScenarioAssetReferenceTests
             return;
         }
 
-        var expectedAddress = $"voice/episode01/{dialogueId}";
+        var expectedAddress = $"voice/{episodeId}/{dialogueId}";
 
         ValidateAddressableEntry(
             scenarioName,
