@@ -1,0 +1,56 @@
+{
+  "Mappings": [
+    {
+      "ScenarioSpeaker": "ろまん",
+      "VoiceVoxCharacter": "小夜/SAYO"
+    },
+    {
+      "ScenarioSpeaker": "ハウエル",
+      "VoiceVoxCharacter": "青山龍星"
+    },
+    {
+      "ScenarioSpeaker": "博士",
+      "VoiceVoxCharacter": "No.7"
+    },
+    {
+      "ScenarioSpeaker": "老人",
+      "VoiceVoxCharacter": "麒ヶ島宗麟"
+    },
+    {
+      "ScenarioSpeaker": "身なりの整った男性",
+      "VoiceVoxCharacter": "玄野武宏"
+    },
+    {
+      "ScenarioSpeaker": "冴えない地味な男性",
+      "VoiceVoxCharacter": "白上虎太郎"
+    },
+    {
+      "ScenarioSpeaker": "サラリーマン",
+      "VoiceVoxCharacter": "白上虎太郎"
+    },
+    {
+      "ScenarioSpeaker": "市民A",
+      "VoiceVoxCharacter": "白上虎太郎"
+    },
+    {
+      "ScenarioSpeaker": "市民B",
+      "VoiceVoxCharacter": "白上虎太郎"
+    },
+    {
+      "ScenarioSpeaker": "市民C",
+      "VoiceVoxCharacter": "白上虎太郎"
+    },
+    {
+      "ScenarioSpeaker": "女性",
+      "VoiceVoxCharacter": "春日部つむぎ"
+    },
+    {
+      "ScenarioSpeaker": "ハル",
+      "VoiceVoxCharacter": "四国めたん"
+    },
+    {
+      "ScenarioSpeaker": "",
+      "VoiceVoxCharacter": "四国めたん"
+    }
+  ]
+}

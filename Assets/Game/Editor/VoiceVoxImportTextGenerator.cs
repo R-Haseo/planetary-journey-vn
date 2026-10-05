@@ -10,25 +10,6 @@ public static class VoiceVoxImportTextGenerator
     private const string ScenarioDirectory = "Assets/Game/Data/Scenario";
     private const string OutputDirectory = "Assets/Game/Generated/VoiceVox";
 
-    private static readonly Dictionary<string, string> SpeakerMap = new()
-    {
-        { "ろまん", "小夜/SAYO" },
-        { "ハウエル", "青山龍星" },
-        { "博士", "No.7" },
-        { "老人", "麒ヶ島宗麟" },
-        { "身なりの整った男性", "玄野武宏" },
-        { "冴えない地味な男性", "白上虎太郎" },
-        { "サラリーマン", "白上虎太郎" },
-        { "市民A", "白上虎太郎" },
-        { "市民B", "白上虎太郎" },
-        { "市民C", "白上虎太郎" },
-        { "女性", "春日部つむぎ" },
-        { "ハル", "四国めたん" },
-
-        // Speakerが空の場合など、システム音声用
-        { "", "四国めたん" }
-    };
-
     [MenuItem("Tools/Voice/Generate VOICEVOX Import Text")]
     private static void Generate()
     {
@@ -49,6 +30,17 @@ public static class VoiceVoxImportTextGenerator
         if (scenario?.Commands == null)
         {
             Debug.LogError($"Failed to load scenario: {scenarioPath}");
+            return;
+        }
+
+        string episodeId = new DirectoryInfo(Path.GetDirectoryName(scenarioPath)!).Name;
+
+        Dictionary<string, string> speakerMap = VoiceVoxSpeakerMappingRepository.Load(episodeId);
+
+        if (speakerMap.Count == 0)
+        {
+            Debug.LogError(
+                $"VOICEVOX speaker mappings not found: {episodeId}");
             return;
         }
 
@@ -74,7 +66,7 @@ public static class VoiceVoxImportTextGenerator
 
             string speaker = command.Speaker ?? string.Empty;
 
-            if (!SpeakerMap.TryGetValue(speaker, out string voiceVoxSpeaker))
+            if (!speakerMap.TryGetValue(speaker, out string voiceVoxSpeaker))
             {
                 Debug.LogError(
                     $"VOICEVOX speaker mapping not found. " +

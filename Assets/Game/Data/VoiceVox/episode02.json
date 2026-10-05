@@ -1,0 +1,20 @@
+{
+  "Mappings": [
+    {
+      "ScenarioSpeaker": "ろまん",
+      "VoiceVoxCharacter": "小夜/SAYO"
+    },
+    {
+      "ScenarioSpeaker": "ハウエル",
+      "VoiceVoxCharacter": "青山龍星"
+    },
+    {
+      "ScenarioSpeaker": "博士",
+      "VoiceVoxCharacter": "No.7"
+    },
+    {
+      "ScenarioSpeaker": "",
+      "VoiceVoxCharacter": "四国めたん"
+    }
+  ]
+}
