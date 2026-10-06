@@ -1,6 +1,10 @@
 {
   "Commands": [
     {
+      "Type": "background",
+      "AssetId": "episode02/scene02/city_aerial"
+    },
+    {
       "Type": "fade",
       "Action": "in",
       "Duration": 0.8

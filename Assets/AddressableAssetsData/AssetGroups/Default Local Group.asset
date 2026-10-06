@@ -2545,6 +2545,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1e0e0922056ebf46ab504a2f9c4a4ee
+    m_Address: background/episode02/scene02/city_aerial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f240e017799f22349a343c6c0be1a959
     m_Address: voice/episode01/s02_025
     m_ReadOnly: 0
