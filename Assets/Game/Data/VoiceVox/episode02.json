@@ -15,6 +15,14 @@
     {
       "ScenarioSpeaker": "",
       "VoiceVoxCharacter": "四国めたん"
+    },
+    {
+      "ScenarioSpeaker": "ミア",
+      "VoiceVoxCharacter": "春日部つむぎ"
+    },
+    {
+      "ScenarioSpeaker": "少女",
+      "VoiceVoxCharacter": "春日部つむぎ"
     }
   ]
 }
