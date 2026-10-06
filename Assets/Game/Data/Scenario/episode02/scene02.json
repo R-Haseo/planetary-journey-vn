@@ -26,23 +26,6 @@
       "Text": "むしろ、これまで訪れた惑星と比べても発展した都市に見えた。"
     },
     {
-      "Type": "character",
-      "AssetId": "roman/roman_normal",
-      "Action": "show",
-      "Position": "left",
-      "Width": 620,
-      "Height": 930
-    },
-    {
-      "Type": "character",
-      "AssetId": "ai/ai_normal",
-      "Action": "show",
-      "Position": "right",
-      "Width": 320,
-      "Height": 320,
-      "OffsetY": 120
-    },
-    {
       "Type": "dialogue",
       "Id": "s02_001",
       "Speaker": "ろまん",
@@ -71,6 +54,27 @@
       "Id": "s02_005",
       "Speaker": "ろまん",
       "Text": "そこは否定してよ"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode02/scene02/tv_city_street"
+    },
+        {
+      "Type": "character",
+      "AssetId": "roman/roman_normal",
+      "Action": "show",
+      "Position": "left",
+      "Width": 620,
+      "Height": 930
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/ai_normal",
+      "Action": "show",
+      "Position": "right",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120
     },
     {
       "Type": "description",
