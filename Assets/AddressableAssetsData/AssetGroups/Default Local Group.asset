@@ -1680,6 +1680,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99e0a5d9f840fa84289ac2d2e6e3f160
+    m_Address: bgm/bright_city
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9a028510ad3207f4890912e929bfb555
     m_Address: voice/episode02/s02_048
     m_ReadOnly: 0

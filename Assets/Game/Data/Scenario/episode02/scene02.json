@@ -214,6 +214,11 @@
       "Text": "まあ、そんなところ"
     },
     {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "bright_city"
+    },
+    {
       "Type": "dialogue",
       "Id": "s02_022",
       "Speaker": "少女",
