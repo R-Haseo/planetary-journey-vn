@@ -292,7 +292,8 @@ public class ScenarioRunner : MonoBehaviour
                     command.Width,
                     command.Height,
                     command.OffsetX,
-                    command.OffsetY);
+                    command.OffsetY,
+                    command.FlipX);
                 break;
 
             case "hide":

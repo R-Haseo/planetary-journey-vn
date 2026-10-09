@@ -234,7 +234,8 @@
       "Position": "center",
       "Width": 320,
       "Height": 320,
-      "OffsetY": 120
+      "OffsetY": 120,
+      "flipX": true
     },
     {
       "Type": "bgm",
