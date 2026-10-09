@@ -105,6 +105,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c33cd4af0e2ac34a88274242603554b
+    m_Address: character/mia/mia_normal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0c43b4d2dafb51849b18d1a89fc4cf72
     m_Address: voice/episode01/s06_076
     m_ReadOnly: 0
@@ -1362,6 +1367,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 797678d03f1c8214e90113c12750d8ad
     m_Address: voice/episode01/s06_079
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 79fa645875ef8df448dc63e9f1a2e9b7
+    m_Address: character/mia/mia_three_quarter
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

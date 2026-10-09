@@ -64,7 +64,7 @@
       "Type": "background",
       "AssetId": "episode02/scene02/tv_city_street"
     },
-        {
+    {
       "Type": "character",
       "AssetId": "roman/roman_normal",
       "Action": "show",
@@ -212,6 +212,29 @@
       "Id": "s02_021",
       "Speaker": "ろまん",
       "Text": "まあ、そんなところ"
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "right"
+    },
+    {
+      "Type": "character",
+      "AssetId": "mia/mia_three_quarter",
+      "Action": "show",
+      "Position": "right",
+      "Width": 775,
+      "Height": 1085,
+      "OffsetY": -50
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/ai_normal",
+      "Action": "show",
+      "Position": "center",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120
     },
     {
       "Type": "bgm",
