@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using Newtonsoft.Json;
 
 public class ScenarioRunner : MonoBehaviour
@@ -56,7 +57,8 @@ public class ScenarioRunner : MonoBehaviour
         scenarioControlView.Initialize(
             ToggleLog,
             ToggleAuto,
-            ToggleSkip);
+            ToggleSkip,
+            ReturnToTitle);
 
 #if UNITY_EDITOR
         currentScenarioIndex = Mathf.Clamp(
@@ -429,6 +431,11 @@ public class ScenarioRunner : MonoBehaviour
 
         Debug.Log($"Skip mode: {(skipMode ? "ON" : "OFF")}");
         ClearButtonSelection();
+    }
+
+    public void ReturnToTitle()
+    {
+        SceneManager.LoadScene("Startup");
     }
 
     private static void ClearButtonSelection()
