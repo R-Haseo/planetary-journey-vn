@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 2437de426f714de448d312cc758beffa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7834192523602138041
+    second: romans_art_gallery_logo_0
+  - first:
+      213: -8975694973456761052
+    second: romans_art_gallery_logo_1
+  - first:
+      213: -9166120346386775919
+    second: romans_art_gallery_logo_2
+  - first:
+      213: -2891708143180335690
+    second: romans_art_gallery_logo_3
+  - first:
+      213: 2807608183617440581
+    second: romans_art_gallery_logo_4
+  - first:
+      213: -3260653861828706892
+    second: romans_art_gallery_logo_5
+  - first:
+      213: -2660500929527842652
+    second: romans_art_gallery_logo_6
+  - first:
+      213: -946028208140407830
+    second: romans_art_gallery_logo_7
+  - first:
+      213: 2628702682633266585
+    second: romans_art_gallery_logo_8
+  - first:
+      213: -261794328878350307
+    second: romans_art_gallery_logo_9
+  - first:
+      213: 5136604767956571086
+    second: romans_art_gallery_logo_10
+  - first:
+      213: 3691850841571156576
+    second: romans_art_gallery_logo_11
+  - first:
+      213: 4695012792979340734
+    second: romans_art_gallery_logo_12
+  - first:
+      213: 4172099419430711988
+    second: romans_art_gallery_logo_13
+  - first:
+      213: 3817326442974731112
+    second: romans_art_gallery_logo_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 20
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c6ca8386b574390800000000000000
+      internalID: -7834192523602138041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 20
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fb9d61afcef6380800000000000000
+      internalID: -8975694973456761052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 20
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190c221fb166bc080800000000000000
+      internalID: -9166120346386775919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 20
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5b1a3c3c69ed7d0800000000000000
+      internalID: -2891708143180335690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_4
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 20
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b4ff484c0a6f620800000000000000
+      internalID: 2807608183617440581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_5
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 20
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bdb13e9694dfb2d0800000000000000
+      internalID: -3260653861828706892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_6
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 21
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a875e22080041bd0800000000000000
+      internalID: -2660500929527842652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_7
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 21
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebaa426b580fd2f0800000000000000
+      internalID: -946028208140407830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_8
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 20
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995e87299270b7420800000000000000
+      internalID: 2628702682633266585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_9
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 20
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d108ef6e17bed5cf0800000000000000
+      internalID: -261794328878350307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_10
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 20
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec311a152d2e84740800000000000000
+      internalID: 5136604767956571086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_11
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 20
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0626397b7c61c3330800000000000000
+      internalID: 3691850841571156576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_12
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 20
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdb27d8249082140800000000000000
+      internalID: 4695012792979340734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_13
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 20
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2f7c6315646e930800000000000000
+      internalID: 4172099419430711988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: romans_art_gallery_logo_14
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 9
+        width: 66
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bd631cc2ed9f430800000000000000
+      internalID: 3817326442974731112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      romans_art_gallery_logo_0: -7834192523602138041
+      romans_art_gallery_logo_1: -8975694973456761052
+      romans_art_gallery_logo_10: 5136604767956571086
+      romans_art_gallery_logo_11: 3691850841571156576
+      romans_art_gallery_logo_12: 4695012792979340734
+      romans_art_gallery_logo_13: 4172099419430711988
+      romans_art_gallery_logo_14: 3817326442974731112
+      romans_art_gallery_logo_2: -9166120346386775919
+      romans_art_gallery_logo_3: -2891708143180335690
+      romans_art_gallery_logo_4: 2807608183617440581
+      romans_art_gallery_logo_5: -3260653861828706892
+      romans_art_gallery_logo_6: -2660500929527842652
+      romans_art_gallery_logo_7: -946028208140407830
+      romans_art_gallery_logo_8: 2628702682633266585
+      romans_art_gallery_logo_9: -261794328878350307
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
