@@ -16,4 +16,5 @@ MonoBehaviour:
   scenarioJsons:
   - {fileID: 4900000, guid: e9f1f1093120c944a950c5eb81d7f25f, type: 3}
   - {fileID: 4900000, guid: 50890dc2824475c428eae3b9c04673d8, type: 3}
+  - {fileID: 4900000, guid: 0e9ee52a9e8980c49a1743a2b9b35898, type: 3}
   endMessage: To be continued...

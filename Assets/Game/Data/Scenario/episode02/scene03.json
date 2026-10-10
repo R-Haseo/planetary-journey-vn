@@ -1,0 +1,532 @@
+{
+  "Commands": [
+    {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "scene02_city"
+    },
+    {
+      "Type": "character",
+      "AssetId": "roman/roman_normal",
+      "Action": "show",
+      "Position": "left",
+      "Width": 620,
+      "Height": 930
+    },
+    {
+      "Type": "character",
+      "AssetId": "mia/mia_three_quarter",
+      "Action": "show",
+      "Position": "right",
+      "Width": 775,
+      "Height": 1085,
+      "OffsetY": -50
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/ai_normal",
+      "Action": "show",
+      "Position": "center",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.8
+    },
+    {
+      "Type": "description",
+      "Text": "通りの両側には無数のテレビが並び、画面から漏れる声が街の喧騒に混じっていた。"
+    },
+    {
+      "Type": "description",
+      "Text": "街の至るところに設置されたテレビから、陽気な音楽が流れている。"
+    },
+    {
+      "Type": "description",
+      "Text": "ろまんたちが通りを歩いていると、何やら激しい言い争いが聞こえてきた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_001",
+      "Speaker": "市民A",
+      "Text": "だから！ 俺はテレビなんか持ってないって言ってるだろ！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_002",
+      "Speaker": "受信料徴収員",
+      "Text": "ですから、お客様。テレビの所有の有無は関係ありません"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_003",
+      "Speaker": "市民A",
+      "Text": "関係ないわけないだろ！ 見てもいないものに、どうして金を払わなきゃならないんだ！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_004",
+      "Speaker": "受信料徴収員",
+      "Text": "正確な情報は、すべての国民が等しく享受すべき公共財です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_005",
+      "Speaker": "受信料徴収員",
+      "Text": "したがって、全国民に受信料をお支払いいただくことが、法律によって定められております"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_006",
+      "Speaker": "市民A",
+      "Text": "俺はそんなもの、頼んだ覚えはないぞ！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_007",
+      "Speaker": "受信料徴収員",
+      "Text": "ええ。ですから、頼んだかどうかは関係ないのです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_008",
+      "Speaker": "受信料徴収員",
+      "Text": "公共財ですので"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_009",
+      "Speaker": "市民A",
+      "Text": "だから、その公共財ってのが何なんだよ！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_010",
+      "Speaker": "受信料徴収員",
+      "Text": "公共財です"
+    },
+    {
+      "Type": "description",
+      "Text": "徴収員は平然とした顔のまま、市民Aは言葉を失った。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_011",
+      "Speaker": "ろまん",
+      "Text": "……なんだか、話が噛み合ってないね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_012",
+      "Speaker": "ハウエル",
+      "Text": "いいえ。徴収員の方は、終始一貫した説明をしています"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_013",
+      "Speaker": "ろまん",
+      "Text": "でも、見てもいない人からお金を取るなんて、おかしくない？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_014",
+      "Speaker": "ろまん",
+      "Text": "わたしたちの星じゃ、公共放送だってとっくにスクランブル化されてるでしょ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_015",
+      "Speaker": "ハウエル",
+      "Text": "この星では、情報の受信そのものが社会的義務とみなされているようですね"
+    },
+    {
+      "Type": "description",
+      "Text": "市民Aはなおも食い下がる。徴収員は少しも表情を変えない。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_016",
+      "Speaker": "市民A",
+      "Text": "とにかく、俺は払わんぞ！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_017",
+      "Speaker": "受信料徴収員",
+      "Text": "お気持ちは理解いたします"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_018",
+      "Speaker": "受信料徴収員",
+      "Text": "しかし、もし一部の国民だけが受信料を免除されれば、情報の公平性が損なわれてしまいます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_019",
+      "Speaker": "市民A",
+      "Text": "テレビも見ない俺が払わないと、何が不公平なんだよ！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_020",
+      "Speaker": "受信料徴収員",
+      "Text": "正確な情報を享受しない自由はございます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_021",
+      "Speaker": "受信料徴収員",
+      "Text": "ただし、正確な情報を享受できる社会を維持する費用から逃れる自由はございません"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_022",
+      "Speaker": "ろまん",
+      "Text": "……なんか、すごい理屈だね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_023",
+      "Speaker": "ハウエル",
+      "Text": "制度の論理としては、理解できます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_024",
+      "Speaker": "ろまん",
+      "Text": "ハウエルまでそっち側なの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_025",
+      "Speaker": "ハウエル",
+      "Text": "理解できることと、賛同することは別です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_026",
+      "Speaker": "ハウエル",
+      "Text": "もっとも、こちらの星では、その区別にも注意が必要かもしれません"
+    },
+    {
+      "Type": "description",
+      "Text": "徴収員は胸元から小型の端末を取り出し、慣れた手つきで画面を操作し始めた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_027",
+      "Speaker": "受信料徴収員",
+      "Text": "それでは、最終確認をさせていただきます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_028",
+      "Speaker": "受信料徴収員",
+      "Text": "受信料のお支払いを拒否される、ということでよろしいですね？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_029",
+      "Speaker": "市民A",
+      "Text": "何度も言わせるな！ 一銭も払わん！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_030",
+      "Speaker": "受信料徴収員",
+      "Text": "承知いたしました"
+    },
+    {
+      "Type": "description",
+      "Text": "端末が短い電子音を鳴らした。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_031",
+      "Speaker": "受信料徴収員",
+      "Text": "では、法令に基づき、財産の差し押さえ手続きを開始いたします"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_032",
+      "Speaker": "市民A",
+      "Text": "……は？"
+    },
+    {
+      "Type": "description",
+      "Text": "鋭い警告音とともに、端末の画面に赤い文字が浮かび上がった。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_033",
+      "Speaker": "受信料徴収員",
+      "Text": "銀行口座の凍結が完了しました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_034",
+      "Speaker": "市民A",
+      "Text": "お、おい！ ちょっと待て！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_035",
+      "Speaker": "受信料徴収員",
+      "Text": "続いて、不足額につきましては、動産の差し押さえによって充当いたします"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_036",
+      "Speaker": "市民A",
+      "Text": "冗談じゃない！ 俺の金だぞ！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_037",
+      "Speaker": "受信料徴収員",
+      "Text": "ご安心ください"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_038",
+      "Speaker": "受信料徴収員",
+      "Text": "徴収された受信料は、すべて国民の皆様に正確な情報をお届けするために使用されます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_039",
+      "Speaker": "市民A",
+      "Text": "安心できるかあああ！"
+    },
+    {
+      "Type": "description",
+      "Text": "市民Aの叫び声は、街にあふれるテレビの音と人々のざわめきにかき消された。"
+    },
+    {
+      "Type": "description",
+      "Text": "その一部始終を見ていたミアは、不思議そうに首をかしげた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_040",
+      "Speaker": "ろまん",
+      "Text": "……ひどい話だね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_041",
+      "Speaker": "ハウエル",
+      "Text": "法的手続きとしては、適正に執行されているようです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_042",
+      "Speaker": "ろまん",
+      "Text": "法律で決まってたら、何でもいいってわけじゃないでしょ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_043",
+      "Speaker": "ハウエル",
+      "Text": "その通りです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_044",
+      "Speaker": "ハウエル",
+      "Text": "合法であることと、合理的であることは必ずしも一致しません"
+    },
+    {
+      "Type": "description",
+      "Text": "ミアは、戸惑うろまんたちに何気ない調子で声をかけた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_045",
+      "Speaker": "ミア",
+      "Text": "お姉ちゃんたち、どうしてそんなに驚いてるの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_046",
+      "Speaker": "ろまん",
+      "Text": "だって、テレビも持ってないのにお金を取られるなんて、おかしいと思わない？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_047",
+      "Speaker": "ミア",
+      "Text": "え？ なんで？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_048",
+      "Speaker": "ミア",
+      "Text": "みんな払ってるよ？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_049",
+      "Speaker": "ろまん",
+      "Text": "……みんな？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_050",
+      "Speaker": "ミア",
+      "Text": "うん。わたしも払ってるし"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_051",
+      "Speaker": "ろまん",
+      "Text": "えっ、あなたも？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_052",
+      "Speaker": "ミア",
+      "Text": "そうだよ。受信料って、税金と同じくらい当たり前のことだもん"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_053",
+      "Speaker": "ミア",
+      "Text": "払わない人のほうがおかしいんじゃない？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_054",
+      "Speaker": "ろまん",
+      "Text": "…………"
+    },
+    {
+      "Type": "description",
+      "Text": "ろまんはミアの顔と、立ち去ろうとする徴収員を交互に見つめた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_055",
+      "Speaker": "ろまん",
+      "Text": "ハウエル。この星の人たち、なんだか変だよ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_056",
+      "Speaker": "ハウエル",
+      "Text": "少なくとも、受信料に対する認識は、我々のものとは大きく異なっているようです"
+    },
+    {
+      "Type": "description",
+      "Text": "徴収員は何事もなかったかのように立ち去った。市民Aだけが、街角の大型テレビの下で呆然と立ち尽くしている。"
+    },
+    {
+      "Type": "description",
+      "Text": "市民Aの銀行口座が凍結されても、街の様子は何ひとつ変わらなかった。"
+    },
+    {
+      "Type": "description",
+      "Text": "人々は当たり前のように通り過ぎ、巨大なテレビからは、相変わらず明るい音楽が流れている。"
+    },
+    {
+      "Type": "description",
+      "Text": "そのとき、大型テレビからひときわ陽気な音楽が流れ始めた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_057",
+      "Speaker": "テレビ司会者",
+      "Text": "さあ、お待たせしました！ 今夜も始まりました！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_058",
+      "Speaker": "テレビ司会者",
+      "Text": "国民的人気アイドルグループによる、ドキドキ！ コスプレ大変身スペシャル！！"
+    },
+    {
+      "Type": "description",
+      "Text": "テレビの中で拍手と歓声が沸き起こる。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_059",
+      "Speaker": "テレビ司会者",
+      "Text": "今夜のテーマは、なんと！ ネコミミメイド！！"
+    },
+    {
+      "Type": "description",
+      "Text": "画面いっぱいに、ネコミミメイド姿のアイドルが笑顔でポーズを決める姿が映し出された。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_060",
+      "Speaker": "アイドル",
+      "Text": "ご主人さま～！ にゃんにゃんっ♡"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_061",
+      "Speaker": "テレビ司会者",
+      "Text": "なお、この番組は国民の知る権利を保障するため、公共放送として全国にお届けしております！"
+    },
+    {
+      "Type": "description",
+      "Text": "スタジオは割れんばかりの歓声に包まれた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_062",
+      "Speaker": "ろまん",
+      "Text": "…………"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_063",
+      "Speaker": "ハウエル",
+      "Text": "…………"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_064",
+      "Speaker": "ろまん",
+      "Text": "……ねえ、ハウエル"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_065",
+      "Speaker": "ハウエル",
+      "Text": "はい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_066",
+      "Speaker": "ろまん",
+      "Text": "あれが、全国民からお金を集めて守ってる、正確な情報なの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_067",
+      "Speaker": "ハウエル",
+      "Text": "少なくとも、ネコミミは正確に装着されているようです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s03_068",
+      "Speaker": "ろまん",
+      "Text": "そこじゃないよ！"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.8
+    },
+    {
+      "Type": "end"
+    }
+  ]
+}
