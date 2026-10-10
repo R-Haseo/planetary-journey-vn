@@ -235,7 +235,7 @@
       "Width": 320,
       "Height": 320,
       "OffsetY": 120,
-      "flipX": true
+      "FlipX": true
     },
     {
       "Type": "bgm",
