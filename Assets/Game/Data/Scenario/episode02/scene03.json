@@ -6,10 +6,14 @@
       "AssetId": "scene02_city"
     },
     {
+      "Type": "background",
+      "AssetId": "episode02/scene03/tv_city_street2"
+    },
+    {
       "Type": "character",
       "AssetId": "roman/roman_normal",
       "Action": "show",
-      "Position": "left",
+      "Position": "center",
       "Width": 620,
       "Height": 930
     },
@@ -26,10 +30,11 @@
       "Type": "character",
       "AssetId": "ai/ai_normal",
       "Action": "show",
-      "Position": "center",
+      "Position": "left",
       "Width": 320,
       "Height": 320,
-      "OffsetY": 120
+      "OffsetY": 120,
+      "FlipX": true
     },
     {
       "Type": "fade",

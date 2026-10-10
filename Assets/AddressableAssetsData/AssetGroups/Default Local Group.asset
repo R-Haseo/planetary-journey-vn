@@ -1165,6 +1165,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e952313f87b96a4988ebe7c63641102
+    m_Address: background/episode02/scene03/tv_city_street2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5ee437395bb51b747b3ef208895c1b76
     m_Address: voice/episode02/s03_068
     m_ReadOnly: 0
