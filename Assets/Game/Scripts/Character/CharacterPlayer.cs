@@ -11,7 +11,14 @@ public class CharacterPlayer : MonoBehaviour
     private readonly Dictionary<CharacterPosition, AsyncOperationHandle<Sprite>>
         currentHandles = new();
 
-    public void Show(string assetId, CharacterPosition position, float width, float height, float offsetX, float offsetY)
+    public void Show(
+        string assetId,
+        CharacterPosition position,
+        float width,
+        float height,
+        float offsetX,
+        float offsetY,
+        bool flipX = false)
     {
         Release(position);
 
@@ -40,7 +47,8 @@ public class CharacterPlayer : MonoBehaviour
                 width,
                 height,
                 offsetX,
-                offsetY);
+                offsetY,
+                flipX);
         };
     }
 

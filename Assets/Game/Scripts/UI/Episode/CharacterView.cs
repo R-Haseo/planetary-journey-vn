@@ -28,15 +28,18 @@ public class CharacterView : MonoBehaviour
         float width,
         float height,
         float offsetX,
-        float offsetY)
+        float offsetY,
+        bool flipX = false)
     {
         var image = GetImage(position);
 
         var rectTransform = image.rectTransform;
         rectTransform.sizeDelta = new Vector2(width, height);
-
-        rectTransform.sizeDelta = new Vector2(width, height);
         rectTransform.anchoredPosition = GetBasePosition(position) + new Vector2(offsetX, offsetY);
+
+        var scale = rectTransform.localScale;
+        scale.x = Mathf.Abs(scale.x) * (flipX ? -1f : 1f);
+        rectTransform.localScale = scale;
 
         image.sprite = sprite;
         image.enabled = true;

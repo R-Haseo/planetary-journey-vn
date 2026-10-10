@@ -1,0 +1,478 @@
+{
+  "Commands": [
+    {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "scene02_city"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode02/scene02/city_aerial"
+    },
+    {
+      "Type": "fade",
+      "Action": "in",
+      "Duration": 0.8
+    },
+    {
+      "Type": "description",
+      "Text": "宇宙船が惑星の都市近郊へと降下していく。"
+    },
+    {
+      "Type": "description",
+      "Text": "眼下には、高層建築や整備された道路が広がっている。"
+    },
+    {
+      "Type": "description",
+      "Text": "荒廃した様子はない。"
+    },
+    {
+      "Type": "description",
+      "Text": "むしろ、これまで訪れた惑星と比べても発展した都市に見えた。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_001",
+      "Speaker": "ろまん",
+      "Text": "普通に都会だね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_002",
+      "Speaker": "ハウエル",
+      "Text": "はい。都市インフラにも目立った異常は確認できません"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_003",
+      "Speaker": "ろまん",
+      "Text": "博士、また大げさに言ってたんじゃないの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_004",
+      "Speaker": "ハウエル",
+      "Text": "その可能性を否定する情報はありません"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_005",
+      "Speaker": "ろまん",
+      "Text": "そこは否定してよ"
+    },
+    {
+      "Type": "background",
+      "AssetId": "episode02/scene02/tv_city_street"
+    },
+    {
+      "Type": "character",
+      "AssetId": "roman/roman_normal",
+      "Action": "show",
+      "Position": "left",
+      "Width": 620,
+      "Height": 930
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/ai_normal",
+      "Action": "show",
+      "Position": "right",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120
+    },
+    {
+      "Type": "description",
+      "Text": "場面転換。ろまんとハウエルが都市を歩いている。"
+    },
+    {
+      "Type": "description",
+      "Text": "広場には巨大なスクリーンが設置され、ニュース番組が流れている。"
+    },
+    {
+      "Type": "description",
+      "Text": "大勢の市民がその前を行き交っている。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_006",
+      "Speaker": "ろまん",
+      "Text": "……でっかいテレビ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_007",
+      "Speaker": "ハウエル",
+      "Text": "映像放送設備のようです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_008",
+      "Speaker": "ろまん",
+      "Text": "それは見ればわかる"
+    },
+    {
+      "Type": "description",
+      "Text": "ろまんは周囲を見渡す。"
+    },
+    {
+      "Type": "description",
+      "Text": "商店の壁にもテレビ。"
+    },
+    {
+      "Type": "description",
+      "Text": "駅の入口にもテレビ。"
+    },
+    {
+      "Type": "description",
+      "Text": "飲食店の店先にもテレビ。"
+    },
+    {
+      "Type": "description",
+      "Text": "どの画面からも、絶え間なく放送が流れている。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_009",
+      "Speaker": "ろまん",
+      "Text": "なんか……古臭い星だね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_010",
+      "Speaker": "ハウエル",
+      "Text": "都市設備の技術水準そのものは高いようです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_011",
+      "Speaker": "ろまん",
+      "Text": "でも、どこ行ってもテレビあるよ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_012",
+      "Speaker": "ハウエル",
+      "Text": "確認できる範囲では、街の至るところにテレビが設置されています"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_013",
+      "Speaker": "ろまん",
+      "Text": "そんなに面白い番組なのかな"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_014",
+      "Speaker": "ハウエル",
+      "Text": "現在は、著名人の飼っている犬が朝食を残した件について議論しています"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_015",
+      "Speaker": "ろまん",
+      "Text": "……平和そうだね"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_016",
+      "Speaker": "ハウエル",
+      "Text": "少なくとも、この放送からはそう判断できます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_017",
+      "Speaker": "ろまん",
+      "Text": "その言い方、ちょっと気になるなあ"
+    },
+    {
+      "Type": "description",
+      "Text": "そこへ、現地の少女が声をかけてくる。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_018",
+      "Speaker": "少女",
+      "Text": "あの……"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_019",
+      "Speaker": "ろまん",
+      "Text": "ん？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_020",
+      "Speaker": "少女",
+      "Text": "もしかして、旅行者ですか？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_021",
+      "Speaker": "ろまん",
+      "Text": "まあ、そんなところ"
+    },
+    {
+      "Type": "character",
+      "Action": "hide",
+      "Position": "right"
+    },
+    {
+      "Type": "character",
+      "AssetId": "mia/mia_three_quarter",
+      "Action": "show",
+      "Position": "right",
+      "Width": 775,
+      "Height": 1085,
+      "OffsetY": -50
+    },
+    {
+      "Type": "character",
+      "AssetId": "ai/ai_normal",
+      "Action": "show",
+      "Position": "center",
+      "Width": 320,
+      "Height": 320,
+      "OffsetY": 120,
+      "FlipX": true
+    },
+    {
+      "Type": "bgm",
+      "Action": "play",
+      "AssetId": "bright_city"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_022",
+      "Speaker": "少女",
+      "Text": "やっぱり！　外から来た人、初めて見ました"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_023",
+      "Speaker": "ろまん",
+      "Text": "初めて？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_024",
+      "Speaker": "少女",
+      "Text": "はい。この星で生まれてから、初めてです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_025",
+      "Speaker": "ろまん",
+      "Text": "へえ……"
+    },
+    {
+      "Type": "description",
+      "Text": "少女はハウエルを興味深そうに見る。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_026",
+      "Speaker": "少女",
+      "Text": "それ、ロボットですか？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_027",
+      "Speaker": "ハウエル",
+      "Text": "ショーペンハウエルです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_028",
+      "Speaker": "少女",
+      "Text": "しゃべった！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_029",
+      "Speaker": "ろまん",
+      "Text": "球体型AI。よくしゃべるよ。聞いてないことまで"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_030",
+      "Speaker": "ハウエル",
+      "Text": "情報提供は私の主要機能です"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_031",
+      "Speaker": "ろまん",
+      "Text": "そういうところ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_032",
+      "Speaker": "少女",
+      "Text": "観光ですか？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_033",
+      "Speaker": "ろまん",
+      "Text": "うーん……調査かな"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_034",
+      "Speaker": "少女",
+      "Text": "調査？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_035",
+      "Speaker": "ろまん",
+      "Text": "この星のこと、外ではあんまり知られてないみたいだから"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_036",
+      "Speaker": "少女",
+      "Text": "そうなんですか？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_037",
+      "Speaker": "ろまん",
+      "Text": "知らなかった？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_038",
+      "Speaker": "少女",
+      "Text": "はい。外のことって、あまり聞かないので"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_039",
+      "Speaker": "ろまん",
+      "Text": "……ふーん"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_040",
+      "Speaker": "少女",
+      "Text": "よかったら、街を案内しましょうか？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_041",
+      "Speaker": "ろまん",
+      "Text": "いいの？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_042",
+      "Speaker": "少女",
+      "Text": "はい！　外から来た人のお話も聞いてみたいです"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_043",
+      "Speaker": "ろまん",
+      "Text": "じゃあ、お願いしようかな"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_044",
+      "Speaker": "少女",
+      "Text": "はい！　あ、私、ミアっていいます"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_045",
+      "Speaker": "ろまん",
+      "Text": "私はろまん。こっちはショーペンハウエル。長いからハウエルでいいよ"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_046",
+      "Speaker": "ハウエル",
+      "Text": "正式名称の省略を推奨したことはありません"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_047",
+      "Speaker": "ろまん",
+      "Text": "よろしくね、ミア"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_048",
+      "Speaker": "ハウエル",
+      "Text": "……よろしくお願いします"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_049",
+      "Speaker": "ミア",
+      "Text": "よろしく、ろまん！　ハウエル！"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_050",
+      "Speaker": "ミア",
+      "Text": "こっちです！"
+    },
+    {
+      "Type": "description",
+      "Text": "ミアが先を歩き始める。"
+    },
+    {
+      "Type": "description",
+      "Text": "ろまんとハウエルがその後を追う。"
+    },
+    {
+      "Type": "description",
+      "Text": "通りの先にも巨大なテレビが見える。"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_051",
+      "Speaker": "ろまん",
+      "Text": "ねえ、ハウエル"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_052",
+      "Speaker": "ハウエル",
+      "Text": "はい"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_053",
+      "Speaker": "ろまん",
+      "Text": "この星、やっぱりちょっと変じゃない？"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_054",
+      "Speaker": "ハウエル",
+      "Text": "現時点では、巨大なテレビが多いという事実しか確認できません"
+    },
+    {
+      "Type": "dialogue",
+      "Id": "s02_055",
+      "Speaker": "ろまん",
+      "Text": "……それが変なんだって"
+    },
+    {
+      "Type": "description",
+      "Text": "三人は街の奥へと歩いていく。"
+    },
+    {
+      "Type": "fade",
+      "Action": "out",
+      "Duration": 0.8
+    },
+    {
+      "Type": "end"
+    }
+  ]
+}
