@@ -23,6 +23,22 @@
     {
       "ScenarioSpeaker": "少女",
       "VoiceVoxCharacter": "春日部つむぎ"
+    },
+    {
+      "ScenarioSpeaker": "市民A",
+      "VoiceVoxCharacter": "白上虎太郎（おこ）"
+    },
+    {
+      "ScenarioSpeaker": "受信料徴収員",
+      "VoiceVoxCharacter": "四国めたん（ツンツン）"
+    },
+    {
+      "ScenarioSpeaker": "テレビ司会者",
+      "VoiceVoxCharacter": "麒ヶ島宗麟"
+    },
+    {
+      "ScenarioSpeaker": "アイドル",
+      "VoiceVoxCharacter": "四国めたん（セクシー）"
     }
   ]
 }
