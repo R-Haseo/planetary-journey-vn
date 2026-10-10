@@ -234,7 +234,8 @@ public class ScenarioCommandValidationTests
                     "Width",
                     "Height",
                     "OffsetX",
-                    "OffsetY");
+                    "OffsetY",
+                    "FlipX");
 
                 RequireNonEmptyString(
                     command,
@@ -263,6 +264,12 @@ public class ScenarioCommandValidationTests
                 ValidateOptionalNumber(
                     command,
                     "OffsetY",
+                    scenarioFile,
+                    commandIndex);
+
+                ValidateOptionalBool(
+                    command,
+                    "FlipX",
                     scenarioFile,
                     commandIndex);
                 break;
@@ -504,6 +511,26 @@ public class ScenarioCommandValidationTests
             Is.True,
             $"{CreatePrefix(scenarioFile, commandIndex)} " +
             $"'{propertyName}' must be a number.");
+    }
+
+    private static void ValidateOptionalBool(
+        JObject command,
+        string propertyName,
+        string scenarioFile,
+        int commandIndex)
+    {
+        var property = command.Property(propertyName);
+
+        if (property == null)
+        {
+            return;
+        }
+
+        Assert.That(
+            property.Value.Type,
+            Is.EqualTo(JTokenType.Boolean),
+            $"{CreatePrefix(scenarioFile, commandIndex)} " +
+            $"'{propertyName}' must be a boolean.");
     }
 
     private static bool IsNumber(JToken token)

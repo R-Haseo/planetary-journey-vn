@@ -15,4 +15,5 @@ public class ScenarioCommandDto
     public float OffsetX;
     public float OffsetY;
     public float Duration;
+    public bool FlipX { get; set; }
 }
